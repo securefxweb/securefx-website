@@ -1,0 +1,129 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.productSteps {
+    padding: 0 0 50px 0;
+
+    .title {
+        padding: 0 0 44px 0;
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            @include font-medium;
+        }
+    }
+
+    .allCardAlignment {
+        .termsboxmain:last-child {
+            margin: 0;
+        }
+
+        .termsboxmain {
+            perspective: 1000px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            margin: 0 0 24px 0;
+
+            &:hover {
+                .termsbox {
+                    transform: translate(0, 45%) rotateX(-44deg) rotateY(0);
+                    animation: radiusTween 0.5s forwards;
+                }
+
+                .termsimageboxmain {
+                    transform: translate(0, 50%) rotateX(43.5deg) rotateY(0);
+
+                    .termsimagebox {
+                        animation: radiusTweensc 0.5s forwards;
+                    }
+                }
+            }
+
+            @keyframes radiusTween {
+                0% {
+                    border-radius: 0 0 20px 20px;
+                }
+
+                100% {
+                    border-radius: 0 0 20px 20px;
+                }
+            }
+
+            @keyframes radiusTweensc {
+                0% {
+                    border-radius: 20px 20px 0 0;
+                }
+
+                100% {
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+
+            .termsimageboxmain {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+                width: 100%;
+                transform: translate(0, 0%) rotateX(87deg) rotateY(0);
+                transform-origin: bottom;
+                transition: all 0.6s ease-in-out;
+
+                .termsimagebox {
+                    border-radius: 12px 12px 0 0;
+                    overflow: hidden;
+                    height: 110px;
+                    transition: all 0.6s ease-in-out;
+
+                    img {
+                        display: block;
+                        width: 120%;
+                        height: 110px;
+                        border-radius: 12px 12px 0 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .termsbox {
+                border-radius: 12px;
+                border: 1px solid rgb(255, 255, 255, .1);
+                background: #171719;
+                padding: 33px 24px;
+                transform: translate(0, 0) rotateX(0deg) rotateY(0);
+                transform-origin: top;
+                transition: all 0.6s ease-in-out;
+
+                span {
+                    display: block;
+                    color: #767676;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                    padding: 0 0 8px 0;
+                    @include font-normal;
+                }
+
+                h3 {
+                    color: #FFF;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    @include font-medium;
+                }
+            }
+        }
+
+
+    }
+
+
+
+}

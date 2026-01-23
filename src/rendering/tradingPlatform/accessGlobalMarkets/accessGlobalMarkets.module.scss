@@ -1,0 +1,271 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.accessGlobalMarketsRelative {
+    position: relative;
+
+    &::before {
+        width: 30%;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        background: #F95C2F;
+        z-index: -1;
+        opacity: 0.12;
+        filter: blur(101px);
+    }
+
+    &::after {
+        width: 30%;
+        height: 90%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        background: #3C75FE;
+        z-index: -1;
+        opacity: 0.12;
+        filter: blur(101px);
+    }
+
+    .text {
+        padding: 0 0 40px 0;
+
+        @include respond-to("sm") {
+            padding: 0 0 47px 0;
+        }
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            @include font-medium;
+            margin: 0 0 20px 0;
+
+            @include respond-to("sm") {
+                @include heading24;
+                margin: 0 auto 8px auto;
+                max-width: 251px;
+            }
+        }
+
+        p {
+            max-width: 777px;
+            color: #FFF;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            @include font-normal;
+            margin: 0 auto;
+
+            @include respond-to("sm") {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                max-width: 328px;
+            }
+        }
+    }
+
+    .card {
+        min-width: 220px;
+        width: 220px;
+        height: 200px;
+        margin-right: 20px;
+        position: relative;
+        perspective: 1200px;
+        transform-style: preserve-3d;
+        border-radius: 8px;
+        background: #121212;
+        cursor: pointer;
+
+        &.cardChange {
+            .front {
+                &::before {
+                    background-color: #FF9000;
+                }
+
+                &::after {
+                    background-color: #B2FF00;
+                }
+            }
+        }
+    }
+
+    .front,
+    .back {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        overflow: hidden;
+    }
+
+    .front {
+        background: #121212;
+        z-index: 2;
+        transform: rotateY(0deg);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+
+        .bottom {
+            p {
+                @include font-medium;
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                margin: 0 0 4px 0;
+            }
+
+            span {
+                display: block;
+                color: #15FF00;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                @include font-normal;
+                line-height: 130%;
+            }
+        }
+
+        .top {
+            p {
+                @include font-normal;
+                color: #fff;
+                text-align: left;
+                font-size: 16px;
+            }
+
+            h4 {
+                @include font-medium;
+                color: #fff;
+                text-align: left;
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+            left: 0;
+            width: 120px;
+            height: 82px;
+            content: "";
+            background-color: #0084ff;
+            opacity: 0.4;
+            filter: blur(52px);
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 120px;
+            z-index: -1;
+            height: 82px;
+            content: "";
+            background-color: #00fbff;
+            opacity: 0.4;
+            filter: blur(52px);
+        }
+    }
+
+    .back {
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: #121212;
+        transform: rotateY(180deg);
+        z-index: 1;
+        position: relative;
+
+        .iconText {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+
+            span {
+                display: block;
+                color: #FFF;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                @include font-medium;
+            }
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 1px;
+            border-radius: 8px;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            z-index: 1;
+            transition: 0.4s ease-in-out;
+        }
+
+        &::after {
+            background: linear-gradient(304.5deg, #0084FF -35%, #0084FF00 37%);
+        }
+
+        &::before {
+            background: linear-gradient(304.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+        }
+
+        .layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 82px;
+            content: "";
+            background-color: #f95c2f;
+            opacity: 0.4;
+            filter: blur(52px);
+        }
+
+        .layer1 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 82px;
+            content: "";
+            background-color: #3c75fe;
+            opacity: 0.4;
+            filter: blur(52px);
+        }
+
+    }
+}

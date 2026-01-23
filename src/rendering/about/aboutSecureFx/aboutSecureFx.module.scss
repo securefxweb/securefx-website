@@ -1,0 +1,36 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.aboutSecureFx {
+    padding: 0 0 120px 0;
+    scroll-margin-top: 120px;
+
+    h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        @include font-medium;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+    p {
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        max-width: 777px;
+        margin: 0 auto 24px auto;
+        @include font-normal;
+
+        &.sec {
+            max-width: 665px;
+        }
+    }
+}

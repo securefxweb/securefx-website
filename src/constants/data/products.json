@@ -1,0 +1,60 @@
+{
+	"products": [
+		{
+			"productName": "Forex",
+			"headline": "Master the Forex Market Confidently",
+			"description": "Trade major, minor, and exotic currency pairs with razor-thin spreads and instant execution. SecureFX delivers unmatched stability, deep liquidity, and transparency for every forex trade.",
+			"features": [
+				{ "label": "2000:1", "text": "Access to extensive leverage" },
+				{
+					"label": "0.0 Pips",
+					"text": "Enjoy the tightest spreads while trading"
+				}
+			],
+			"image": "/assets/images/prod-bg-1.png"
+		},
+		{
+			"productName": "Metals",
+			"headline": "Trade Metals That Hold Value",
+			"description": "Access gold, silver, and platinum markets with precision pricing and global liquidity. SecureFX empowers you to hedge, diversify, and grow through the strength of metals.",
+			"features": [
+				{ "label": "1000:1", "text": "Access to extensive leverage" },
+				{ "label": "Tightest spread", "text": "On Gold & Silver" }
+			],
+			"image": "/assets/images/prod-bg-2.png"
+		},
+		{
+			"productName": "Indices",
+			"headline": "Trade Indices That Shape Economies",
+			"description": "Gain exposure to global indices like NASDAQ, S&P 500, and FTSE 100. Trade market momentum securely with real-time insights and institutional-grade execution.",
+			"features": [
+				{ "label": "0", "text": "Swap" },
+				{
+					"label": "No Expiry",
+					"text": "Continues spot prices / Flexible Leverage"
+				}
+			],
+			"image": "/assets/images/prod-bg-3.png"
+		},
+		{
+			"productName": "Energy",
+			"headline": "Trade Energy With Global Impact",
+			"description": "Explore opportunities across crude oil, natural gas, and energy futures. SecureFX gives you fast access, advanced analytics, and transparent pricing in dynamic global energy markets.",
+			"features": [
+				{ "label": "0", "text": "Swap" },
+				{ "label": "200X", "text": "Higher Leverage" }
+			],
+			"image": "/assets/images/prod-bg-4.png"
+		},
+		{
+			"productName": "Commodities",
+			"headline": "Trade Commodities That Drive Growth",
+			"description": "Access agricultural and industrial commodities in one secure platform. Trade smarter with real-time data, low spreads, and consistent execution across global commodity markets.",
+			"features": [
+				{ "label": "0", "text": "Swap" },
+				{ "label": "200X", "text": "Higher Leverage" }
+			],
+			"image": "/assets/images/prod-bg-5.png"
+		}
+	]
+}

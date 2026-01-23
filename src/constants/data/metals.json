@@ -1,0 +1,56 @@
+{
+	"title": "Trade Metals That Hold Value",
+	"cards": [
+		{
+			"label": "Up to 500:1",
+			"content": "Highest levels of leverage"
+		},
+		{
+			"label": "0.0* Pips",
+			"content": "Tightest spreads in the industry"
+		}
+	],
+	"description": "Access gold, silver, and platinum markets with precision pricing and global liquidity. SecureFX empowers you to hedge, diversify, and grow through the strength of metals.",
+	"image": "/assets/images/metalsbanner.png",
+	"trading": {
+		"title": "What is Metals Trading?",
+		"content": [
+			"Metals trading allows investors to buy and sell precious and industrial metals like gold, silver, and platinum, assets known for their lasting value and stability. These markets offer a powerful way to hedge against inflation, diversify portfolios, and capture opportunities in times of volatility.",
+			"With SecureFX, you gain access to global metals markets with transparent pricing, deep liquidity, and advanced trading platforms. Trade the world’s most valuable commodities with precision and confidence."
+		],
+		"image": "/assets/images/metals.png"
+	},
+
+	"stapes": [
+		{
+			"id": 1,
+			"title": "Register with SecureFX",
+			"content": "Open a trading account with a regulated and trusted broker.",
+			"images": "/assets/images/products-images/metals-image-01.png"
+		},
+		{
+			"id": 2,
+			"title": "Deposit funds securely",
+			"content": "Choose from global funding methods with instant processing.",
+			"images": "/assets/images/products-images/metals-image-02.png"
+		},
+		{
+			"id": 3,
+			"title": "Analyze and trade",
+			"content": "Use real-time charts, analytics, and expert tools.",
+			"images": "/assets/images/products-images/metals-image-03.png"
+		},
+		{
+			"id": 4,
+			"title": "Manage your investments",
+			"content": "Track performance and adjust positions anytime.",
+			"images": "/assets/images/products-images/metals-image-04.png"
+		},
+		{
+			"id": 5,
+			"title": "Withdraw profits",
+			"content": "SecureFX ensures smooth, protected withdrawals.",
+			"images": "/assets/images/products-images/metals-image-05.png"
+		}
+	]
+}

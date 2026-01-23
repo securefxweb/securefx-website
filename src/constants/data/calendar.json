@@ -1,0 +1,95 @@
+{
+	"date": "October 30",
+	"events": [
+		{
+			"time": "15:00",
+			"country": "India",
+			"iso_code": "IN",
+			"event": "NI State CPI YY",
+			"actual": "1.12%",
+			"forecast": "100",
+			"prior": "2.3%"
+		},
+		{
+			"time": "15:00",
+			"country": "India",
+			"iso_code": "IN",
+			"event": "PPI MM",
+			"actual": "45.0%",
+			"forecast": "100",
+			"prior": "0.2%"
+		},
+		{
+			"time": "15:00",
+			"country": "India",
+			"iso_code": "IN",
+			"event": "NI State CPI YY",
+			"actual": null,
+			"forecast": null,
+			"prior": "0.3%"
+		},
+		{
+			"time": "11:00",
+			"country": "United States",
+			"iso_code": "US",
+			"event": "PPI MM",
+			"actual": "45.0%",
+			"forecast": "100",
+			"prior": "0.2%"
+		},
+		{
+			"time": "11:00",
+			"country": "United States",
+			"iso_code": "US",
+			"event": "NI State CPI YY",
+			"actual": null,
+			"forecast": null,
+			"prior": "0.3%"
+		},
+		{
+			"time": "11:00",
+			"country": "United States",
+			"iso_code": "US",
+			"event": "PPI MM",
+			"actual": "45.0%",
+			"forecast": "100",
+			"prior": "0.2%"
+		},
+		{
+			"time": "11:00",
+			"country": "United States",
+			"iso_code": "US",
+			"event": "NI State CPI YY",
+			"actual": null,
+			"forecast": null,
+			"prior": "0.3%"
+		},
+		{
+			"time": "11:00",
+			"country": "United States",
+			"iso_code": "US",
+			"event": "PPI MM",
+			"actual": "45.0%",
+			"forecast": "100",
+			"prior": "0.2%"
+		},
+		{
+			"time": "11:00",
+			"country": "United States",
+			"iso_code": "US",
+			"event": "NI State CPI YY",
+			"actual": null,
+			"forecast": null,
+			"prior": "0.3%"
+		},
+		{
+			"time": "11:00",
+			"country": "United States",
+			"iso_code": "US",
+			"event": "PPI MM",
+			"actual": "45.0%",
+			"forecast": "100",
+			"prior": "0.2%"
+		}
+	]
+}

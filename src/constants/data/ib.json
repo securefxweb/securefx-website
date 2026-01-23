@@ -1,0 +1,69 @@
+{
+	"ibsecurefx": [
+		{
+			"id": "d9e6b1c4-2bc1-4e4e-9f2e-72a7b6d1a411",
+			"title": "Seamless Execution",
+			"subtitle": "Diverse Product Range",
+			"description": "Access over 500 trading products, including Forex, Metals, Energies, Indices, and Shares, all through one secure and seamless account. Build your portfolio with flexibility and trade across global markets with the reliability and efficiency SecureFX is known for.",
+			"color": "#EFBA4E80",
+			"image": "/assets/images/highlight-2.png"
+		},
+		{
+			"id": "5ff1a8b5-07d0-4af1-b61a-0cd9e58f3d98",
+			"title": "Ultra-Low Spreads",
+			"subtitle": "Trusted Security",
+			"description": "Experience tight spreads on major instruments, starting as low as 0.1 pips on EUR/USD. Enjoy consistent pricing and enhanced liquidity designed to deliver more precise and cost-efficient trades across every market condition, ensuring every pip counts toward your profitability.",
+			"color": "#3C75FE80",
+			"image": "/assets/images/highlight-1.png"
+		},
+		{
+			"id": "a4fc89b7-7d75-4fd4-8d2e-a81a02db3f64",
+			"title": "Multi-Regulated Broker",
+			"subtitle": "Broker",
+			"description": "Trade confidently with a globally recognized and multi-regulated broker. SecureFX operates under multiple international regulatory frameworks, ensuring transparency, investor protection, and adherence to the highest compliance standards across every market where we serve clients.",
+			"color": "#3CD1FE80",
+			"image": "/assets/images/highlight-3.png"
+		},
+		{
+			"id": "d9e6b1c4-2bc1-4e4e-9f2e-72a7b6d1a411",
+			"title": "Seamless Execution",
+			"subtitle": "Diverse Product Range",
+			"description": "Access over 500 trading products, including Forex, Metals, Energies, Indices, and Shares, all through one secure and seamless account. Build your portfolio with flexibility and trade across global markets with the reliability and efficiency SecureFX is known for.",
+			"color": "#EFBA4E80",
+			"image": "/assets/images/highlight-2.png"
+		},
+		{
+			"id": "5ff1a8b5-07d0-4af1-b61a-0cd9e58f3d98",
+			"title": "Ultra-Low Spreads",
+			"subtitle": "Trusted Security",
+			"description": "Experience tight spreads on major instruments, starting as low as 0.1 pips on EUR/USD. Enjoy consistent pricing and enhanced liquidity designed to deliver more precise and cost-efficient trades across every market condition, ensuring every pip counts toward your profitability.",
+			"color": "#3C75FE80",
+			"image": "/assets/images/highlight-1.png"
+		},
+		{
+			"id": "a4fc89b7-7d75-4fd4-8d2e-a81a02db3f64",
+			"title": "Multi-Regulated Broker",
+			"subtitle": "Broker",
+			"description": "Trade confidently with a globally recognized and multi-regulated broker. SecureFX operates under multiple international regulatory frameworks, ensuring transparency, investor protection, and adherence to the highest compliance standards across every market where we serve clients.",
+			"color": "#3CD1FE80",
+			"image": "/assets/images/highlight-3.png"
+		}
+	],
+	"program": [
+		{
+			"id": "a3f1c8e2-91b4-4c44-9c1b-92f0e6ef101a",
+			"title": "Register with SecureFX",
+			"description": "Invite traders using your unique referral link and track every signup in real time."
+		},
+		{
+			"id": "c7b9e2d4-58fa-47bd-9a37-3b1a8cf2f51c",
+			"title": "Refer Clients",
+			"description": "Invite traders using your unique referral link and track every signup in real time."
+		},
+		{
+			"id": "f4d2a915-6e0d-4e2c-b27a-24a8e64cf71b",
+			"title": "Start Earning",
+			"description": "Invite traders using your unique referral link and track every signup in real time."
+		}
+	]
+}

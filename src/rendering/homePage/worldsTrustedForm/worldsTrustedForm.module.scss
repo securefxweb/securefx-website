@@ -1,0 +1,242 @@
+@use "../../../scss/breakpoints/breakpoints.scss" as *;
+@use "../../../scss/main.scss" as *;
+@use "../../../scss/font/font.scss" as *;
+
+.formAnimationWrapper {
+  position: relative;
+  width: 100%;
+  padding: 48px 0 0 0;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .sticky {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 390px 1fr;
+    gap: 80px;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+
+    .tab {
+      border-radius: 60px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.08);
+      padding: 4px;
+      margin: 0 0 24px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4px;
+
+      .buttonUi {
+        width: 100%;
+        position: relative;
+        padding: 12px;
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        border-radius: 99px;
+        gap: 10px;
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        @include font-medium;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+
+        &.activeButton {
+          background: #171719;
+
+          .layer,
+          .layer2 {
+            opacity: 1;
+          }
+
+          &::after,
+          &::before {
+            opacity: 1;
+          }
+        }
+
+        .layer,
+        .layer2 {
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          width: 47px;
+          height: 100%;
+          filter: blur(40px);
+          transition: 0.4s ease;
+        }
+
+        .layer {
+          left: -20px;
+          background-color: #f95c2f;
+        }
+
+        .layer2 {
+          right: -20px;
+          background-color: #0084ff;
+        }
+
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          padding: 1px;
+          border-radius: 99px;
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          opacity: 0;
+          pointer-events: none;
+          z-index: 1;
+          transition: 0.4s ease-in-out;
+        }
+
+        &::after {
+          background: linear-gradient(271.5deg, #0084ff -35%, #0084ff00 37%);
+        }
+
+        &::before {
+          background: linear-gradient(267.5deg,
+              #f7541c00 68.57%,
+              #f7541c 102.63%);
+        }
+
+        &:hover {
+          .layer {
+            left: 0;
+          }
+
+          .layer2 {
+            right: 0;
+          }
+
+          &::after {
+            background-position: 200% 0;
+          }
+
+          &::before {
+            background-position: -200% 0;
+          }
+        }
+      }
+    }
+  }
+
+  .box {
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(25px);
+    padding: 16px;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 1px;
+      border-radius: 12px;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+      z-index: 1;
+      transition: 0.4s ease-in-out;
+    }
+
+    &::after {
+      background: linear-gradient(117.5deg, #0084ff -35%, #0084ff00 37%);
+    }
+
+    &::before {
+      background: linear-gradient(124.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+    }
+  }
+
+  .text {
+    &.textbottomAlignment {
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      margin: 0;
+      @include font-medium;
+    }
+
+    .lineAnimation {
+      margin: 16px 0;
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    p {
+      color: #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      @include font-normal;
+
+      span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        @include font-normal;
+      }
+    }
+  }
+
+  .text,
+  .text1 {
+    position: relative;
+    min-height: 260px;
+  }
+
+  .stepItem {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    transform-origin: center;
+    will-change: transform, opacity;
+    text-align: left;
+  }
+
+  .stepItemRight {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    transform-origin: center;
+    will-change: transform, opacity;
+    text-align: left;
+  }
+}

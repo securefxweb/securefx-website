@@ -1,0 +1,45 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.commoditiestrading {
+    padding: 70px 0 50px 0;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 391px;
+        gap: 56px;
+
+        .image {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .text {
+            h2 {
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                margin: 0 0 16px 0;
+                @include font-medium;
+                @include text-gradient-white;
+            }
+
+            p {
+                max-width: 607px;
+                font-size: 20px;
+                @include text-gradient-white;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                @include font-normal;
+                margin: 0 0 16px 0;
+            }
+        }
+    }
+
+
+}

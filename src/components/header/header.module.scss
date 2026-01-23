@@ -1,0 +1,256 @@
+@use '../../scss/main.scss' as *;
+@use '../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../scss/font/font.scss' as *;
+
+.header {
+    width: 100%;
+    z-index: 99;
+    background-image: url('/assets/images/header-bg-new.svg');
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+
+    @include respond-to("xl") {
+        background-image: url('/assets/images/header-xl.svg');
+        height: 80px;
+    }
+
+    @media (max-width:1300px) {
+        background-image: url('/assets/images/header-small.svg');
+    }
+
+    @include respond-to("md") {
+        display: none;
+    }
+
+    .buttonAlignment {
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+    }
+
+    .headerAlignment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        height: 100%;
+
+        @media (max-width:1300px) {
+            gap: 30px;
+        }
+
+        a {
+            color: #fff;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            @include font-medium;
+            line-height: 130%;
+
+            @media (max-width:1300px) {
+                font-size: 14px;
+            }
+        }
+
+        img {
+            display: block;
+            cursor: pointer;
+
+            @media (max-width:1300px) {
+                max-width: 120px;
+            }
+        }
+    }
+
+    .loginButton {
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+
+        .loginbuttonUi {
+            position: relative;
+            padding: 6px 6px 6px 16px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            min-width: 140px;
+            backdrop-filter: blur(100px);
+            justify-content: space-between;
+            border-radius: 99px;
+            gap: 10px;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            @include font-medium;
+            overflow: hidden;
+            background: #171719;
+            transition: 0.3s ease-in-out;
+
+            .layer,
+            .layer2 {
+                position: absolute;
+                top: 0;
+                width: 47px;
+                height: 100%;
+                opacity: 0;
+                filter: blur(40px);
+                transition: 0.4s ease;
+            }
+
+            .layer {
+                left: -20px;
+                background-color: #F95C2F;
+            }
+
+            .layer2 {
+                right: -20px;
+                background-color: #0084FF;
+            }
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                padding: 2px;
+                border-radius: 99px;
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+                z-index: 1;
+                transition: 0.4s ease-in-out;
+            }
+
+            &::after {
+                background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+            }
+
+            &::before {
+                background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+            }
+
+            &:hover {
+                .layer {
+                    left: 0;
+                    opacity: 1;
+                }
+
+                .layer2 {
+                    right: 0;
+                    opacity: 1;
+                }
+
+                &::after {
+                    background-position: 200% 0;
+                }
+
+                &::before {
+                    background-position: -200% 0;
+                }
+            }
+        }
+    }
+
+    .buttonUi {
+        position: relative;
+        padding: 6px 6px 6px 16px;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        backdrop-filter: blur(100px);
+        border-radius: 99px;
+        gap: 10px;
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        @include font-medium;
+        overflow: hidden;
+        background: #171719;
+        transition: 0.3s ease-in-out;
+
+        .layer,
+        .layer2 {
+            position: absolute;
+            top: 0;
+            width: 47px;
+            height: 100%;
+            filter: blur(40px);
+            transition: 0.4s ease;
+        }
+
+        .layer {
+            left: -20px;
+            background-color: #F95C2F;
+        }
+
+        .layer2 {
+            right: -20px;
+            background-color: #0084FF;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 2px;
+            border-radius: 99px;
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+            z-index: 1;
+            transition: 0.4s ease-in-out;
+        }
+
+        &::after {
+            background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+        }
+
+        &::before {
+            background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+        }
+
+        &:hover {
+            .layer {
+                left: 0;
+            }
+
+            .layer2 {
+                right: 0;
+            }
+
+            &::after {
+                background-position: 200% 0;
+            }
+
+            &::before {
+                background-position: -200% 0;
+            }
+        }
+    }
+
+}
+
+.headerSticky {
+    position: relative;
+    z-index: 9999;
+
+    &.ibRoute {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 998;
+    }
+}

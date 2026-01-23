@@ -1,0 +1,19 @@
+/* Global styles for scrollbar in react-select dropdown */
+.custom-select__menu-list::-webkit-scrollbar {
+	width: 4px;
+	height: 4px;
+}
+
+.custom-select__menu-list::-webkit-scrollbar-track {
+	background: #1f1f1f;
+	border-radius: 8px;
+}
+
+.custom-select__menu-list::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 8px;
+}
+
+.custom-select__menu-list::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}

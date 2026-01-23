@@ -1,0 +1,24 @@
+{
+	"mobileTrading": [
+		{
+			"id": "9c7d1f32-b8b1-4f3c-9e2b-4d9c52a6f110",
+			"title": "One-Tap Trading Control",
+			"description": "Open, close, or modify orders instantly with intuitive one-click execution."
+		},
+		{
+			"id": "b4d95c20-2e5b-4f49-a8e0-1af82e2c8410",
+			"title": "Real-Time Market Tracking",
+			"description": "Follow live quotes, price trends, and your open positions effortlessly."
+		},
+		{
+			"id": "d13e5d72-94c3-4c72-b7ac-3bc0c40cd57b",
+			"title": "Smart Alerts & Updates",
+			"description": "Get instant push notifications on price movements, trade activity, and key economic events."
+		},
+		{
+			"id": "4a0b2d1c-a8e8-4a10-bc3f-7dfb0bfab92e",
+			"title": "Comprehensive Trade Orders",
+			"description": "Utilize advanced order types, including Buy Stop Limit and Sell Stop, for flexible trading strategies."
+		}
+	]
+}

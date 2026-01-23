@@ -1,0 +1,51 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.secFundDetailsCard {
+    padding: 120px 0 50px 0;
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px 0;
+
+        .griditems:nth-child(3),
+        .griditems:nth-child(6),
+        .griditems:last-child {
+            border: none;
+        }
+
+        .griditems {
+            padding: 0 20px 58px 20px;
+            border-right: 1px solid rgb(255, 255, 255, .1);
+
+            .iconAlignment {
+                padding: 0 0 25px 0;
+
+                img {
+                    display: block;
+                }
+            }
+
+            h3 {
+                color: #FFF;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                @include font-normal;
+                margin: 0 0 22px 0;
+            }
+
+            p {
+                @include font-normal;
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+            }
+        }
+    }
+}

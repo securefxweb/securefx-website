@@ -1,0 +1,54 @@
+{
+	"milestones": [
+		{
+			"id": "d1f7c0c1-9f3f-4e3e-8a54-2c6f9f220a10",
+			"year": 2015,
+			"description": "Launched global operations, expanding trading access to over 100 countries."
+		},
+		{
+			"id": "a4b9d671-0c89-4f0a-bd85-f7fb2efc2d91",
+			"year": 2016,
+			"description": "Rolled out next-generation MT5 platform with advanced charting and real-time data."
+		},
+		{
+			"id": "e9c1fe32-3a4a-4778-8df7-9fc89d00a41d",
+			"year": 2017,
+			"description": "Achieved USD 1 billion in executed trade volume across all asset classes."
+		},
+		{
+			"id": "b6e8b25f-5c30-4df7-9b5c-34fc3b2f0f73",
+			"year": 2018,
+			"description": "Introduced zero-commission accounts and ultra-tight spreads starting from 0.1 pips."
+		},
+		{
+			"id": "c3a17fe9-52c0-474d-90df-8c8b249d5a66",
+			"year": 2019,
+			"description": "Secured multi-jurisdictional regulation and enhanced fund-segregation protocols globally."
+		},
+		{
+			"id": "fa0e2c56-8e4b-4e8e-b3e3-48b4cb11d0a9",
+			"year": 2020,
+			"description": "Expanded product suite to 500+ instruments, including shares, indices and commodities."
+		},
+		{
+			"id": "7c62be91-0f3f-4b1d-bfb0-7dfcca2b9d11",
+			"year": 2021,
+			"description": "Launched institutional partner & white-label programs to amplify global brokerage reach."
+		},
+		{
+			"id": "4e5b7402-90fa-4dc1-9467-823679e0fef3",
+			"year": 2022,
+			"description": "Introduced USD 1 million excess-loss insurance per account for enhanced client security."
+		},
+		{
+			"id": "81d9c2b0-ecf1-49e0-9b45-d85c7c2714c0",
+			"year": 2023,
+			"description": "Established 24/5 multilingual support with live assistance across continents."
+		},
+		{
+			"id": "0ae3f62a-d9c4-4cb8-b99b-5c1dc6301d9a",
+			"year": 2024,
+			"description": "Surpassed 25,000 active trading accounts and marked 15 years of service excellence."
+		}
+	]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome lint ./src",
+    "format": "biome format --write ./src",
+    "check": "biome check --write ./src"
+  },
+  "dependencies": {
+    "@amcharts/amcharts5": "^5.14.4",
+    "@amcharts/amcharts5-geodata": "^5.1.5",
+    "axios": "^1.13.2",
+    "classnames": "^2.5.1",
+    "country-codes-list": "^2.0.0",
+    "country-flag-icons": "^1.6.4",
+    "d3": "^7.9.0",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.555.0",
+    "marked": "^17.0.1",
+    "next": "^15.5.9",
+    "nodemailer": "^7.0.11",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-fast-marquee": "^1.6.5",
+    "react-intersection-observer": "^10.0.0",
+    "react-select": "^5.10.2",
+    "sass": "^1.94.1",
+    "sonner": "^2.0.7",
+    "swiper": "^12.0.3",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11",
+    "@types/node": "25.0.3",
+    "typescript": "5.9.3"
+  }
+}

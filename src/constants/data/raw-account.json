@@ -1,0 +1,54 @@
+{
+	"title": "Raw Account",
+	"badge": "Raw A/c",
+	"image": "/assets/images/raw-account.png",
+	"description": "Gain institutional-level access with direct market pricing, ultra-tight spreads, and zero hidden markups for transparent trading.",
+	"parent": {
+		"center": "Pure pricing. Ultimate transparency. No compromise."
+	},
+
+	"left": [
+		{
+			"key": "lowLatencyConnections",
+			"number": 5,
+			"content": "Low latency and stable connections"
+		},
+		{
+			"key": "fastExecution",
+			"number": 6,
+			"content": "Blazing-fast execution speed"
+		},
+		{
+			"key": "realTimeMarketDepth",
+			"number": 7,
+			"content": "Real-time depth of market visibility"
+		},
+		{
+			"key": "fullMT5Support",
+			"number": 8,
+			"content": "Full MT5 trading environment support"
+		}
+	],
+	"right": [
+		{
+			"key": "lowSpreads",
+			"number": 1,
+			"content": "Spreads from 0.0 pips"
+		},
+		{
+			"key": "directLiquidityAccess",
+			"number": 2,
+			"content": "Direct access to liquidity providers"
+		},
+		{
+			"key": "commissionBased",
+			"number": 3,
+			"content": "Commission-based trading structure"
+		},
+		{
+			"key": "optimizedForScalpers",
+			"number": 4,
+			"content": "Optimized for scalpers and algorithmic traders"
+		}
+	]
+}

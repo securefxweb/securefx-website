@@ -1,0 +1,55 @@
+{
+	"title": "Trade Indices That Shape Economies",
+	"cards": [
+		{
+			"label": "Up to 500:1",
+			"content": "Highest levels of leverage"
+		},
+		{
+			"label": "0.0* Pips",
+			"content": "Tightest spreads in the industry"
+		}
+	],
+	"description": "Gain exposure to global indices like NASDAQ, S&P 500, and FTSE 100. Trade market momentum securely with real-time insights and institutional-grade execution.",
+	"image": "/assets/images/indices-banner.png",
+	"trading": {
+		"title": "What is Indices Trading?",
+		"content": [
+			"Indices trading lets you speculate on the performance of a group of top companies from major global economies, such as the S&P 500, NASDAQ, and FTSE 100. By trading indices, you gain exposure to entire markets rather than individual stocks.",
+			"SecureFX empowers traders to capture opportunities across global indices with real-time pricing, lightning-fast execution, and professional-grade platforms, all under a secure trading environment."
+		],
+		"image": "/assets/images/indices.png"
+	},
+	"stapes": [
+		{
+			"id": 1,
+			"title": "Sign up with SecureFX",
+			"content": "Trade with confidence under regulated oversight.",
+			"images": "/assets/images/products-images/indices-image-1.png"
+		},
+		{
+			"id": 2,
+			"title": "Dexpertly your funds",
+			"content": "Access instant, secure deposit options.",
+			"images": "/assets/images/products-images/indices-image-2.png"
+		},
+		{
+			"id": 3,
+			"title": "Choose your index",
+			"content": "Select from global benchmarks like NASDAQ, DAX, or Nikkei 225.",
+			"images": "/assets/images/products-images/indices-image-3.png"
+		},
+		{
+			"id": 4,
+			"title": "Trade and monitor",
+			"content": "Execute positions and track real-time performance.",
+			"images": "/assets/images/products-images/indices-image-4.png"
+		},
+		{
+			"id": 5,
+			"title": "Withdraw your earnings",
+			"content": "Enjoy quick and reliable withdrawals through SecureFX.",
+			"images": "/assets/images/products-images/indices-image-5.png"
+		}
+	]
+}

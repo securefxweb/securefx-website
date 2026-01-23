@@ -1,0 +1,30 @@
+{
+	"stepper": {
+		"steps": [
+			{
+				"id": "7a3c1f7e-9f41-4c52-9c0b-2b8e3fa1c101",
+				"step": 1,
+				"content": "Sign up and verify your identity securely.",
+				"images": "/assets/images/step-one.png"
+			},
+			{
+				"id": "b5e6820d-3f72-4d8a-8f5e-91c5cc47df42",
+				"step": 2,
+				"content": "Sign up and verify your identity securely.",
+				"images": "/assets/images/step-two.png"
+			},
+			{
+				"id": "e1c4b2ab-2e6e-4c4c-a9c7-c9d04f2bc882",
+				"step": 3,
+				"content": "Sign up and verify your identity securely.",
+				"images": "/assets/images/step-three.png"
+			},
+			{
+				"id": "cfa83de4-7e22-4db3-8c9b-3c9d0f1c44f0",
+				"step": 4,
+				"content": "Sign up and verify your identity securely.",
+				"images": "/assets/images/step-four.png"
+			}
+		]
+	}
+}

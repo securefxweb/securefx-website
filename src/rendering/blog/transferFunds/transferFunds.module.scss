@@ -1,0 +1,78 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.transferFundsAlignment {
+    padding: 0 0 50px 0;
+
+    @include respond-to('sm') {
+        padding: 0 0 40px 0;
+    }
+
+    .title {
+        padding: 0 0 20px 0;
+
+        @include respond-to('sm') {
+            padding: 0 0 16px 0;
+        }
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            @include font-medium;
+
+            @include respond-to('tab') {
+                font-size: 28px;
+            }
+
+            @include respond-to('sm') {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .imageAlignment {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+        justify-content: center;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include respond-to('tab') {
+            gap: 20px;
+            justify-content: flex-start;
+            padding: 0 20px;
+        }
+
+        @include respond-to('sm') {
+            gap: 16px;
+            padding: 0 16px;
+        }
+
+        img {
+            display: block;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            flex-shrink: 0;
+
+            @include respond-to('sm') {
+                width: auto;
+                height: 40px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

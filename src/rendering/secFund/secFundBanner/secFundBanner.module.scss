@@ -1,0 +1,54 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.secFundBanner {
+    padding: 120px 0;
+
+    h1 {
+        max-width: 727px;
+        margin: 0 auto;
+        color: #FFF;
+        text-align: center;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        @include font-medium;
+    }
+
+    .lineAnimation {
+        max-width: 727px;
+        margin: 0 auto;
+
+        svg {
+            width: 100%;
+        }
+    }
+
+    .textstyle {
+        padding: 31px 0 0 0;
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 20px;
+            font-style: normal;
+            margin: 0 0 8px 0;
+            font-weight: 500;
+            line-height: 120%;
+            @include font-medium;
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            max-width: 392px;
+            margin: 0 auto;
+        }
+    }
+}

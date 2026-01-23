@@ -1,0 +1,84 @@
+{
+	"paymentMethods": [
+		{
+			"key": "Sticpay",
+			"label": "Sticpay",
+			"deposit": {
+				"mode": "USD",
+				"fees": "Free",
+				"processingTime": "3–30 minutes",
+				"minimumAmount": "100 USD"
+			},
+			"withdrawal": {
+				"mode": "USD",
+				"fees": "Free",
+				"processingTime": "1–3 hours to approve the withdrawal and up to 30 minutes to transfer the funds.",
+				"minimumAmount": "100 USD"
+			}
+		},
+		{
+			"key": "USDT",
+			"label": "USDT",
+			"deposit": {
+				"mode": "USDT",
+				"fees": "Free",
+				"processingTime": "3–30 minutes",
+				"minimumAmount": "100 USD"
+			},
+			"withdrawal": {
+				"mode": "USD",
+				"fees": "Free",
+				"processingTime": "1–3 hours to approve the withdrawal and up to 30 minutes to transfer the funds.",
+				"minimumAmount": "100 USD"
+			}
+		},
+		{
+			"key": "LocalBank",
+			"label": "Local Bank",
+			"deposit": {
+				"mode": "Local Bank",
+				"fees": "Free",
+				"processingTime": "3–30 minutes",
+				"minimumAmount": "100 USD"
+			},
+			"withdrawal": {
+				"mode": "Local Bank",
+				"fees": "Free",
+				"processingTime": "1–3 hours to approve the withdrawal and up to 30 minutes to transfer the funds.",
+				"minimumAmount": "100 USD"
+			}
+		},
+		{
+			"key": "Mastercard",
+			"label": "Mastercard",
+			"deposit": {
+				"mode": "Mastercard",
+				"fees": "Free",
+				"processingTime": "3–30 minutes",
+				"minimumAmount": "100 USD"
+			},
+			"withdrawal": {
+				"mode": "Mastercard",
+				"fees": "Free",
+				"processingTime": "1–3 hours to approve the withdrawal and up to 30 minutes to transfer the funds.",
+				"minimumAmount": "100 USD"
+			}
+		},
+		{
+			"key": "Visacard",
+			"label": "Visacard",
+			"deposit": {
+				"mode": "Visacard",
+				"fees": "Free",
+				"processingTime": "3–30 minutes",
+				"minimumAmount": "100 USD"
+			},
+			"withdrawal": {
+				"currency": "USD",
+				"fees": "Free",
+				"processingTime": "1–3 hours to approve the withdrawal and up to 30 minutes to transfer the funds.",
+				"minimumAmount": "100 USD"
+			}
+		}
+	]
+}

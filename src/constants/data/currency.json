@@ -1,0 +1,16 @@
+{
+	"currencies": [
+		{
+			"pair": "AUDUSD",
+			"description": "Australian Dollar vs US Dollar",
+			"rate": 12.80494,
+			"change_percent": -5.97
+		},
+		{
+			"pair": "EURUSD",
+			"description": "Euro vs US Dollars",
+			"rate": 0.80494,
+			"change_percent": -5.97
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"id": "f5c1cc1c-2c7a-4cd3-9f4b-f0eaf2660a8e",
+	"title": "Standard Account",
+	"description": "Your entry into professional trading with transparent pricing, reliable execution, and access to all global markets.",
+	"badge": "Standard A/c",
+	"image": "/images/standard-account.png",
+	"parent": {
+		"id": "9b6c627d-bf14-4b44-95cf-7f4fd7b1cc0f",
+		"center": "The perfect blend of simplicity and precision for consistent traders."
+	},
+	"left": [
+		{
+			"id": "3d8d947e-439c-4b9d-9ee4-1b459bc78e25",
+			"key": "lightningFastExecution",
+			"number": 5,
+			"content": "Lightning-fast execution on all orders"
+		},
+		{
+			"id": "e66f62d4-dba7-4f59-97a5-870174d67384",
+			"key": "minimumDeposit",
+			"number": 6,
+			"content": "Minimum deposit of just $100"
+		},
+		{
+			"id": "df2f734f-9c9d-4bfb-b595-c9f59aef7ed3",
+			"key": "beginnerFriendly",
+			"number": 7,
+			"content": "Designed for new and growing traders"
+		},
+		{
+			"id": "0d2b5aaf-5c5f-4f25-9d33-1bd6091c3460",
+			"key": "mt5Compatibility",
+			"number": 8,
+			"content": "MT5 compatibility on web, mobile & desktop"
+		}
+	],
+	"right": [
+		{
+			"id": "aacaa17e-5b1c-4fd4-a45d-9a8e7cd1e4ab",
+			"key": "tightSpreads",
+			"number": 1,
+			"content": "Tight spreads starting from 0.5 pips"
+		},
+		{
+			"id": "a0b4cf2a-8a42-49ec-aa23-3de5db501d1f",
+			"key": "noDealingDesk",
+			"number": 2,
+			"content": "No dealing desk or price manipulation"
+		},
+		{
+			"id": "de1c743c-c9df-4adb-94b3-81b2c455bcb4",
+			"key": "supportsStrategies",
+			"number": 3,
+			"content": "Supports scalping, hedging & EAs"
+		},
+		{
+			"id": "1e17e6f7-c79d-4dd5-a1d4-b285bb0342ab",
+			"key": "marketAccess",
+			"number": 4,
+			"content": "Access to Forex, Metals, Indices & more"
+		}
+	]
+}

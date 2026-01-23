@@ -1,0 +1,138 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.ourAffiliateAlignment {
+    padding: 120px 0;
+    overflow-x: hidden;
+
+    .title {
+        padding: 0 0 100px 0;
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            @include font-medium;
+        }
+    }
+
+    :global(.swiper-slide-active) {
+        .mainSpacing {
+            transform: scale(1.1);
+            margin-top: -20px;
+        }
+    }
+
+    :global(.swiper) {
+        overflow: unset;
+    }
+
+    .mainSpacing {
+        height: 510px;
+        border-radius: 12px;
+        transition: .3s ease-in-out;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .card {
+        height: 510px;
+        width: 100%;
+        border-radius: 12px;
+        transition: .3s ease-in-out;
+        position: relative;
+
+        &:hover {
+            .mainTitle {
+                p {
+                    transform: translateY(0%);
+                }
+
+                h3 {
+                    transform: translateY(-150%);
+                }
+            }
+        }
+
+        .mainTitle {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transition: .3s ease-in-out;
+
+            .spacing {
+                padding: 20px 20px;
+            }
+
+
+            h3 {
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                position: absolute;
+                bottom: 0;
+                padding: 0 0 20px 0;
+                transition: .3s ease-in-out;
+                @include font-medium;
+                line-height: 120%;
+            }
+
+            p {
+                color: #FFF;
+                font-size: 18px;
+                position: absolute;
+                padding: 0 20px 20px 20px;
+                left: 0;
+                bottom: 0;
+                transition: .3s ease-in-out;
+                transform: translateY(130%);
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                margin: 8px 0 0 0;
+                @include font-normal;
+            }
+        }
+
+
+
+        .image {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            border-radius: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    .arrowCenterAlignment {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        padding: 40px 0 0 0;
+
+        button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:last-child {
+            transform: rotate(180deg);
+        }
+    }
+}

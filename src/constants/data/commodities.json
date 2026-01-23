@@ -1,0 +1,55 @@
+{
+	"title": "Trade Commodities That Drive Growth",
+	"cards": [
+		{
+			"label": "Up to 500:1",
+			"content": "Highest levels of leverage"
+		},
+		{
+			"label": "0.0* Pips",
+			"content": "Tightest spreads in the industry"
+		}
+	],
+	"description": "Access agricultural and industrial commodities in one secure platform. Trade smarter with real-time data, low spreads, and consistent execution across global commodity markets.",
+	"image": "/assets/images/commodities-banner.png",
+	"trading": {
+		"title": "What is Commodities Trading?",
+		"content": [
+			"Commodities trading gives you the chance to invest in essential goods that drive the global economy, from agricultural products to industrial materials. These markets help traders diversify, hedge risk, and seize opportunities driven by global demand.",
+			"SecureFX gives you access to major commodity markets with institutional liquidity, tight spreads, and real-time execution, all on a secure, transparent platform."
+		],
+		"image": "/assets/images/Commodities.png"
+	},
+	"stapes": [
+		{
+			"id": 1,
+			"title": "Register and verify your account",
+			"content": "Trade safely with a regulated broker.",
+			"images": "/assets/images/products-images/commodities-image-01.png"
+		},
+		{
+			"id": 2,
+			"title": "Deposit your funds",
+			"content": "SecureFX supports multiple instant funding options.",
+			"images": "/assets/images/products-images/commodities-image-02.png"
+		},
+		{
+			"id": 3,
+			"title": "Pick your commodity",
+			"content": "Trade agricultural, industrial, or precious goods.",
+			"images": "/assets/images/products-images/commodities-image-03.png"
+		},
+		{
+			"id": 4,
+			"title": "Execute trades",
+			"content": "Monitor markets and act on real-time data.",
+			"images": "/assets/images/products-images/commodities-image-04.png"
+		},
+		{
+			"id": 5,
+			"title": "Withdraw profits",
+			"content": "Access your earnings easily and securely.",
+			"images": "/assets/images/products-images/commodities-image-05.png"
+		}
+	]
+}

@@ -1,0 +1,133 @@
+{
+	"web": {
+		"badge": "Web Trading",
+		"title": "Trade Instantly With MT5 WebTerminal",
+		"description": "Trade effortlessly from your browser with full access to market tools, instant execution, and real-time data — no downloads required.",
+		"image": "/assets/images/web.png",
+		"web-features": {
+			"id": "b2c9e5f7-8d3a-4b6c-9e1f-0a7d8e5f6c4b",
+			"title": "All the Power, None of the Installs",
+			"description": "Experience MultiTracer 5's advanced tracing capabilities entirely online. The MITS WolDBrnminal lets you trade, analyse, and manage portfolios from any browser with the same precision, functionality, and speed as the desktop platform.",
+			"image": "/assets/images/trade-platform-img-1.png",
+			"features": [
+				{
+					"title": "No Downloads Needed",
+					"description": "Trade securely right from your browser, compatible with any device or operating system.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-5.png",
+					"date": "01/04"
+				},
+				{
+					"title": "Full Multi-Asset Access",
+					"description": "Explore forex, indices, metals, and commodities, all accessible through a single unified interface.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-6.png",
+					"date": "02/04"
+				},
+				{
+					"title": "Instant Chart Switching",
+					"description": "Move between charts and instruments seamlessly for efficient analysis and trading.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-7.png",
+					"date": "06/05"
+				},
+				{
+					"title": "In-Depth Market Analytics",
+					"description": "Use 40+ customizable indicators, an integrated economic calendar, and multi-chart layouts to refine your trading strategies.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-8.png",
+					"date": "06/05"
+				}
+			]
+		}
+	},
+	"mobile": {
+		"badge": "Mobile Trading",
+		"title": "Redefine Trading With MT5 Mobile",
+		"description": "Experience faster execution, deeper insights, and complete market access through the MetaTrader 5 app, built for modern traders on the move.",
+		"image": "/assets/images/mt5-mobile.png",
+		"mobile-features": {
+			"id": "a3f8d2b1-5c6e-4a7d-9b0c-1d2e3f4a5b6c",
+			"title": "Trade Smarter With Advanced Mobile Tools",
+			"description": "Discover an all-in-one trading experience that brings speed, flexibility, and precision to your fingertips. The MT5 app delivers full functionality for executing trades, managing risk, and analyzing markets, anytime, anywhere.",
+			"image": "/assets/images/trade-platform-img-1.png",
+			"features": [
+				{
+					"title": "Smart Alerts & Updates",
+					"description": "Get instant push notifications on price movements, trade activity, and key economic events.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-1.png",
+					"date": "03/04"
+				},
+				{
+					"title": "Comprehensive Trade Orders",
+					"description": "Utilize advanced order types, including Buy Stop Limit and Sell Stop, for flexible trading strategies.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-2.png",
+					"date": "04/04"
+				},
+				{
+					"title": "One-Tap Trading Control",
+					"description": "Open, close, or modify orders instantly with intuitive one-click execution.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-3.png",
+					"date": "04/05"
+				},
+				{
+					"title": "Real-Time Market Tracking",
+					"description": "Follow live quotes, price trends, and your open positions effortlessly.",
+					"icon": "/assets/icons/trade-platform/trade-platform-icon-4.png",
+					"date": "04/06"
+				}
+			]
+		}
+	},
+	"analysis": {
+		"id": "market-analysis-suite",
+		"title": "Analyse Markets With Precision",
+		"description": "Take full control of your strategies using MT5’s built-in analytical suite, customize indicators, charts, and timeframes to align with your trading vision.",
+		"features-analysis": [
+			{
+				"icon": "chart-multiple",
+				"title": "Multiple Chart Modes"
+			},
+			{
+				"icon": "chart-line",
+				"title": "40+ Indicators & Tools"
+			},
+			{
+				"icon": "clock-time",
+				"title": "Flexible Timeframes"
+			}
+		]
+	},
+	"choices": {
+		"title": "What Makes MT5 the Trader's Choice",
+		"description": "MetaTrader 5 is the next-generation trading platform designed for professionals who value speed, versatility, and precision. Available on both Android and iOS, it offers multi-asset trading, advanced charting tools, and integrated risk-management features. Whether you’re managing short-term trades or long-term investments, MT5 keeps you connected to global markets anytime you trade.",
+		"image": "/assets/images/makes.png"
+	},
+	"comparison": {
+		"title": "Why MT5 Is Better With SecureFX",
+		"description": " Trade with confidence on one of the world’s most advanced mobile platforms, powered by SecureFX’s trusted infrastructure and market expertise.",
+		"center": {
+			"text": "Why MT5 Is Better With SecureFX",
+			"icon": "/assets/icons/Execution.svg",
+			"description": " Execute trades within milliseconds across multiple asset classes, ensuring no delay between decision and action."
+		},
+		"features": [
+			{
+				"id": "instant-fund-access",
+				"text": "Instant Fund Access",
+				"counter": "1"
+			},
+			{
+				"id": "lightning-execution",
+				"text": "Lightning-Speed Execution.",
+				"counter": "2"
+			},
+			{
+				"id": "enhanced-stop-out-shield",
+				"text": "Enhanced Stop-Out Shield",
+				"counter": "3"
+			},
+			{
+				"id": "support-24-7",
+				"text": "Round-the-Clock Support",
+				"counter": "4"
+			}
+		]
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"faqs": [
+		{
+			"id": "b7d6b5a4-2e1a-4c1b-9b2a-9f8e0dfc9d11",
+			"question": "Is SecureFX a regulated broker?",
+			"answer": "Yes. SecureFX operates under strict international financial standards, ensuring client fund segregation, transparency, and compliance with global trading regulations. All client deposits are held in trusted, top-tier banks with full separation from the company’s operational accounts."
+		},
+		{
+			"id": "0f3bd410-821d-4cf5-a9fd-9ef12da1f3b4",
+			"question": "How does SecureFX protect client funds?",
+			"answer": "Client funds are kept in segregated accounts with reputable global banks, ensuring they remain completely separate from company assets. Additional safeguards include negative balance protection, data encryption, and secure payment gateways to maintain full fund security and transaction integrity."
+		},
+		{
+			"id": "a3a9d5dd-93ab-457e-8495-9c5f2b364bcb",
+			"question": "How do I fund or withdraw from my account?",
+			"answer": "SecureFX supports multiple secure funding methods, including bank transfers, credit/debit cards, and e-wallets. Deposits are processed instantly in most cases, and withdrawals are executed quickly with instant approval on eligible transactions to give traders full control of their funds."
+		},
+		{
+			"id": "e6bf8e0c-4a90-4928-9d44-34a6c6ca2480",
+			"question": "What are the trading conditions like at SecureFX?",
+			"answer": "Traders enjoy lightning-fast execution, low latency, and tight spreads across all markets. The infrastructure is built to minimize slippage and ensure trades are executed at real-time market prices, maintaining transparency and reliability at every step."
+		},
+		{
+			"id": "c91f9e45-1b26-4c0b-8b34-f042af1dbf55",
+			"question": "Can I trade from my phone?",
+			"answer": "Yes. The MT5 Mobile App (available on iOS and Android) lets you trade, analyze markets, and manage accounts anytime, anywhere. With built-in alerts, 30+ technical indicators, and multiple chart types, it delivers a complete trading experience on the go."
+		},
+		{
+			"id": "4c315e11-b473-4e55-980c-0c7b5a8f8d10",
+			"question": "Does SecureFX offer educational or analytical tools?",
+			"answer": "Yes. SecureFX provides access to real-time news, market analysis, and an economic calendar. Within MT5, traders can use over 40 built-in indicators, nine timeframes, and customizable charting tools to refine their strategy and decision-making."
+		},
+		{
+			"id": "a8ef41c0-8ab6-4c46-809d-bc618ae0ad4e",
+			"question": "How can I become a SecureFX partner?",
+			"answer": "Becoming a partner is simple:\nSTEP 1 - Register online as an IB or Affiliate.\nSTEP 2 - Refer clients using your unique referral link.\nSTEP 3 - Earn commissions as your referred clients trade."
+		},
+		{
+			"id": "e5c54d61-2cd4-4b6c-b247-4a64bde8ef20",
+			"question": "How can I contact SecureFX support?",
+			"answer": "You can reach the SecureFX team 24/5 via email, live chat, or the online contact form. Dedicated support specialists and partner managers are available to assist you with technical issues, account queries, and partnership guidance."
+		}
+	]
+}

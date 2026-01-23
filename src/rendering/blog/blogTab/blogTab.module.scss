@@ -1,0 +1,100 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.blogTab {
+    padding: 0 0 40px 0;
+
+    @include respond-to('sm') {
+        padding: 0 0 30px 0;
+    }
+
+    .tabAlignment {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include respond-to('sm') {
+            gap: 8px;
+            padding: 0 0 10px 0;
+        }
+
+        .buttonUi {
+            position: relative;
+            padding: 8px 18px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            backdrop-filter: blur(100px);
+            border-radius: 99px;
+            min-width: 110px;
+            gap: 10px;
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            justify-content: center;
+            font-weight: 400;
+            line-height: 130%;
+            @include font-normal;
+            overflow: hidden;
+            border-radius: 54px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.04);
+            transition: 0.3s ease-in-out;
+            flex-shrink: 0;
+
+            @include respond-to('sm') {
+                padding: 6px 14px;
+                min-width: 90px;
+                font-size: 11px;
+            }
+
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                padding: 1px;
+                border-radius: 99px;
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+                z-index: 1;
+                opacity: 0;
+                transition: 0.4s ease-in-out;
+            }
+
+            &::after {
+                background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+            }
+
+            &::before {
+                background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+            }
+
+            &:hover {
+
+
+                &::after {
+                    background-position: 200% 0;
+                    opacity: 1;
+                }
+
+                &::before {
+                    background-position: -200% 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

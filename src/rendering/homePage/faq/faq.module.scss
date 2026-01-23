@@ -1,0 +1,174 @@
+@use "../../../scss/main.scss" as *;
+@use "../../../scss/font/font.scss" as *;
+@use "../../../scss/breakpoints/breakpoints.scss" as *;
+
+.faqSectionAlignment {
+  padding: 100px 0 0 0;
+
+  @include respond-to("md") {
+    padding: 80px 0 0 0;
+  }
+
+  @include respond-to("sm") {
+    padding: 60px 0 0 0;
+  }
+
+  .title {
+    padding: 0 0 40px 0;
+
+    @include respond-to("sm") {
+      padding: 0 0 30px 0;
+    }
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+      @include font-medium;
+
+      @include respond-to("md") {
+        font-size: 32px;
+      }
+
+      @include respond-to("sm") {
+        font-size: 28px;
+      }
+    }
+  }
+
+  /* FIXED 2-COLUMN LAYOUT (Not Masonry) */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: start;
+
+    @include respond-to("md") {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @include respond-to("md") {
+      gap: 16px;
+    }
+  }
+
+  .mainFaq {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #131315;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+
+    @include respond-to("sm") {
+      padding: 14px;
+      border-radius: 6px;
+    }
+
+    &.activeFaq {
+      &::before {
+        opacity: 0.5;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 100%;
+      background: #3c75fe;
+      opacity: 0;
+      filter: blur(225px);
+      content: "";
+    }
+
+    .faqHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      h3 {
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        @include font-normal;
+        flex: 1;
+        margin-right: 12px;
+
+        @include respond-to("sm") {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+
+        img {
+          display: block;
+          cursor: pointer;
+          width: 20px;
+          height: 20px;
+
+          @include respond-to("sm") {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+
+    .faqbody {
+      &.hide {
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+      }
+
+      &.show {
+        max-height: 100vh;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+      }
+
+      .spacing {
+        padding: 16px 0 0 0;
+
+        @include respond-to("sm") {
+          padding: 12px 0 0 0;
+        }
+
+        p {
+          color: #fff;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 130%;
+          letter-spacing: -0.32px;
+          @include font-normal;
+
+          @include respond-to("sm") {
+            font-size: 14px;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+  }
+}

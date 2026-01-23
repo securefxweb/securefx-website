@@ -1,0 +1,50 @@
+[
+	{
+		"name": "Switzerland",
+		"countryCode": "CH",
+		"coords": [8.2275, 46.8182],
+		"color": "#ef4444"
+	},
+	{
+		"name": "United Arab Emirates",
+		"countryCode": "AE",
+		"coords": [53.8478, 23.4241],
+		"color": "#10b981"
+	},
+	{
+		"name": "India",
+		"countryCode": "IN",
+		"coords": [78.9629, 20.5937],
+		"color": "#f97316"
+	},
+	{
+		"name": "United Kingdom",
+		"countryCode": "GB",
+		"coords": [-0.1278, 51.5074],
+		"color": "#3b82f6"
+	},
+	{
+		"name": "United States",
+		"countryCode": "US",
+		"coords": [-95.7129, 37.0902],
+		"color": "#dc2626"
+	},
+	{
+		"name": "Australia",
+		"countryCode": "AU",
+		"coords": [133.7751, -25.2744],
+		"color": "#2563eb"
+	},
+	{
+		"name": "France",
+		"countryCode": "FR",
+		"coords": [2.2137, 46.2276],
+		"color": "#0e946cff"
+	},
+	{
+		"name": "Germany",
+		"countryCode": "DE",
+		"coords": [10.4515, 51.1657],
+		"color": "#eab308"
+	}
+]

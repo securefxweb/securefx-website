@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"title": "Trust",
+		"subtitle": "Industry-Leading Reputation & Stability",
+		"description": "Partner with a regulated broker trusted by thousands worldwide. SecureFX provides transparent operations, top-tier liquidity, and consistent payout performance, ensuring your clients trade confidently while you earn sustainable, long-term commissions.",
+		"cta": "Learn More"
+	},
+	{
+		"id": 2,
+		"title": "Rewards",
+		"subtitle": "Unmatched Rebates and Payouts",
+		"description": "Earn industry-leading rebates and tiered rewards that scale as your referrals grow. SecureFX ensures instant, transparent commission structures designed to maximize your earning potential without limits or hidden terms.",
+		"cta": "Explore Rewards"
+	},
+	{
+		"id": 3,
+		"title": "Support",
+		"subtitle": "Dedicated Partner Account Manager",
+		"description": "Access personalized support from our partner success managers, ready to guide your strategy, optimize conversions, and ensure your clients enjoy a seamless trading experience across platforms.",
+		"cta": "Connect Now"
+	},
+	{
+		"id": 4,
+		"title": "Growth",
+		"subtitle": "Marketing Tools and Promotions",
+		"description": "Boost your growth with professional marketing materials, referral links, and seasonal promotions tailored to increase your client engagement and retention.",
+		"cta": "Get Started"
+	},
+	{
+		"id": 5,
+		"title": "Access",
+		"subtitle": "Advanced Technology & Real-Time Tracking",
+		"description": "Monitor every referral, trade, and payout in real time through our partner dashboard. Track performance metrics easily and stay in full control of your earnings.",
+		"cta": "View Dashboard"
+	}
+]

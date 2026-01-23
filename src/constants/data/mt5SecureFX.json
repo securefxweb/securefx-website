@@ -1,0 +1,28 @@
+{
+	"mt5SecureFx": {
+		"headline": "Why MT5 Is Better With SecureFX",
+		"description": "Trade with confidence on one of the world’s most advanced mobile platforms, powered by SecureFX’s trusted infrastructure and market expertise.",
+		"features": [
+			{
+				"id": "7f3c91b2-1e4a-4d9c-b82c-8c4fd18f6a22",
+				"title": "Instant Fund Access",
+				"description": "Withdraw your profits instantly with automated processing and secure payment channels."
+			},
+			{
+				"id": "d0a9b3e7-4ce1-4c1f-b8a4-1ea93b746921",
+				"title": "Lightning-Speed Execution",
+				"description": "Execute trades within milliseconds across multiple asset classes, ensuring no delay between decision and action."
+			},
+			{
+				"id": "3a1c79df-0bd8-4c55-9b1f-0cdc8e20ad11",
+				"title": "Enhanced Stop-Out Shield",
+				"description": "Protect your capital with SecureFX’s advanced Stop-Out Protection that minimizes premature closures during volatility."
+			},
+			{
+				"id": "9e0b61f5-8d32-42be-98e0-7892dafcbf01",
+				"title": "Round-the-Clock Support",
+				"description": "Get expert help whenever you need it, from setup to strategy execution, directly within the app."
+			}
+		]
+	}
+}

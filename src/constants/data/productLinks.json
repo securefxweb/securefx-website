@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Forex",
+		"link": "/forex"
+	},
+	{
+		"name": "Metals",
+		"link": "/metals"
+	},
+	{
+		"name": "Indices",
+		"link": "/indices"
+	},
+	{
+		"name": "Energy",
+		"link": "/energy"
+	},
+	{
+		"name": "Commodities",
+		"link": "/commodities"
+	}
+]

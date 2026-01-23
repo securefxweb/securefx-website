@@ -1,0 +1,24 @@
+{
+	"webTrading": [
+		{
+			"id": "3f1c9a71-2c4d-4d9b-9f88-b1e4a6d92d10",
+			"title": "No Downloads Needed",
+			"description": "Trade securely right from your browser, compatible with any device or operating system."
+		},
+		{
+			"id": "8bd41f23-6ea2-4e7f-a3aa-1a6dcb92b8c4",
+			"title": "Full Multi-Asset Access",
+			"description": "Explore forex, indices, metals, and commodities, all accessible through a single unified interface."
+		},
+		{
+			"id": "c6b84b09-2f8a-4f54-9b38-4c72a2d347e1",
+			"title": "Instant Chart Switching",
+			"description": "Move between charts and instruments instantly with one click to monitor multiple markets at once."
+		},
+		{
+			"id": "f1e2d94c-3b4a-4a79-b5c9-20f5e379dc33",
+			"title": "In-Depth Market Analytics",
+			"description": "Use 40+ customizable indicators, an integrated economic calendar, and multi-chart layouts to refine your trading strategies."
+		}
+	]
+}

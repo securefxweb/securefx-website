@@ -1,0 +1,235 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.blogCardListAlignent {
+    padding: 0 0 120px 0;
+
+    @include respond-to('sm') {
+        padding: 0 0 60px 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px 20px;
+        padding: 0 0 60px 0;
+
+        @include respond-to('tab') {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px 20px;
+        }
+
+        @include respond-to('sm') {
+            grid-template-columns: 1fr;
+            gap: 30px;
+            padding: 0 0 40px 0;
+        }
+
+        .griditems {
+            transition: .3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            .image {
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 200px;
+                    border-radius: 6px;
+                    object-fit: cover;
+
+                    @include respond-to('sm') {
+                        height: 180px;
+                    }
+                }
+            }
+
+            .details {
+                padding: 12px 0 0 0;
+
+                h3 {
+                    max-width: 305px;
+                    @include font-medium;
+                    color: #FFF;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+
+                    @include respond-to('sm') {
+                        max-width: 100%;
+                        font-size: 18px;
+                    }
+                }
+
+                .cardbodyAlignment {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 0 20px 0;
+                    justify-content: space-between;
+
+                    @include respond-to('sm') {
+                        flex-wrap: wrap;
+                        gap: 8px;
+                    }
+
+                    p {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                        @include font-medium;
+                    }
+
+                    button {
+                        cursor: pointer;
+                        color: #FFF;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%;
+                        @include font-normal;
+                        padding: 6px 10px;
+                        border-radius: 5px;
+                        border: 1px solid rgba(255, 255, 255, 0.10);
+                        background: rgba(255, 255, 255, 0.10);
+                    }
+                }
+            }
+        }
+
+        .noBlogsCard {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 60px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.02);
+
+            @include respond-to('sm') {
+                padding: 40px 16px;
+            }
+
+            h3 {
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 130%;
+                @include font-medium;
+                margin-bottom: 12px;
+
+                @include respond-to('sm') {
+                    font-size: 20px;
+                }
+            }
+
+            p {
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 130%;
+                @include font-normal;
+            }
+        }
+    }
+
+    .viewmoreButton {
+        display: flex;
+        justify-content: center;
+
+        .buttonUi {
+            position: relative;
+            padding: 14px 24px;
+            justify-content: center;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            backdrop-filter: blur(100px);
+            border-radius: 99px;
+            gap: 10px;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            @include font-medium;
+            overflow: hidden;
+            background: #171719;
+            transition: 0.3s ease-in-out;
+
+            @include respond-to('sm') {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+
+            .layer,
+            .layer2 {
+                position: absolute;
+                top: 0;
+                width: 47px;
+                height: 100%;
+                filter: blur(40px);
+                transition: 0.4s ease;
+                opacity: 0;
+            }
+
+            .layer {
+                left: -20px;
+                background-color: #F95C2F;
+            }
+
+            .layer2 {
+                right: -20px;
+                background-color: #0084FF;
+            }
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                padding: 2px;
+                border-radius: 99px;
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+                z-index: 1;
+                transition: 0.4s ease-in-out;
+            }
+
+            &::after {
+                background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+            }
+
+            &::before {
+                background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+            }
+
+            &:hover {
+                .layer {
+                    left: 0;
+                    opacity: 1;
+                }
+
+                .layer2 {
+                    right: 0;
+                    opacity: 1;
+                }
+
+                &::after {
+                    background-position: 200% 0;
+                }
+
+                &::before {
+                    background-position: -200% 0;
+                }
+            }
+        }
+    }
+}

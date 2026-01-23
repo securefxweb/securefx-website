@@ -1,0 +1,47 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.trustedbyTraders {
+    padding: 120px 0;
+
+    .text {
+        padding: 0 0 40px 0;
+
+        h2 {
+            color: #FFF;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            margin: 0 0 20px 0;
+            @include font-medium;
+            text-align: center;
+
+            span {
+                color: #EFBA4E;
+            }
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            margin: 0 auto;
+            font-weight: 400;
+            line-height: 120%;
+            @include font-normal;
+            max-width: 719px;
+        }
+    }
+
+    .centerImage {
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: block;
+        }
+    }
+}

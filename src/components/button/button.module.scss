@@ -1,0 +1,65 @@
+@use '../../scss/main.scss' as *;
+@use '../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../scss/font/font.scss' as *;
+
+
+.buttonUi {
+    position: relative;
+    padding: 14px 24px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    backdrop-filter: blur(100px);
+    border-radius: 99px;
+    gap: 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    @include font-medium;
+    overflow: hidden;
+    width: fit-content;
+    background: #171719;
+
+
+    &:hover {
+        &::before {
+            background: linear-gradient(332.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+        }
+
+        &::after {
+            background: linear-gradient(329.5deg, #0084ff -35%, #0084ff00 37%);
+        }
+    }
+
+    &.widthfull {
+        width: 100%;
+        justify-content: center;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 2px;
+        border-radius: 99px;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+        z-index: 1;
+        transition: all ease-in-out;
+    }
+
+    &::after {
+        background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+    }
+
+    &::before {
+        background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+    }
+
+}

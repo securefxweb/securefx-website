@@ -1,0 +1,55 @@
+{
+	"title": "Trade Energy With Global Impact",
+	"cards": [
+		{
+			"label": "Up to 500:1",
+			"content": "Highest levels of leverage"
+		},
+		{
+			"label": "0.0* Pips",
+			"content": "Tightest spreads in the industry"
+		}
+	],
+	"description": "Explore opportunities across crude oil, natural gas, and energy futures. SecureFX gives you fast access, advanced analytics, and transparent pricing in dynamic global energy markets.",
+	"image": "/assets/images/energy-banner.png",
+	"trading": {
+		"title": "What is Energy Trading?",
+		"content": [
+			"Energy trading gives you access to commodities that fuel the world - **crude oil, natural gas, and energy futures**. It's one of the most dynamic markets, influenced by global supply, demand, and geopolitical trends.",
+			"At SecureFX, we provide traders with transparent pricing, real-time data, and advanced charting tools - empowering you to capitalize on global energy market movements."
+		],
+		"image": "/assets/images/Energy.png"
+	},
+	"stapes": [
+		{
+			"id": 1,
+			"title": "Register with SecureFX",
+			"content": "Get access to professional-grade trading tools.",
+			"images": "/assets/images/products-images/energy-image-01.png"
+		},
+		{
+			"id": 2,
+			"title": "ONLY 2016 | 4:00 PM",
+			"content": "Fund your account with fast, verified payment methods.",
+			"images": "/assets/images/products-images/energy-image-02.png"
+		},
+		{
+			"id": 3,
+			"title": "Analyses and trade",
+			"content": "Study global news and price charts for key insights.",
+			"images": "/assets/images/products-images/energy-image-03.png"
+		},
+		{
+			"id": 4,
+			"title": "Trade energy products",
+			"content": "Open and manage positions with low spreads and fast execution.",
+			"images": "/assets/images/products-images/energy-image-04.png"
+		},
+		{
+			"id": 5,
+			"title": "Withdraw profits",
+			"content": "Withdraw your returns safely and swiftly.",
+			"images": "/assets/images/products-images/energy-image-05.png"
+		}
+	]
+}

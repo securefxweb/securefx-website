@@ -1,0 +1,40 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.depositInSecondAlignment {
+    padding: 0 0 50px 0;
+
+    .title {
+        padding: 0 0 36px 0;
+
+        h2 {
+            max-width: 472px;
+            margin: 0 auto;
+            color: #FFF;
+            text-align: center;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            @include font-medium;
+        }
+    }
+
+    .imageAlignment {
+        display: flex;
+        align-items: center;
+        gap: 29px;
+        justify-content: center;
+
+        img {
+            display: block;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

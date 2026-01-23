@@ -1,0 +1,154 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.simplicitySection {
+    padding: 120px 0;
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 386px 1fr;
+        gap: 26px;
+        align-items: center;
+
+        .first {
+            margin-left: -60px;
+        }
+
+        .leftFirst {
+            margin-right: -60px;
+        }
+
+
+
+        .griditems:first-child {
+            .textstyle {
+                grid-template-columns: 1fr 60px;
+
+                .round {
+                    order: 2;
+                }
+
+                p {
+                    text-align: right;
+                }
+            }
+        }
+
+        .textstyle {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            gap: 16px;
+            padding: 0 0 66px 0;
+            align-items: center;
+
+            &.spacingRemove {
+                padding: 0;
+            }
+
+            p {
+                color: #E3E3E3;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                @include font-medium;
+                text-align: left;
+            }
+
+            .round {
+                border-radius: 180px;
+                border: 1px solid rgba(255, 255, 255, 0.40);
+                background: rgba(255, 255, 255, 0.04);
+                color: #FFF;
+                text-align: center;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 130%;
+                @include font-medium;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .roundedbox {
+            width: 386px;
+            height: 386px;
+            border-radius: 440px;
+            backdrop-filter: blur(100px);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .text {
+                position: relative;
+
+                h2 {
+                    max-width: 287px;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: #fff;
+                    color: #FFF;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    @include font-medium;
+                }
+            }
+
+            .layer {
+                width: 110.476px;
+                height: 190px;
+                transform: rotate(17.123deg);
+                background: #F95C2F;
+                position: absolute;
+                top: 0;
+                left: 0;
+                filter: blur(100px);
+            }
+
+            .layer1 {
+                width: 110.476px;
+                height: 190px;
+                transform: rotate(17.123deg);
+                background: #3C75FE;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+                filter: blur(100px);
+            }
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                padding: 2px;
+                border-radius: 50%;
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+                z-index: 1;
+                transition: 0.4s ease-in-out;
+            }
+
+            &::after {
+                background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+            }
+
+            &::before {
+                background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+            }
+        }
+    }
+}

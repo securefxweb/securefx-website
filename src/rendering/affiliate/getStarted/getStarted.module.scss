@@ -1,0 +1,174 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.getStarted {
+    padding: 0 0 0 0;
+
+    .allCardAlignment {
+        .termsboxmain:last-child {
+            margin: 0;
+        }
+
+        .termsboxmain {
+            perspective: 1000px;
+            position: relative;
+            transition: all 0.3s ease-in-out;
+            margin: 0 0 24px 0;
+
+            &:hover {
+                .termsbox {
+                    transform: translate(0, 45%) rotateX(-44deg) rotateY(0);
+                    animation: radiusTween 0.5s forwards;
+
+                    &::before {
+                        opacity: 1;
+                    }
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+
+                .termsimageboxmain {
+                    transform: translate(0, 50%) rotateX(43.5deg) rotateY(0);
+
+                    .termsimagebox {
+                        animation: radiusTweensc 0.5s forwards;
+                    }
+                }
+            }
+
+            @keyframes radiusTween {
+                0% {
+                    border-radius: 0 0 20px 20px;
+                }
+
+                100% {
+                    border-radius: 0 0 20px 20px;
+                }
+            }
+
+            @keyframes radiusTweensc {
+                0% {
+                    border-radius: 20px 20px 0 0;
+                }
+
+                100% {
+                    border-radius: 20px 20px 0 0;
+                }
+            }
+
+            .termsimageboxmain {
+                position: absolute;
+                bottom: 99%;
+                left: 0;
+                width: 100%;
+                transform: translate(0, 0%) rotateX(87deg) rotateY(0);
+                transform-origin: bottom;
+                transition: all 0.6s ease-in-out;
+
+                .termsimagebox {
+                    border-radius: 12px 12px 0 0;
+                    overflow: hidden;
+                    height: 110px;
+                    transition: all 0.6s ease-in-out;
+
+                    img {
+                        display: block;
+                        height: 96px;
+                        border-radius: 12px 12px 0 0;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .termsbox {
+                border-radius: 12px;
+                border: 1px solid rgb(255, 255, 255, .1);
+                background: #171719;
+                padding: 33px 24px;
+                transform: translate(0, 0) rotateX(0deg) rotateY(0);
+                transform-origin: top;
+                transition: all 0.6s ease-in-out;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    position: absolute;
+                    left: 20%;
+                    width: 30%;
+                    height: 37px;
+                    content: '';
+                    background-color: #F95C2F;
+                    opacity: 0.5;
+                    z-index: -1;
+                    filter: blur(40px);
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                }
+
+                &::after {
+                    position: absolute;
+                    left: 60%;
+                    width: 30%;
+                    height: 37px;
+                    content: '';
+                    background-color: #0084FF;
+                    opacity: 0.5;
+                    z-index: -1;
+                    filter: blur(40px);
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                }
+
+                p {
+                    color: #BEBEBE;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                    @include font-normal;
+                }
+
+                span {
+                    color: #FFF;
+                    display: block;
+                    margin: 0 0 0 0;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    @include font-medium;
+                }
+            }
+        }
+
+
+    }
+
+    .title {
+        padding: 0 0 57px 0;
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            @include font-medium;
+            margin: 0 0 12px 0;
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            @include font-normal;
+        }
+    }
+}

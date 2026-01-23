@@ -1,0 +1,222 @@
+.demoAccountForm {
+  overflow: visible; // 🔥 IMPORTANT
+
+  .dropdown {
+    position: relative;
+    overflow: visible;
+
+    label {
+      color: #fff;
+      font-size: 14px;
+      padding-bottom: 4px;
+      display: block;
+    }
+
+    .dropdownBox {
+      position: relative;
+      height: 48px;
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.1);
+
+      p {
+        color: #9b9b9b;
+        font-size: 16px;
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+      }
+
+      /* ================= DROPDOWN LIST ================= */
+      .dropdownDesign {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #000;
+        border-radius: 4px;
+        z-index: 9999; // 🔥 FIX
+        overflow: hidden;
+
+        span {
+          display: block;
+          padding: 12px;
+          color: #9b9b9b;
+          cursor: pointer;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+          &:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+          }
+        }
+      }
+
+      .hide {
+        max-height: 0;
+        transition: max-height 0.3s ease;
+      }
+
+      .show {
+        max-height: 200px;
+        transition: max-height 0.3s ease;
+      }
+    }
+  }
+
+  .spacer {
+    padding-top: 16px;
+  }
+
+  .inputgrid {
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .labelAlignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    span {
+      text-align: center;
+      text-decoration: underline;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .submitButton {
+  padding: 40px 0 0 0;
+
+  .buttonUi {
+    justify-content: center;
+    position: relative;
+    padding: 14px 28px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    backdrop-filter: blur(100px);
+    border-radius: 99px;
+    gap: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    overflow: hidden;
+    background: #171719;
+    border: none;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+
+    /* 🔥 glowing layers */
+    .layer,
+    .layer2 {
+      position: absolute;
+      top: 0;
+      width: 47px;
+      height: 100%;
+      filter: blur(40px);
+      transition: 0.4s ease;
+      z-index: 0;
+    }
+
+    .layer {
+      left: -20%;
+      background: #0084ff;
+    }
+
+    .layer2 {
+      right: -20%;
+      background: #f7541c;
+    }
+
+    /* 🔥 gradient border */
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      padding: 2px;
+      border-radius: 99px;
+      pointer-events: none;
+      z-index: 1;
+
+      mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      transition: 0.4s ease-in-out;
+    }
+
+    &::after {
+      background: linear-gradient(
+        271.5deg,
+        #0084ff -35%,
+        rgba(0, 132, 255, 0) 37%
+      );
+    }
+
+    &::before {
+      background: linear-gradient(
+        267.5deg,
+        rgba(247, 84, 28, 0) 68.57%,
+        #f7541c 102.63%
+      );
+    }
+
+    /* 🔥 hover animation */
+    &:hover {
+      .layer {
+        left: 60%;
+      }
+
+      .layer2 {
+        right: 60%;
+      }
+
+      &::after {
+        background-position: 200% 0;
+      }
+
+      &::before {
+        background-position: -200% 0;
+      }
+    }
+
+    /* text above everything */
+    span:last-child {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .loader {
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+}

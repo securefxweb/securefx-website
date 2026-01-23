@@ -1,0 +1,44 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.missionVissonSection {
+    padding-left: max(40px, (100vw - 900px) / 2);
+    padding-bottom: 0;
+    scroll-margin-top: 120px;
+
+    .iconCenter {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 24px 0;
+
+        img {
+            display: block;
+        }
+    }
+
+    h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%;
+        margin: 0 0 20px 0;
+        @include font-medium;
+    }
+
+    p {
+        max-width: 625px;
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 34px;
+        min-height: 68px;
+        @include font-normal;
+        margin: 0 auto;
+    }
+
+}

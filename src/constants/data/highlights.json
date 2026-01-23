@@ -1,0 +1,52 @@
+{
+	"highlights": [
+		{
+			"id": 1,
+			"title": "Trusted Security",
+			"subtitle": "Ultra-Low Spreads",
+			"description": "Experience tight spreads on major instruments, starting as low as 0.1 pips on EUR/USD. Enjoy consistent pricing and enhanced liquidity designed to deliver more precise and cost-efficient trades across every market condition, ensuring every pip counts toward your profitability.",
+			"color": "#3C75FE80",
+			"image": "/assets/images/highlight-1.png"
+		},
+		{
+			"id": 2,
+			"title": "Make Your Choice",
+			"subtitle": "Diverse Product Range",
+			"description": "Access over 500 trading products, including Forex, Metals, Energies, Indices, and Shares, all through one secure and seamless account. Build your portfolio with flexibility and trade across global markets with the reliability and efficiency SecureFX is known for.",
+			"color": "#EFBA4E80",
+			"image": "/assets/images/highlight-2.png"
+		},
+		{
+			"id": 3,
+			"title": "Institutional Reliability",
+			"subtitle": "Multi-Regulated Broker",
+			"description": "Trade confidently with a globally recognized and multi-regulated broker. SecureFX operates under multiple international regulatory frameworks, ensuring transparency, investor protection, and adherence to the highest compliance standards across every market where we serve clients.",
+			"color": "#3CD1FE80",
+			"image": "/assets/images/highlight-3.png"
+		},
+		{
+			"id": 4,
+			"title": "Transparent Operations",
+			"subtitle": "Segregated Client Funds",
+			"description": "Your funds are protected in independently segregated accounts with leading, top-tier banks. SecureFX ensures client capital remains fully separated from company operating funds, offering maximum security, accountability, and peace of mind at every stage of your trading journey.",
+			"color": "#9A3CFE80",
+			"image": "/assets/images/highlight-4.png"
+		},
+		{
+			"id": 5,
+			"title": "Trusted Security",
+			"subtitle": "Advanced Trading Platforms",
+			"description": "Trade smarter with the powerful SecureFX MT5 platform, available on Desktop, Web, and Mobile. Experience seamless execution, integrated analytics, and advanced trading tools engineered for speed, precision, and performance across every market condition.",
+			"color": "#FE3CFB80",
+			"image": "/assets/images/highlight-5.png"
+		},
+		{
+			"id": 6,
+			"title": "Seamless Trading",
+			"subtitle": "Lightning-Fast Execution",
+			"description": "Enjoy ultra-fast order execution in a low-latency trading environment built for accuracy and reliability. SecureFX’s optimized infrastructure ensures trades are processed instantly, allowing you to capture opportunities the moment they arise, with minimal slippage and maximum control.",
+			"color": "#FE3C6680",
+			"image": "/assets/images/highlight-6.png"
+		}
+	]
+}

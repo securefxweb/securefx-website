@@ -1,0 +1,90 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.pipvaluecalculator {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(25px);
+    padding: 24px 20px;
+
+    @include respond-to("sm") {
+        padding: 24px 12px;
+    }
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 1px;
+        border-radius: 15px;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+        z-index: 1;
+        transition: 0.4s ease-in-out;
+    }
+
+    &::after {
+        background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+    }
+
+    &::before {
+        background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+    }
+
+    .title {
+        padding: 0 0 55px 0;
+
+        @include respond-to("sm") {
+            padding: 0 0 32px 0;
+        }
+
+        h2 {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            @include font-medium;
+        }
+    }
+
+    .twoCol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px 20px;
+        padding: 0 0 54px 0;
+
+        @include respond-to("sm") {
+            gap: 12px;
+            padding: 0 0 32px 0;
+        }
+    }
+
+    .buttonAlignment {
+        width: 100%;
+        padding: 0 0 24px 0;
+
+        @include respond-to("sm") {
+            padding: 0 0 32px 0;
+        }
+    }
+
+    .lastText {
+        p {
+            color: #FFF;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            @include font-medium;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+	"title": "Zero Spread Account",
+	"description": "Trade like a pro with absolute clarity- zero spreads, zero confusion, and maximum control over every trade.",
+	"badge": "Zero Spread a/c",
+	"image": "/assets/images/zero-account.png",
+	"parent": {
+		"center": "The perfect blend of simplicity and precision for consistent traders."
+	},
+	"left": [
+		{
+			"key": "totalTransparency",
+			"number": 5,
+			"content": "Total transparency, no hidden costs"
+		},
+		{
+			"key": "zeroSpreads",
+			"number": 6,
+			"content": "0.0 spreads on major pairs"
+		},
+		{
+			"key": "fixedCommissions",
+			"number": 7,
+			"content": "Fixed commissions per lot traded"
+		},
+		{
+			"key": "instantExecution",
+			"number": 8,
+			"content": "Instant order execution without delays"
+		}
+	],
+	"right": [
+		{
+			"key": "enhancedMT5Tools",
+			"number": 1,
+			"content": "Enhanced MT5 performance tools"
+		},
+		{
+			"key": "forHighFrequencyTraders",
+			"number": 2,
+			"content": "Designed for high-frequency and expert traders"
+		},
+		{
+			"key": "idealForNewsTrading",
+			"number": 3,
+			"content": "Perfect for news and short-term trading"
+		},
+		{
+			"key": "accurateMarketDepth",
+			"number": 4,
+			"content": "Accurate market depth and liquidity access"
+		}
+	]
+}

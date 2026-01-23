@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "GeneralSans-Bold";
+    src: url("/assets/font/GeneralSans-Bold.otf");
+}
+
+@font-face {
+    font-family: "GeneralSans-Medium";
+    src: url("/assets/font/GeneralSans-Medium.otf");
+}
+
+@font-face {
+    font-family: "GeneralSans-Regular";
+    src: url("/assets/font/GeneralSans-Regular.otf");
+}
+
+@font-face {
+    font-family: "GeneralSans-Semibold";
+    src: url("/assets/font/GeneralSans-Semibold.otf");
+}
+
+@mixin font-normal {
+    font-family: "GeneralSans-Regular";
+}
+
+@mixin font-medium {
+    font-family: "GeneralSans-Medium";
+}
+
+@mixin font-bold {
+    font-family: "GeneralSans-Bold";
+
+}
+
+@mixin font-semibold {
+    font-family: "GeneralSans-Semibold";
+
+}
+
+@mixin text-gradient-primary {
+    background: linear-gradient(90deg, #EFBA4E 0%, #FFE2A6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin text-gradient-white {
+    background: linear-gradient(90deg, #FFF 0%, #FFF 52.4%, #999 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin heading24 {
+    font-size: 24px;
+    font-style: normal;
+    font-family: "GeneralSans-Medium";
+    font-weight: 500;
+    line-height: 120%;
+}
+
+@mixin heading32 {
+    font-size: 32px;
+    font-style: normal;
+    font-family: "GeneralSans-Medium";
+    font-weight: 500;
+    line-height: 120%;
+}

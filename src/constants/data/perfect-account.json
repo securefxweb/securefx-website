@@ -1,0 +1,100 @@
+{
+	"accounts": [
+		{
+			"icon": "/assets/icons/profile.svg",
+			"title": "Standard Account",
+			"desc": "A flexible, and cost-effective account for new & intermediate traders.",
+			"features": [
+				{
+					"label": "Deposit",
+					"value": "$10"
+				},
+				{
+					"label": "Spread",
+					"value": "1.2 pips"
+				},
+				{
+					"label": "Leverage",
+					"value": "up to 1:500"
+				},
+				{
+					"label": "Commission",
+					"value": "No commission on trades"
+				}
+			],
+			"link": "/standard-account"
+		},
+		{
+			"icon": "/assets/icons/star.svg",
+			"title": "Pro Account",
+			"desc": "Built for professionals who demand precision, power, and performance",
+			"features": [
+				{
+					"label": "Deposit",
+					"value": "$100"
+				},
+				{
+					"label": "Spread",
+					"value": "0.6 pips"
+				},
+				{
+					"label": "Leverage",
+					"value": "Faster execution with low latency"
+				},
+				{
+					"label": "Commission",
+					"value": "No commission on trades"
+				}
+			],
+			"link": "/pro-account"
+		},
+		{
+			"icon": "/assets/icons/raw.svg",
+			"title": "Raw Account",
+			"desc": "Experience the real market with direct liquidity and raw spreads.",
+			"features": [
+				{
+					"label": "Deposit",
+					"value": "$200"
+				},
+				{
+					"label": "Spread",
+					"value": "0.0 pips"
+				},
+				{
+					"label": "Leverage",
+					"value": "$6 per lot (round turn)"
+				},
+				{
+					"label": "Commission",
+					"value": "Ideal for scalpers and algorithmic traders"
+				}
+			],
+			"link": "/raw-account"
+		},
+		{
+			"icon": "/assets/icons/zero.svg",
+			"title": "Zero Spread Account",
+			"desc": "Trade with accuracy and 0 cost spreads for high-volume performance.",
+			"features": [
+				{
+					"label": "Deposit",
+					"value": "$500"
+				},
+				{
+					"label": "Spread",
+					"value": "Fixed 0.0 pip spreads"
+				},
+				{
+					"label": "Leverage",
+					"value": "Commission-based model"
+				},
+				{
+					"label": "Commission",
+					"value": "Perfect for intraday and high-frequency traders"
+				}
+			],
+			"link": "/zero-spread-account"
+		}
+	]
+}

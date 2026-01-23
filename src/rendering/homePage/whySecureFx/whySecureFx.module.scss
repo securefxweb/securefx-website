@@ -1,0 +1,137 @@
+@use "../../../scss/main.scss" as *;
+@use "../../../scss/breakpoints/breakpoints.scss" as *;
+@use "../../../scss/font/font.scss" as *;
+
+.whySecureFxSection {
+  padding: 120px 0;
+  scroll-margin-top: 120px;
+  overflow: hidden;
+  .sectiontitle {
+    padding-bottom: 30px;
+
+    h2 {
+      color: #fff;
+      font-size: 48px;
+      font-weight: 500;
+      line-height: 120%;
+      @include font-medium;
+      text-align: center;
+      margin-bottom: 16px;
+
+      span {
+        color: #efba4e;
+      }
+    }
+
+    p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 120%;
+      text-align: center;
+      max-width: 496px;
+      margin: 0 auto;
+      @include font-normal;
+    }
+  }
+
+  .centerBox {
+    margin: 0 auto;
+    width: 100%;
+    // max-width: 1200px;
+    // height: 540px;
+    max-width: 980px;
+    height: 634px;
+    position: relative;
+
+    .sliderWrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      perspective: 1500px;
+      overflow: hidden;
+    }
+  }
+
+  .cardStyle {
+    width: 386px;
+    min-width: 386px;
+    height: auto;
+    border-radius: 12px;
+    background: #131315;
+    position: absolute;
+    overflow: hidden;
+    height: 580px;
+    transform-origin: center; // FIX
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 320px;
+      height: 320px;
+      background: var(--gradient-color);
+      filter: blur(125px);
+      border-radius: 12px;
+    }
+
+    .sapcing {
+      padding: 35px 16px;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 120%;
+      margin-bottom: 24px;
+      @include font-medium;
+    }
+
+    p {
+      color: #fff;
+      font-size: 16px;
+      line-height: 24px;
+      @include font-normal;
+    }
+
+    .imageRightAlignment {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        max-width: 180px;
+        display: block;
+      }
+    }
+
+    .cardheader {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding-bottom: 16px;
+
+      span {
+        color: #fff;
+        font-size: 16px;
+        @include font-normal;
+      }
+    }
+  }
+
+  .arrowCenterAlignment {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 40px;
+
+    button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

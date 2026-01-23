@@ -1,0 +1,56 @@
+[
+	{
+		"id": "5c7d5b32-8bd9-4d6a-9b62-3a4b9fe90e11",
+		"title": "Client Fund Protection",
+		"description": "Your funds are now protected with layered measures: segregation, USD 1M professional indemnity insurance, and a €2.5M civil liability policy, creating multiple lines of defense for clients’ capital.",
+		"icon": "/assets/icons/sec-fund-icons/icon-1.png"
+	},
+	{
+		"id": "ad1de0aa-e8a4-4c76-91e8-80c2a27a59ae",
+		"title": "Civil Liability Insurance (€2.5M)",
+		"description": "SecureFx holds a civil liability insurance programme up to €2,500,000 EUR, covering broker liabilities from events such as fraud, errors, omissions, or negligence that could lead to client losses.",
+		"icon": "/assets/icons/sec-fund-icons/icon-2.png"
+	},
+	{
+		"id": "f3e1aa84-0a86-4218-92c0-0e9f0b1452d8",
+		"title": "Professional Indemnity Insurance (USD 1M)",
+		"description": "Client accounts benefit from professional indemnity insurance of up to USD 1,000,000, introduced to strengthen client fund protection and provide extra cover against specified liabilities.",
+		"icon": "/assets/icons/sec-fund-icons/icon-3.png"
+	},
+	{
+		"id": "7c3183cc-b720-4e9c-9f11-a1461c5d6f7e",
+		"title": "Segregated Client Funds (Top-tier Banks)",
+		"description": "All client funds are segregated from company operating capital and held in independent accounts with leading banking institutions to ensure client monies are not used for company operations or investments.",
+		"icon": "/assets/icons/sec-fund-icons/icon-4.png"
+	},
+	{
+		"id": "cd7960c4-3607-4bfc-9639-cc5a7c108ce8",
+		"title": "Partnership with Major Bank — Barclays PLC",
+		"description": "We maintain banking relationships with major global banks, including Barclays Bank PLC — a British international bank operating in 50+ countries and rated by Standard & Poor's, Moody’s, and Fitch.",
+		"icon": "/assets/icons/sec-fund-icons/icon-5.png"
+	},
+	{
+		"id": "f71cf238-6c71-43dc-b1c7-ad51cf5017b4",
+		"title": "Negative Balance Protection",
+		"description": "Clients are protected from owing more than they deposited; negative balance protection applies per legislation, and in extreme volatility SecureFx will reset client account balances to zero when necessary.",
+		"icon": "/assets/icons/sec-fund-icons/icon-6.png"
+	},
+	{
+		"id": "3f2d4a4f-3c85-4e8b-9d93-a6b8ba76f51f",
+		"title": "Investor Compensation Fund (ICF) Membership & Coverage",
+		"description": "SecureFx is linked to investor protection frameworks: the Investor Compensation Fund (ICF) provides eligible clients of CySEC-registered companies compensation up to €20,000 EUR.",
+		"icon": "/assets/icons/sec-fund-icons/icon-7.png"
+	},
+	{
+		"id": "9cb8c08f-6a0e-4a4f-87fe-85d2f6df4d8d",
+		"title": "International Regulation & Registrations",
+		"description": "SecureFx Capital Ltd operates under multiple registrations and regulatory touchpoints including the Labuan FSA, Canada FINTRAC, and European registrations under relevant authorities.",
+		"icon": "/assets/icons/sec-fund-icons/icon-8.png"
+	},
+	{
+		"id": "bfe71cf9-2e45-4eb0-87ca-a39c259b6c43",
+		"title": "Continuous Risk Management & Operational Safeguards",
+		"description": "SecureFx continually identifies, assesses, and monitors operational and financial risk, maintaining policies to meet capital requirements and ensure the firm meets its financial obligations at all times.",
+		"icon": "/assets/icons/sec-fund-icons/icon-9.png"
+	}
+]

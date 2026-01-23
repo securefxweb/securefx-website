@@ -1,0 +1,52 @@
+{
+	"title": "Master the Forex Market Confidently",
+	"cards": [
+		{
+			"label": "Up to 500:1",
+			"content": "Highest levels of leverage"
+		},
+		{
+			"label": "0.0* Pips",
+			"content": "Tightest spreads in the industry"
+		}
+	],
+	"image": "/assets/images/product.png",
+	"description": "Trade major, minor, and exotic currency pairs with razor-thin spreads and instant execution. SecureFX delivers unmatched stability, deep liquidity, and transparency for every forex trade.",
+
+	"trading": {
+		"title": "What is Forex Trading?",
+		"content": [
+			"Forex trading is all about profiting from changes in currency prices. It's simple yet full of opportunities. And the best part? The Forex market never sleeps, so you can trade whenever it suits you.",
+			"As the leading Forex broker in UAE, EoneFX is open 24/5, giving you access to trade major, minor, and even exotic pairs. We make it easy for you to grow your profits quickly and with less hassle.",
+			"So now the million-dollar question is, are you ready to take advantage of the market's non-stop action?"
+		],
+		"image": "/assets/images/forex-trading.png"
+	},
+
+	"stapes": [
+		{
+			"id": 1,
+			"title": "STAPE 1",
+			"content": "Terms and Conditions",
+			"images": "/assets/images/products-images/Terms and Conditions.png"
+		},
+		{
+			"id": 2,
+			"title": "STAPE 2",
+			"content": "Anti Money Laundering Policy",
+			"images": "/assets/images/products-images/Anti Money Laundering Policy.png"
+		},
+		{
+			"id": 3,
+			"title": "STAPE 3",
+			"content": "Global Order Execution Policy",
+			"images": "/assets/images/products-images/Global Order Execution Policy.png"
+		},
+		{
+			"id": 4,
+			"title": "STAPE 4",
+			"content": "Risk Disclosure Notice",
+			"images": "/assets/images/products-images/Risk Disclosure Notice.png"
+		}
+	]
+}

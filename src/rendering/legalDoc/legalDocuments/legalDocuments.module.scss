@@ -1,0 +1,116 @@
+@use "../../../scss/main.scss" as *;
+@use "../../../scss/breakpoints/breakpoints.scss" as *;
+@use "../../../scss/font/font.scss" as *;
+
+.legalDocuments {
+  padding: 120px 0;
+
+  .title {
+    padding: 0 0 44px 0;
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%;
+      @include font-medium;
+    }
+  }
+
+  .allBoxAlignment {
+    .box:last-child {
+      margin: 0;
+    }
+
+    .box {
+      padding: 22px 28px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 12px;
+      cursor: pointer;
+      border: 1px solid rgb(255, 255, 255, 0.05);
+      background: #171719;
+      margin: 0 0 16px 0;
+      transition: 0.4s ease-in-out;
+
+      &:hover {
+        &::after,
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 1px;
+        border-radius: 13px;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+        z-index: 1;
+        opacity: 0;
+        transition: 0.4s ease-in-out;
+      }
+
+      &::after {
+        background: linear-gradient(271.5deg, #0084ff -35%, #0084ff00 37%);
+      }
+
+      &::before {
+        background: linear-gradient(
+          267.5deg,
+          #f7541c00 68.57%,
+          #f7541c 102.63%
+        );
+      }
+
+      p {
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        @include font-medium;
+      }
+
+      .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+          display: block;
+          cursor: pointer;
+        }
+      }
+
+      .imageAlignment {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20%;
+        z-index: 99;
+      }
+
+      .mainImage {
+        img {
+          width: 200px;
+          height: 140px;
+          display: block;
+          transform: rotate(-11.658deg);
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+}

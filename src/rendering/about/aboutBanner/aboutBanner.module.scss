@@ -1,0 +1,46 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.aboutBanner {
+    padding: 80px 0 120px 0;
+
+    .imageCenter {
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: block;
+            max-width: 429px;
+
+        }
+    }
+
+    .relative {
+        position: relative;
+
+        .first {
+            position: absolute;
+            left: 4%;
+            top: 25%;
+        }
+
+        .three {
+            position: absolute;
+            right: 4%;
+            top: 25%;
+        }
+
+        .sec {
+            position: absolute;
+            left: 14%;
+            bottom: 12%;
+        }
+
+        .four {
+            position: absolute;
+            right: 11%;
+            bottom: 12%;
+        }
+    }
+}

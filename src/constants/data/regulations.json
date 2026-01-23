@@ -1,0 +1,30 @@
+{
+	"heading": "Regulations",
+	"badge": "Governed by Trust",
+	"title": "Global Standards Safeguarding Every SecureFX Trader",
+	"image": "/assets/images/Regulations.png",
+	"company": [
+		{
+			"name": "Eone Mauritius",
+			"other": [
+				"EONE CAPITAL LIMITED",
+				"INVESTMENT DEALER (FULL SERVICE DEALER EXCLUDING UNDERWRITING)",
+				"United Docks Business Park, Caudan, Port Louis, Mauritius."
+			],
+			"image": "/assets/icons/Eone.svg"
+		},
+		{
+			"name": "Foreign Rep. Company",
+			"other": [
+				"1701 Nassima Tower, Sheikh Zayed Road,",
+				"Trade Center, Dubai, UAE.",
+				"License No: 1423002"
+			],
+			"image": "/assets/icons/Foreign.png"
+		}
+	],
+	"integrity": {
+		"icon": "/assets/icons/integrity.svg",
+		"description": " At SecureFx, integrity isn’t just policy, it’s the foundation of every trade we protect."
+	}
+}

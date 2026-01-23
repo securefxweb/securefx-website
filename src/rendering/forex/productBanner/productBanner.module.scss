@@ -1,0 +1,294 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.productBanner {
+    padding: 40px 0 74px 0;
+
+    @include respond-to("sm") {
+        padding: 34px 0 80px 0;
+    }
+
+    :global(.container-lg) {
+        @include respond-to("sm") {
+            padding: 0;
+        }
+    }
+
+    .tabAlignment {
+        display: flex;
+        justify-content: center;
+        padding: 0 0 8px 0;
+        align-items: center;
+        gap: 0px;
+
+        @include respond-to("sm") {
+            overflow: auto;
+            scrollbar-width: none;
+            justify-content: flex-start;
+            padding-left: 16px;
+        }
+
+        .line {
+            width: 36px;
+            height: 1px;
+            background-color: rgb(255, 255, 255, .1);
+
+            @include respond-to("sm") {
+                width: 36px;
+                min-width: 36px;
+            }
+        }
+
+        .buttonUi {
+            position: relative;
+            padding: 10px;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            backdrop-filter: blur(100px);
+            justify-content: center;
+            border-radius: 99px;
+            gap: 10px;
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            @include font-normal;
+            overflow: hidden;
+            min-width: 140px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: #1A1A1A;
+            transition: 0.3s ease-in-out;
+
+            @include respond-to("sm") {
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                padding: 1px;
+                border-radius: 99px;
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                opacity: 0;
+                pointer-events: none;
+                z-index: 1;
+                transition: 0.4s ease-in-out;
+            }
+
+            &::after {
+                background: linear-gradient(271.5deg, #0084FF -35%, #0084FF00 37%);
+            }
+
+            &::before {
+                background: linear-gradient(267.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+            }
+
+            &:hover {
+                box-shadow: 0 0 12px 0 rgba(60, 117, 254, 0.44);
+
+                &::after {
+                    background-position: 200% 0;
+                    opacity: 1;
+                }
+
+                &::before {
+                    background-position: -200% 0;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .leftAlignment {
+        padding-left: max(80px, (100vw - 1160px) / 2);
+
+        @include respond-to("md") {
+            padding-left: 20px;
+        }
+
+        @include respond-to("sm") {
+            padding-left: 0;
+        }
+
+        .mobileshow {
+            display: none;
+            padding: 20px 16px 0 16px;
+
+            @include respond-to("sm") {
+                display: block;
+            }
+
+            .buttonWidth {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        .grid {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 758px;
+            gap: 20px;
+
+            @include respond-to("md") {
+                grid-template-columns: 1fr;
+            }
+
+            @include respond-to("sm") {
+                gap: 0;
+            }
+
+            .image {
+                @include respond-to("sm") {
+                    padding: 32px 0 0 0;
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .subgrid {
+                max-width: 386px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                padding: 0 0 24px 0;
+
+                @include respond-to("sm") {
+                    padding: 0 16px 16px 16px;
+                    gap: 16px;
+                }
+
+                .detailsBox {
+                    border-radius: 6px;
+                    border: 1px solid rgba(255, 255, 255, 0.10);
+                    background: #101025;
+                    position: relative;
+                    overflow: hidden;
+                    padding: 12px;
+
+                    &::before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #3C75FE;
+                        opacity: 0.3;
+                        filter: blur(35px);
+                        width: 72px;
+                        height: 72px;
+                        content: '';
+                    }
+
+                    &::after {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        background: #F95C2F;
+                        opacity: 0.5;
+                        filter: blur(35px);
+                        width: 52px;
+                        height: 52px;
+                        content: '';
+                    }
+
+                    h4 {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        margin: 0 0 16px 0;
+                        line-height: 120%;
+                        @include font-medium;
+                    }
+
+                    p {
+                        color: #FFF;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 120%;
+                        @include font-normal;
+                    }
+                }
+            }
+
+            .title {
+                padding: 0 0 84px 0;
+
+                @include respond-to("sm") {
+                    padding: 46px 16px 60px 16px;
+                }
+
+                h1 {
+                    color: #FFF;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    max-width: 450px;
+                    @include font-medium;
+
+                    @include respond-to("sm") {
+                        max-width: 313px;
+                        @include heading24;
+                    }
+
+                    span {
+                        color: #EFBA4E;
+                    }
+                }
+            }
+
+            .mobileHide {
+                @include respond-to("sm") {
+                    display: none;
+                }
+            }
+
+            .text {
+                padding: 0 0 36px 0;
+
+                @include respond-to("sm") {
+                    padding: 0 16px;
+                }
+
+                p {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%;
+                    @include font-normal;
+                    max-width: 488px;
+
+                    @include respond-to("sm") {
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        max-width: 328px;
+                        line-height: 120%;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

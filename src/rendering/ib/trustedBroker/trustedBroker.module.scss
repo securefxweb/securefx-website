@@ -1,0 +1,51 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.trustedBrokerAlignment {
+    padding: 140px 0 0 0;
+
+    .title {
+        padding: 0 0 60px 0;
+
+        h2 {
+            color: #FFF;
+            text-align: center;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            @include font-medium;
+            line-height: 110%;
+
+            span {
+                color: #EFBA4E;
+            }
+        }
+    }
+
+    .contnetAlignment {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            text-align: center;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 110%;
+            @include text-gradient-primary;
+            margin: 0 0 10px 0;
+            @include font-medium;
+        }
+
+        p {
+            color: #FFF;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            @include font-normal;
+        }
+    }
+}

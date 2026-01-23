@@ -1,0 +1,78 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.experienceSecureFx {
+    margin: 0 0 50px 0;
+    padding: 40px 0;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        width: 200px;
+        height: 81px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        content: '';
+        background: #EFBA4E;
+        filter: blur(127px);
+    }
+
+    &::after {
+        position: absolute;
+        width: 200px;
+        height: 81px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        content: '';
+        background: #3C75FE;
+        filter: blur(127px);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 306px;
+        gap: 40px;
+
+        h2 {
+            max-width: 630px;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            margin: 0 0 16px 0;
+            @include font-medium;
+            @include text-gradient-white;
+        }
+
+        .buttonAlignment {
+            max-width: 183px;
+
+            div:first-child {
+                width: 100%;
+                justify-content: center;
+                background: rgba(0, 0, 0, 0.06);
+            }
+        }
+
+        p {
+            margin: 0 0 80px 0;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            @include text-gradient-white;
+            max-width: 700px;
+            line-height: 120%;
+            @include font-normal;
+        }
+
+        .image {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}

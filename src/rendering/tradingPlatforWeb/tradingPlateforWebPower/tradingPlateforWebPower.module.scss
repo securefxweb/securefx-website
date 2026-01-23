@@ -1,0 +1,197 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.tradeSmarterAlignment {
+    padding: 120px 0;
+
+    @include respond-to("sm") {
+        padding: 80px 0 120px 0;
+    }
+
+    :global(.container-lg) {
+        @include respond-to("sm") {
+            padding: 0;
+        }
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 387px;
+        gap: 100px;
+
+        @include respond-to("md") {
+            grid-template-columns: 1fr;
+            gap: 50px;
+        }
+
+        @include respond-to("sm") {
+            gap: 0;
+        }
+
+        .stickySection {
+            position: sticky;
+            top: 120px;
+        }
+
+        .gridItem:first-child {
+            @include respond-to("sm") {
+                padding: 0 16px;
+            }
+        }
+
+        .gridItem:last-child {
+            @include respond-to("md") {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            @include respond-to("sm") {
+                display: flex;
+                overflow: auto;
+                scrollbar-width: none;
+                gap: 16px;
+                padding-left: 16px;
+            }
+        }
+
+        .box:last-child {
+            margin: 0;
+        }
+
+        .box {
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            background: rgba(255, 255, 255, 0.06);
+            padding: 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 186px;
+            margin: 0 0 24px 0;
+
+            @include respond-to("md") {
+                margin: 0;
+            }
+
+            @include respond-to("sm") {
+                width: 310px;
+                padding: 24px 20px;
+                max-width: 310px;
+                gap: 140px;
+                min-width: 310px;
+            }
+
+            .bottomAlignment {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                img {
+                    display: block;
+                }
+
+                p {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 130%;
+                    @include font-normal;
+                }
+            }
+
+            .topAlignment {
+                h3 {
+                    color: #FFF;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                    @include font-medium;
+                    margin: 0 0 8px 0;
+
+                    @include respond-to("sm") {
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 130%;
+                    }
+                }
+
+                p {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    @include font-normal;
+
+                    @include respond-to("sm") {
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 130%;
+                    }
+                }
+            }
+        }
+
+        .gridItem {
+            .image {
+                max-width: 500px;
+
+                @include respond-to("sm") {
+                    display: none;
+                }
+
+                img {
+                    max-width: 500px;
+                    display: block;
+                }
+            }
+
+            .text {
+                padding: 0 0 104px 0;
+
+                @include respond-to("sm") {
+                    padding: 0 0 120px 0;
+                }
+
+                h2 {
+                    max-width: 434px;
+                    color: #FFF;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                    margin: 0 0 16px 0;
+                    @include font-medium;
+
+                    @include respond-to("sm") {
+                        @include heading24;
+                        max-width: 300px;
+                        margin: 0 0 8px 0;
+                    }
+                }
+
+                p {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                    max-width: 508px;
+                    @include font-normal;
+
+                    @include respond-to("sm") {
+                        max-width: 328px;
+                    }
+                }
+            }
+        }
+    }
+}

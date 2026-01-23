@@ -1,0 +1,141 @@
+{
+	"title": "Earn Big with SecureFX Affiliates",
+	"badge": "Partner Program",
+	"description": "Join our global partner network and maximise your earnings through referrals, commissions and industry-leading support.",
+	"image": "/assets/images/affiliate-dollar.png",
+	"ourAffiliate": [
+		{
+			"id": "f3b4735d-1e0a-4eb2-9c25-a1c77f6db201",
+			"title": "Experienced Traders",
+			"description": "Traders who want to earn extra income by referring new traders while continuing their own trading journey.",
+			"image": "/assets/images/bull-img.png"
+		},
+		{
+			"id": "8c6f94a9-3e4c-48dc-b62f-90a83d2be3e4",
+			"title": "Financial Influencers",
+			"description": "Influencers who educate audiences about trading and wish to monetize their network effectively.",
+			"image": "/assets/images/afflilate-forex.png"
+		},
+		{
+			"id": "d41b7d87-9f8f-4f45-8bb4-4db82fd2198d",
+			"title": "Forex Educators & Mentors",
+			"description": "Educators and mentors who train or guide students and traders, offering them a trusted broker partnership.",
+			"image": "/assets/images/afflilate-trade.png"
+		},
+		{
+			"id": "a7f25fe2-4b9a-4e10-ae91-121ea59df934",
+			"title": "Affiliate Marketers",
+			"description": "Marketers specializing in online promotion who want to expand into the Forex market for high commissions.",
+			"image": "/assets/images/bull-img.png"
+		},
+		{
+			"id": "1cdd43a8-0c38-4c31-a1a1-5cf095c0aabc",
+			"title": "Community Leaders",
+			"description": "Leaders managing Telegram, WhatsApp, or Discord trading groups who want to earn from their community’s trading activity.",
+			"image": "/assets/images/afflilate-forex.png"
+		},
+		{
+			"id": "5ae1d9fd-7444-4ece-863e-62d08f817d20",
+			"title": "Investors & Entrepreneurs",
+			"description": "Individuals who see the Forex industry’s potential and want to build a business network without direct trading involvement.",
+			"image": "/assets/images/afflilate-trade.png"
+		}
+	],
+	"benefits": {
+		"title": "This Is How You Get Started",
+		"description": "Begin your affiliate journey in three simple steps and unlock your earning potential swiftly.",
+		"image": "/assets/images/affiliate-benefit-image.png",
+		"features": [
+			{
+				"id": "8b1c1c42-6f94-4de1-9ae1-3f9c2c718a51",
+				"title": "Register your free partner account"
+			},
+			{
+				"id": "0f3c74d2-2e6e-4e3b-ae3f-bc9ab1ff47f0",
+				"title": "Get your unique referral link"
+			},
+			{
+				"id": "d2f5c7b4-1b29-4d32-b7c7-4e6fa9b0a922",
+				"title": "Promote SecureFX using our assets"
+			},
+			{
+				"id": "b7e6e9a1-3cb5-4a52-9af4-8c0a4bd92b33",
+				"title": "Track leads and conversions in real-time"
+			},
+			{
+				"id": "6c41f9e2-8b57-4dc3-8a99-b1aef29c5a10",
+				"title": "Receive commissions on trader activity"
+			},
+			{
+				"id": "3e92bf6c-1a78-4d4c-8cf8-d3e4bfa7e981",
+				"title": "Scale your earnings with volume rewards"
+			}
+		]
+	},
+	"whySecureFx": [
+		{
+			"id": 1,
+			"title": "Earnings",
+			"subtitle": "Market-Leading Affiliate Payouts",
+			"description": "Earn industry-best commissions through flexible CPA and revenue-sharing models designed to grow with you. SecureFX ensures full transparency, reliable payments, and lifetime value from every referral, empowering you to scale your affiliate income with confidence and consistency across global markets.",
+			"color": "#3C75FE80",
+			"image": "/assets/images/highlight-1.png"
+		},
+		{
+			"id": 2,
+			"title": "Analytics",
+			"subtitle": "Real-Time Performance Tracking",
+			"description": "Gain total control with our advanced partner dashboard. Track clicks, conversions, and commissions in real time with detailed analytics. Identify top-performing campaigns instantly and optimize your marketing strategies using data-driven insights built to maximize results and long-term profitability.",
+			"color": "#EFBA4E80",
+			"image": "/assets/images/highlight-2.png"
+		},
+		{
+			"id": 3,
+			"title": "Credibility",
+			"subtitle": "Partner With a Trusted Global Broker",
+			"description": "SecureFX operates under strict international regulatory standards with fully segregated client funds. By promoting a broker recognized for transparency and safety, you strengthen your reputation while offering your clients a secure, professional, and reliable trading experience across all major financial markets.",
+			"color": "#3CD1FE80",
+			"image": "/assets/images/highlight-3.png"
+		},
+		{
+			"id": 4,
+			"title": "Support",
+			"subtitle": "Dedicated Affiliate Growth Team",
+			"description": "Enjoy personalized guidance from our multilingual affiliate specialists. From onboarding and campaign setup to conversion optimization, our dedicated team ensures you have the tools, data, and expertise to grow efficiently and outperform competition in every region you target.",
+			"color": "#9A3CFE80",
+			"image": "/assets/images/highlight-4.png"
+		},
+		{
+			"id": 5,
+			"title": "Resources",
+			"subtitle": "Advanced Marketing Tools and Assets",
+			"description": "Access high-performing creatives, localized content, banners, and referral links that drive engagement and conversions. Our marketing suite is built to simplify your efforts and give you a professional edge, whether you’re running global campaigns or niche traffic strategies.",
+			"color": "#FE3CFB80",
+			"image": "/assets/images/highlight-5.png"
+		},
+		{
+			"id": 6,
+			"title": "Payments",
+			"subtitle": "Fast, Reliable Commission Withdrawals",
+			"description": "Get paid quickly through trusted global payment systems. SecureFX ensures seamless, automatic commission withdrawals with flexible methods, from bank transfers to e-wallets, so your hard-earned revenue reaches you on time, every time, with zero unnecessary delays.",
+			"color": "#FE3C6680",
+			"image": "/assets/images/highlight-6.png"
+		},
+		{
+			"id": 7,
+			"title": "Network",
+			"subtitle": "Multi-Tier Partnership Opportunities",
+			"description": "Expand your earning potential by introducing new affiliates and building your own sub-network. Our multi-tier program rewards you for referrals generated through your partners, multiplying your passive income streams and creating a long-term growth ecosystem for sustainable success.",
+			"color": "#3C75FE80",
+			"image": "/assets/images/highlight-1.png"
+		},
+		{
+			"id": 8,
+			"title": "Results",
+			"subtitle": "Proven Conversion and Retention Rates",
+			"description": "Promote a trading brand built for performance. SecureFX’s optimized funnels, intuitive user experience, and competitive trading conditions deliver higher conversion rates and client retention, ensuring your efforts generate consistent, measurable returns month after month.",
+			"color": "#EFBA4E80",
+			"image": "/assets/images/highlight-2.png"
+		}
+	]
+}

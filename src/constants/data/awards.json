@@ -1,0 +1,46 @@
+{
+	"awards": [
+		{
+			"id": "4f9c8e7a-2b19-4c1e-bc1d-2db9f8e6fa10",
+			"title": "Fastest Growing Broker Award",
+			"description": "Recognised for rapid international growth and excellence, establishing SecureFx as one of the most dynamic global brokers.",
+			"image": "/assets/images/awards.svg",
+			"number": "1."
+		},
+		{
+			"id": "c1e0b6af-9c4f-4bb4-a56e-73cb5b8d3b52",
+			"title": "Best Customer Service Award",
+			"description": "Honoured for delivering unmatched client support with precision, speed, and a trader-first approach across all platforms.",
+			"image": "/assets/images/awards.svg",
+			"number": "2."
+		},
+		{
+			"id": "8b9d4f77-6c13-4527-9a46-0abfae902bd5",
+			"title": "Best Affiliate Program Award",
+			"description": "Awarded for offering industry-leading commissions, transparency, and partner support to affiliates across multiple regions.",
+			"image": "/assets/images/awards.svg",
+			"number": "3."
+		},
+		{
+			"id": "e7f4a2c5-0d69-4d39-bb32-2cf72df2f0f3",
+			"title": "Best Customer Satisfaction Award",
+			"description": "Celebrated for consistently exceeding trader expectations through performance, reliability, and service excellence.",
+			"image": "/assets/images/awards.svg",
+			"number": "4."
+		},
+		{
+			"id": "5a83f1d1-7cc0-4c97-aafd-b0b44f31c8fb",
+			"title": "Innovation in Brokerage Award",
+			"description": "Recognised for redefining trading technology with secure, fast, and user-centric platforms for global traders.",
+			"image": "/assets/images/awards.svg",
+			"number": "5."
+		},
+		{
+			"id": "d4c1b830-8d92-4b2c-a32a-9c5bc51af1e6",
+			"title": "Global Trading Excellence Award",
+			"description": "Awarded for exceptional integrity, compliance, and leadership in global trading standards and execution quality.",
+			"image": "/assets/images/awards.svg",
+			"number": "6."
+		}
+	]
+}

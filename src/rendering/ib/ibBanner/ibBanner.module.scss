@@ -1,0 +1,47 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.ibbannerDesign {
+    background-image: url('/assets/images/ib-banner.png');
+    height: 564px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+        h1 {
+            color: #FFF;
+            text-align: center;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            @include font-medium;
+            max-width: 600px;
+            margin: 0 auto 20px 0;
+        }
+
+        p {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            @include font-normal;
+        }
+    }
+
+    .buttonAlignment {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+        z-index: 9;
+    }
+}

@@ -1,0 +1,55 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.forexTrading {
+    padding: 70px 0;
+
+    @include respond-to("sm") {
+        padding: 80px 0 32px 0;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 443px;
+        gap: 54px;
+        align-items: center;
+
+        @include respond-to("md") {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .image {
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .text {
+            h2 {
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                margin: 0 0 16px 0;
+                @include font-medium;
+                @include text-gradient-white;
+            }
+
+            p {
+                max-width: 607px;
+                font-size: 20px;
+                @include text-gradient-white;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                @include font-normal;
+                margin: 0 0 16px 0;
+            }
+        }
+    }
+
+
+}

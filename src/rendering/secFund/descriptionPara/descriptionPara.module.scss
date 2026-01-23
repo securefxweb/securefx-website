@@ -1,0 +1,61 @@
+@use '../../../scss/main.scss' as *;
+@use '../../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../../scss/font/font.scss' as *;
+
+.descriptionPara {
+    position: relative;
+    padding: 0 0 40px 0;
+
+    h2 {
+        color: #FFF;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+        line-height: 130%;
+        @include font-medium;
+    }
+
+    p {
+        max-width: 777px;
+        margin: 0 auto;
+        @include font-normal;
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+    }
+
+    &::before {
+        position: absolute;
+        width: 40%;
+        left: 0;
+        height: 291px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #F95C2F;
+        opacity: 0.12;
+        filter: blur(101px);
+        content: '';
+        z-index: -1;
+
+    }
+
+    &::after {
+        position: absolute;
+        width: 40%;
+        right: 0;
+        height: 291px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #3C75FE;
+        opacity: 0.12;
+        filter: blur(101px);
+        z-index: -1;
+        content: '';
+
+    }
+}

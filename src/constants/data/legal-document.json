@@ -1,0 +1,41 @@
+{
+	"badge": " Committed to Client Protection",
+	"title": "Legal Confidence for Every SecureFx Trader",
+	"image": "/assets/images/Protection.png",
+	"integrity": {
+		"icon": "/assets/icons/integrity.svg",
+		"description": "We turn compliance into confidence, and trust into lasting partnerships."
+	},
+	"rules": [
+		{
+			"id": "e7f9c0c1-4c2a-4d88-9b7a-2f0dfd813a11",
+			"title": "Terms and Conditions",
+			"image": "/assets/images/legal-terms-condition.png"
+		},
+		{
+			"id": "9d4f6f52-1b6e-4458-a8be-6e3f2d59c762",
+			"title": "Anti Money Laundering Policy",
+			"image": "/assets/images/anti-money-laundering-policy.png"
+		},
+		{
+			"id": "3bcf8e79-0d41-4b73-9f77-1e641ecb7e32",
+			"title": "Global Order Execution Policy",
+			"image": "/assets/images/legal-doc-global-order-execution-policy.png"
+		},
+		{
+			"id": "d51f9f35-1fe5-42d7-af6c-e91bce39f98c",
+			"title": "Risk Disclosure Notice",
+			"image": "/assets/images/risk-disclosure-notice.png"
+		},
+		{
+			"id": "f0b4394d-1c11-405d-9aef-7a928c3203fa",
+			"title": "Refund Policy",
+			"image": "/assets/images/refund-policy.png"
+		},
+		{
+			"id": "7b8d8391-1f7e-4c58-9e5b-5451a29f1a6d",
+			"title": "Cookies Policies",
+			"image": "/assets/images/legal-cookies-policies.png"
+		}
+	]
+}
