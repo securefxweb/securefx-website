@@ -4,6 +4,7 @@ import styles from "./expectedMonthlyDeposits.module.scss";
 import { motion, useMotionValue, animate } from "framer-motion";
 
 const LineChartImage = "/assets/images/line-chart.svg";
+const MobileLineChartImage = "/assets/images/mobile-line.svg";
 
 export default function ExpectedMonthlyDeposits() {
 	const containerVariants = {
@@ -69,12 +70,22 @@ export default function ExpectedMonthlyDeposits() {
 							transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
 							whileHover={{ scale: 1.02 }}
 						/>
+						<motion.img
+							src={MobileLineChartImage}
+							alt="MobileLineChartImage"
+							style={{ width: "100%", height: "auto", maxWidth: 320 }}
+							animate={{ y: [0, -10, 0] }}
+							transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+							whileHover={{ scale: 1.02 }}
+						/>
 					</motion.div>
 
 					{/* Right stat */}
-					<motion.div variants={fadeUp}>
-						<h4>$1320</h4>
-						<p>Your income per month</p>
+					<motion.div className={styles.bottomAlignment} variants={fadeUp}>
+						<div>
+							<h4>$1320</h4>
+							<p>Your income per month</p>
+						</div>
 					</motion.div>
 				</motion.div>
 			</div>

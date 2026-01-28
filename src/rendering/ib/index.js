@@ -7,6 +7,7 @@ import ExpectedMonthlyDeposits from "./expectedMonthlyDeposits";
 import JointheSecureFx from "./jointheSecureFx";
 import WorldsTrustedForm from "../homePage/worldsTrustedForm";
 import { ibDataJson } from "@/constants/data";
+import MobileViewForm from '../homePage/mobileViewForm'
 export default function Ib() {
 	return (
 		<div>
@@ -15,6 +16,7 @@ export default function Ib() {
 			<WhySecureFx data={ibDataJson.ibsecurefx} />
 			<ExpectedMonthlyDeposits />
 			<JointheSecureFx data={ibDataJson.program} />
+			<MobileViewForm spaceremove={true} />
 			<div className={styles.spacingAlignment}>
 				<WorldsTrustedForm form="affliateForm" />
 			</div>

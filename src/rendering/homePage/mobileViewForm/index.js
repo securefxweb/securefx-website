@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./mobileViewForm.module.scss";
 import DemoAccountForm from "../worldsTrustedForm/demoAccountForm";
+import classNames from "classnames";
 const BlueLine = "/assets/images/blue-line.svg";
 
 const steps = [
@@ -26,7 +27,7 @@ const steps = [
     desc: "Our multilingual team stands ready around the clock to assist, guide, and resolve, wherever you trade.",
   },
 ];
-export default function MobileViewForm() {
+export default function MobileViewForm({ spaceremove }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -48,7 +49,7 @@ export default function MobileViewForm() {
   const handleTouchEnd = (e) => {
     const endX = e.changedTouches[0].clientX;
     const diff = startX - endX;
-    
+
     if (Math.abs(diff) > 50) {
       if (diff > 0) {
         setCurrentIndex((prev) => (prev + 1) % steps.length);
@@ -67,7 +68,7 @@ export default function MobileViewForm() {
   const handleMouseUp = (e) => {
     const endX = e.clientX;
     const diff = startX - endX;
-    
+
     if (Math.abs(diff) > 50) {
       if (diff > 0) {
         setCurrentIndex((prev) => (prev + 1) % steps.length);
@@ -79,9 +80,9 @@ export default function MobileViewForm() {
   };
 
   return (
-    <div className={styles.mobileViewForm}>
+    <div className={classNames(styles.mobileViewForm, spaceremove ? styles.spaceRemove : "")}>
       <div className={styles.sliderContainer}>
-        <div 
+        <div
           className={styles.contentAlignment}
           style={{ transform: `translateX(-${currentIndex * (275 + 20)}px)` }}
           onTouchStart={handleTouchStart}

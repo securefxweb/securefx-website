@@ -5,8 +5,16 @@
 .expectedMonthlyDeposits {
     padding: 0 0 120px 0;
 
+    @include respond-to("sm") {
+        padding: 0 0 80px 0;
+    }
+
     .title {
         padding: 0 0 35px 0;
+
+        @include respond-to("sm") {
+            padding: 0 0 80px 0;
+        }
 
         h2 {
             color: #FFF;
@@ -16,6 +24,13 @@
             font-weight: 500;
             line-height: 120%;
             @include font-medium;
+
+            @include respond-to("sm") {
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+            }
         }
     }
 
@@ -45,6 +60,10 @@
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: rgba(255, 255, 255, 0.06);
             transition: 0.3s ease-in-out;
+
+            @include respond-to("sm") {
+                padding: 13px 18px;
+            }
 
 
 
@@ -97,6 +116,20 @@
         align-items: center;
         gap: 100px;
 
+        @include respond-to("sm") {
+            grid-template-columns: 1fr 100px 1fr;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .bottomAlignment {
+            @include respond-to("sm") {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+
         div:first-child {
             h4 {
                 text-align: right;
@@ -114,6 +147,13 @@
             font-weight: 400;
             line-height: 120%;
             @include font-normal;
+
+            @include respond-to("sm") {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
         }
 
         h4 {
@@ -124,11 +164,33 @@
             font-weight: 500;
             line-height: 110%;
             @include font-medium;
+
+            @include respond-to("sm") {
+                color: #FFF;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%;
+            }
         }
 
         img {
             display: block;
             width: 100%;
+        }
+
+        img[alt="LineChartImage"] {
+            @include respond-to("sm") {
+                display: none;
+            }
+        }
+
+        img[alt="MobileLineChartImage"] {
+            display: none;
+
+            @include respond-to("sm") {
+                display: block;
+            }
         }
     }
 

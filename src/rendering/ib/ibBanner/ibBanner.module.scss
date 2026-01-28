@@ -14,6 +14,10 @@
     align-items: center;
     justify-content: center;
 
+    @include respond-to("sm") {
+        height: 600px;
+    }
+
     .text {
         h1 {
             color: #FFF;
@@ -25,6 +29,15 @@
             @include font-medium;
             max-width: 600px;
             margin: 0 auto 20px 0;
+
+            @include respond-to("sm") {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                margin: 0 auto 16px auto;
+                max-width: 273px;
+            }
         }
 
         p {
@@ -34,6 +47,16 @@
             font-weight: 400;
             line-height: 120%;
             @include font-normal;
+
+            @include respond-to("sm") {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                max-width: 290px;
+                margin: 0 auto;
+                text-align: center;
+            }
         }
     }
 

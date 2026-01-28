@@ -5,8 +5,16 @@
 .jointheSecureFx {
     padding: 0 0 120px 0;
 
+    @include respond-to("sm") {
+        padding: 0 0 0 0;
+    }
+
     .title {
         padding: 0 0 57px 0;
+
+        @include respond-to("sm") {
+            padding: 0 0 32px 0;
+        }
 
         h2 {
             color: #FFF;
@@ -17,6 +25,13 @@
             line-height: 140%;
             @include font-medium;
             margin: 0 0 12px 0;
+
+            @include respond-to("sm") {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+            }
         }
 
         p {
@@ -27,6 +42,7 @@
             font-weight: 400;
             line-height: 120%;
             @include font-normal;
+
         }
     }
 
@@ -40,6 +56,10 @@
             position: relative;
             transition: all 0.3s ease-in-out;
             margin: 0 0 24px 0;
+
+            @include respond-to("sm") {
+                margin: 0 0 30px 0;
+            }
 
             &:hover {
                 .termsbox {
@@ -93,6 +113,10 @@
                 transform-origin: bottom;
                 transition: all 0.6s ease-in-out;
 
+                @include respond-to("sm") {
+                    bottom: 96%;
+                }
+
                 .termsimagebox {
                     border-radius: 12px 12px 0 0;
                     overflow: hidden;
@@ -118,6 +142,10 @@
                 transition: all 0.6s ease-in-out;
                 position: relative;
                 overflow: hidden;
+
+                @include respond-to("sm") {
+                    padding: 12px;
+                }
 
                 &::before {
                     position: absolute;
@@ -154,6 +182,13 @@
                     font-weight: 400;
                     line-height: 120%;
                     @include font-normal;
+
+                    @include respond-to("sm") {
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 120%;
+                    }
                 }
 
                 span {
@@ -165,6 +200,14 @@
                     font-weight: 500;
                     line-height: 120%;
                     @include font-medium;
+
+                    @include respond-to("sm") {
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 120%;
+                        /* 19.2px */
+                    }
                 }
             }
         }
