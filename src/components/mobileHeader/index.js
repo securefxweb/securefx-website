@@ -7,8 +7,12 @@ import Link from "next/link";
 import classNames from "classnames";
 
 export default function MobileHeader() {
-	const [dropdown, setDropdown] = useState(false);
 	const [headerOpen, setHeaderOpen] = useState(false);
+	const [activeDropdown, setActiveDropdown] = useState(null);
+
+	const toggleDropdown = (dropdownName) => {
+		setActiveDropdown(activeDropdown === dropdownName ? null : dropdownName);
+	};
 	return (
 		<><div className={styles.mobileHeader}>
 			<div className={styles.headerStyling}>
@@ -32,17 +36,72 @@ export default function MobileHeader() {
 				<div className={styles.mobileSidebarBody}>
 					<div className={styles.textIconAlignment}>
 						<a className={styles.lgText}>About</a>
-						<div className={classNames(styles.icon, dropdown ? styles.rotate : "")} onClick={() => setDropdown(!dropdown)}>
+						<div className={classNames(styles.icon, activeDropdown === 'about' ? styles.rotate : "")} onClick={() => toggleDropdown('about')}>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"></path></svg>
 						</div>
 					</div>
-					<div className={classNames(styles.listMenu, dropdown ? styles.show : styles.hide)}>
+					<div className={classNames(styles.listMenu, activeDropdown === 'about' ? styles.show : styles.hide)}>
 						<div className={styles.spacing}>
 							<Link href="/about/#about-secure-fx">Why Securefx</Link>
 							<Link href="/regulations">Regulation</Link>
 							<Link href="/legal-doc">Legal Documents</Link>
 							<Link href="/sec-fund">Security of funds</Link>
 						</div>
+					</div>
+
+					<div className={styles.textIconAlignment}>
+						<a className={styles.lgText}>Trade</a>
+						<div className={classNames(styles.icon, activeDropdown === 'trade' ? styles.rotate : "")} onClick={() => toggleDropdown('trade')}>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"></path></svg>
+						</div>
+					</div>
+					<div className={classNames(styles.listMenu, activeDropdown === 'trade' ? styles.show : styles.hide)}>
+						<div className={styles.spacing}>
+							<Link href="/forex">Products</Link>
+							<Link href="/trading-platform">Trading Platform</Link>
+							<Link href="/calendar">Economic Calendar</Link>
+							<Link href="/precise-calculations">Calculators</Link>
+						</div>
+					</div>
+
+					<div className={styles.textIconAlignment}>
+						<a className={styles.lgText}>Accounts</a>
+						<div className={classNames(styles.icon, activeDropdown === 'accounts' ? styles.rotate : "")} onClick={() => toggleDropdown('accounts')}>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"></path></svg>
+						</div>
+					</div>
+					<div className={classNames(styles.listMenu, activeDropdown === 'accounts' ? styles.show : styles.hide)}>
+						<div className={styles.spacing}>
+							<Link href="/standard-account">STD</Link>
+							<Link href="/pro-account">PRO</Link>
+							<Link href="/raw-account">RAW</Link>
+							<Link href="/zero-spread-account">ZERO</Link>
+						</div>
+					</div>
+
+					<div className={styles.textIconAlignment}>
+						<a className={styles.lgText}>Partner</a>
+						<div className={classNames(styles.icon, activeDropdown === 'partner' ? styles.rotate : "")} onClick={() => toggleDropdown('partner')}>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M297.4 438.6C309.9 451.1 330.2 451.1 342.7 438.6L502.7 278.6C515.2 266.1 515.2 245.8 502.7 233.3C490.2 220.8 469.9 220.8 457.4 233.3L320 370.7L182.6 233.4C170.1 220.9 149.8 220.9 137.3 233.4C124.8 245.9 124.8 266.2 137.3 278.7L297.3 438.7z"></path></svg>
+						</div>
+					</div>
+					<div className={classNames(styles.listMenu, activeDropdown === 'partner' ? styles.show : styles.hide)}>
+						<div className={styles.spacing}>
+							<Link href="/ib">IB</Link>
+							<Link href="/affiliate">Affiliate</Link>
+						</div>
+					</div>
+
+					<div className={styles.textIconAlignment}>
+						<Link href="#" className={styles.lgText}>Tools</Link>
+					</div>
+
+					<div className={styles.textIconAlignment}>
+						<Link href="mailto:support@securefx.net" className={styles.lgText}>Support</Link>
+					</div>
+
+					<div className={styles.textIconAlignment}>
+						<Link href="#" className={styles.lgText}>EN</Link>
 					</div>
 				</div>
 			</div>
