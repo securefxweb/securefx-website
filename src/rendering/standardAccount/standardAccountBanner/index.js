@@ -35,7 +35,7 @@ export default function StandardAccountBanner({ data }) {
 
 							<h1>{data.title}</h1>
 							<p>{data.description}</p>
-							<Button text="Open Standard Account" />
+							<Button className={styles.mobileHide} text="Open Standard Account" />
 						</motion.div>
 
 						<motion.div
@@ -52,6 +52,7 @@ export default function StandardAccountBanner({ data }) {
 						>
 							<img src={AccountImage} alt="AccountImage" />
 						</motion.div>
+						<Button className={styles.mobileShow} text="Start Trading" />
 					</div>
 				</div>
 			</div>

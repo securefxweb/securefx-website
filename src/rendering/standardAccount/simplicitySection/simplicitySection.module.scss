@@ -5,18 +5,61 @@
 .simplicitySection {
     padding: 120px 0;
 
+    @include respond-to("sm") {
+        padding: 80px 0;
+        position: relative;
+        overflow: hidden;
+        background: #09090B;
+    }
+
+    h2 {
+        display: none;
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        max-width: 313px;
+        margin: 0 auto;
+        @include font-medium;
+
+        @include respond-to("sm") {
+            display: block;
+        }
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 1fr 386px 1fr;
         gap: 26px;
         align-items: center;
 
+        @include respond-to("sm") {
+            grid-template-columns: 1fr;
+            margin: 0;
+        }
+
+        .griditems:first-child {
+            @include respond-to("sm") {
+                order: 2;
+            }
+        }
+
         .first {
             margin-left: -60px;
+
+            @include respond-to("sm") {
+                margin-left: 0;
+            }
         }
 
         .leftFirst {
             margin-right: -60px;
+
+            @include respond-to("sm") {
+                margin-right: 0;
+            }
         }
 
 
@@ -25,12 +68,25 @@
             .textstyle {
                 grid-template-columns: 1fr 60px;
 
+                @include respond-to("sm") {
+                    grid-template-columns: 36px 1fr;
+                }
+
                 .round {
                     order: 2;
+
+                    @include respond-to("sm") {
+                        order: inherit;
+                    }
                 }
 
                 p {
                     text-align: right;
+
+                    @include respond-to("sm") {
+                        text-align: left;
+                        order: 1;
+                    }
                 }
             }
         }
@@ -41,6 +97,12 @@
             gap: 16px;
             padding: 0 0 66px 0;
             align-items: center;
+
+            @include respond-to("sm") {
+                grid-template-columns: 36px 1fr;
+                gap: 12px;
+                padding: 0 0 20px 0;
+            }
 
             &.spacingRemove {
                 padding: 0;
@@ -54,6 +116,13 @@
                 line-height: 120%;
                 @include font-medium;
                 text-align: left;
+
+                @include respond-to("sm") {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                }
             }
 
             .round {
@@ -72,6 +141,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                @include respond-to("sm") {
+                    width: 36px;
+                    color: #FFF;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 130%;
+                    height: 36px;
+                }
             }
         }
 
@@ -85,6 +164,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
+
+            @include respond-to("sm") {
+                display: none;
+            }
 
             .text {
                 position: relative;
