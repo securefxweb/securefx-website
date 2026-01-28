@@ -108,26 +108,31 @@
 			"description": " Execute trades within milliseconds across multiple asset classes, ensuring no delay between decision and action."
 		},
 		"features": [
-			{
-				"id": "instant-fund-access",
-				"text": "Instant Fund Access",
-				"counter": "1"
-			},
-			{
-				"id": "lightning-execution",
-				"text": "Lightning-Speed Execution.",
-				"counter": "2"
-			},
-			{
-				"id": "enhanced-stop-out-shield",
-				"text": "Enhanced Stop-Out Shield",
-				"counter": "3"
-			},
-			{
-				"id": "support-24-7",
-				"text": "Round-the-Clock Support",
-				"counter": "4"
-			}
-		]
+  {
+    "id": "instant-fund-access",
+    "text": "Instant Fund Access",
+    "description": "Withdraw your profits instantly with automated processing and secure payment channels.",
+    "counter": "1"
+  },
+  {
+    "id": "lightning-execution",
+    "text": "Lightning-Speed Execution",
+    "description": "Execute trades within milliseconds across multiple asset classes, ensuring no delay between decision and action.",
+    "counter": "2"
+  },
+  {
+    "id": "enhanced-stop-out-shield",
+    "text": "Enhanced Stop-Out Shield",
+    "description": "Protect your capital with SecureFX’s advanced Stop-Out Protection that minimizes premature closures during market volatility.",
+    "counter": "3"
+  },
+  {
+    "id": "support-24-7",
+    "text": "Round-the-Clock Support",
+    "description": "Get expert help whenever you need it, from setup to strategy execution, directly within the app.",
+    "counter": "4"
+  }
+]
+
 	}
 }

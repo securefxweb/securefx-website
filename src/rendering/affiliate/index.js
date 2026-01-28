@@ -7,13 +7,18 @@ import WhySecureFx from "../homePage/whySecureFx";
 import WorldsTrustedForm from "../homePage/worldsTrustedForm";
 
 export default function Affiliate() {
+	
 	return (
 		<div>
 			<AffiliateBanner data={affiliateData} />
 			<OurAffiliate data={affiliateData.ourAffiliate} />
 			<GetStartedSection data={affiliateData.benefits} />
 			<WhySecureFx data={affiliateData.whySecureFx} />
-			<WorldsTrustedForm form={"affliateForm"}  />
+			<WorldsTrustedForm 
+				leftSteps={affiliateData.formSteps.leftSteps}
+				rightSteps={affiliateData.formSteps.rightSteps}
+				form={"affliateForm"} 
+			/>
 		</div>
 	);
 }
