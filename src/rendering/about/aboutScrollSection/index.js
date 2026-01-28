@@ -38,6 +38,9 @@ export default function AboutScrollSection({ data }) {
 		>
 			<div className={styles.stickyContainer}>
 				<div className={styles.contentWrapper}>
+					<div className={styles.awardsTitlemobile}>
+						<h2>Awards.</h2>
+					</div>
 					<div className="container-lg">
 						<div className={styles.grid}>
 							{/* Image Section */}
@@ -49,37 +52,59 @@ export default function AboutScrollSection({ data }) {
 
 									let opacity = 0;
 									let x = 0;
+									let xMobile = 0;
 									let y = 0;
 									let rotate = 0;
+									// let rotateMobile = 0;
+									let rotateMobile = 5;
 									let scale = 0.8;
+									let scaleMobile = 0.85;
 									let zIndex = 0;
 									let cardClass = styles.adjacent;
 
 									if (index === currentIndex) {
+										// Current card - center position
 										x = 0;
+										xMobile = 0;
 										y = 0;
 										opacity = 1;
 										scale = 1;
+										scaleMobile = 1;
 										rotate = 0;
+										// rotateMobile = 0;
+										rotateMobile = 5;
 										zIndex = 100;
 										cardClass = styles.current;
 									} else if (index === prevItem && prevItem >= 0) {
+										// Previous card - desktop: arc position, mobile: left side
 										const radius = 360;
 										const angle = Math.PI * 0.73;
 										x = Math.cos(angle) * radius;
 										y = -Math.sin(angle) * radius;
+										// xMobile = -52; // Left side on mobile
+										xMobile = -111; // Left side on mobile
 										opacity = 0.25;
 										scale = 0.75;
+										// scaleMobile = 0.85;
+										scaleMobile = 1;
 										rotate = -30;
+										// rotateMobile = -5;
+										rotateMobile = 15;
 										zIndex = 50;
 									} else if (index === nextItem && nextItem < totalItems) {
+										// Next card - desktop: arc position, mobile: right side
 										const radius = 270;
 										const angle = -Math.PI * 0.58;
 										x = Math.cos(angle) * radius;
 										y = -Math.sin(angle) * radius;
+										// xMobile = 52; // Right side on mobile
+										xMobile = 111; // Right side on mobile
 										opacity = 0.25;
 										scale = 0.75;
+										// scaleMobile = 0.85;
+										scaleMobile = 1;
 										rotate = 15;
+										rotateMobile = 15;
 										zIndex = 50;
 									} else {
 										return null;
@@ -101,7 +126,12 @@ export default function AboutScrollSection({ data }) {
 												duration: 0.6,
 												ease: [0.4, 0, 0.2, 1],
 											}}
-											style={{ zIndex }}
+											style={{
+												zIndex,
+												"--mobile-x": `${xMobile}%`,
+												"--mobile-rotate": `${rotateMobile}deg`,
+												"--mobile-scale": scaleMobile,
+											}}
 										>
 											<div className={styles.imageContent}>
 												<img src={award.image} alt={award.image} />

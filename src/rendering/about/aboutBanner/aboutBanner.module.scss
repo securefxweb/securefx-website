@@ -1,46 +1,120 @@
-@use '../../../scss/main.scss' as *;
-@use '../../../scss/breakpoints/breakpoints.scss' as *;
-@use '../../../scss/font/font.scss' as *;
+@use "../../../scss/main.scss" as *;
+@use "../../../scss/breakpoints/breakpoints.scss" as *;
+@use "../../../scss/font/font.scss" as *;
 
 .aboutBanner {
-    padding: 80px 0 120px 0;
+  padding: 80px 0 120px 0;
 
-    .imageCenter {
-        display: flex;
-        justify-content: center;
+  @include respond-to("sm") {
+    padding: 80px 0;
+  }
 
-        img {
-            display: block;
-            max-width: 429px;
+  .aboutBannerText {
+    display: none;
+    margin: 0 auto 40px auto;
+    max-width: 285px;
 
-        }
+    @include respond-to("sm") {
+      display: block;
     }
 
-    .relative {
-        position: relative;
-
-        .first {
-            position: absolute;
-            left: 4%;
-            top: 25%;
-        }
-
-        .three {
-            position: absolute;
-            right: 4%;
-            top: 25%;
-        }
-
-        .sec {
-            position: absolute;
-            left: 14%;
-            bottom: 12%;
-        }
-
-        .four {
-            position: absolute;
-            right: 11%;
-            bottom: 12%;
-        }
+    h1 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 120%;
+      color: #fff;
+      text-align: center;
+      @include font-normal;
     }
+  }
+
+  .imageCenter {
+    display: flex;
+    justify-content: center;
+
+    .aboutImage {
+      max-width: 429px;
+
+      @include respond-to("sm") {
+        max-width: 275px;
+        display: none;
+      }
+    }
+
+    .aboutshieldrelative {
+      display: none;
+      position: relative;
+
+      @include respond-to("sm") {
+        display: block;
+      }
+
+      .aboutshield {
+        max-width: 275px;
+      }
+
+      .animatingtextfirst,
+      .animatingtextsecond,
+      .animatingtextthird,
+      .animatingtextfourth {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        h2 {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 120%;
+          color: #fff;
+          text-align: center;
+          @include font-normal;
+        }
+      }
+    }
+  }
+
+  .relative {
+    position: relative;
+
+    .first {
+      position: absolute;
+      left: 4%;
+      top: 25%;
+
+      @include respond-to("sm") {
+        display: none;
+      }
+    }
+
+    .three {
+      position: absolute;
+      right: 4%;
+      top: 25%;
+
+      @include respond-to("sm") {
+        display: none;
+      }
+    }
+
+    .sec {
+      position: absolute;
+      left: 14%;
+      bottom: 12%;
+
+      @include respond-to("sm") {
+        display: none;
+      }
+    }
+
+    .four {
+      position: absolute;
+      right: 11%;
+      bottom: 12%;
+
+      @include respond-to("sm") {
+        display: none;
+      }
+    }
+  }
 }
