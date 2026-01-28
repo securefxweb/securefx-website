@@ -14,7 +14,7 @@ export default function SimplicitySection({ data }) {
 			transition={{ duration: 0.7, ease: "easeOut" }}
 		>
 			<div className="container-md2">
-				<h2>
+				<h2 className={styles.heading}>
 					The perfect blend of simplicity and precision for consistent traders.
 				</h2>
 				<div className={styles.grid}>

@@ -32,7 +32,7 @@ export default function RawAccountBanner({ data }) {
 
 							<h1>{data.title}</h1>
 							<p>{data.description}</p>
-							<Button text="Open Raw Account" />
+							<Button className={styles.mobileHide} text="Open Raw Account" />
 						</motion.div>
 
 						<motion.div
@@ -49,6 +49,8 @@ export default function RawAccountBanner({ data }) {
 						>
 							<img src={data.image} alt="AccountImage" />
 						</motion.div>
+						<Button className={styles.mobileShow} text="Open Raw Account" />
+
 					</div>
 				</div>
 			</div>

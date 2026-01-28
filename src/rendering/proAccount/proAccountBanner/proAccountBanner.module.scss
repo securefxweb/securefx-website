@@ -3,10 +3,21 @@
 @use '../../../scss/font/font.scss' as *;
 
 .proAccountBanner {
+    :global(.container-lg) {
+        padding: 0;
+    }
 
     .box {
         padding: 160px 70px 62px 70px;
         position: relative;
+
+        @include respond-to("md") {
+            padding: 120px 40px 60px 40px;
+        }
+
+        @include respond-to("sm") {
+            padding: 46px 16px;
+        }
 
         &::before {
             position: absolute;
@@ -22,9 +33,36 @@
         }
 
         .image {
+            @include respond-to("sm") {
+                display: flex;
+                padding: 0 0 16px 0;
+                justify-content: center;
+            }
+
             img {
                 max-width: 394px;
                 display: block;
+
+                @include respond-to("sm") {
+                    max-width: 297px;
+                }
+            }
+        }
+
+        .mobileHide {
+            @include respond-to("sm") {
+                display: none;
+            }
+        }
+
+        .mobileShow {
+            display: none;
+
+            @include respond-to("sm") {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.06);
             }
         }
 
@@ -32,6 +70,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @include respond-to("sm") {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
 
             h1 {
                 color: #FFF;
@@ -41,6 +85,12 @@
                 line-height: 120%;
                 margin: 0 0 16px 0;
                 @include font-medium;
+
+                @include respond-to("sm") {
+                    @include heading24;
+                    margin: 0 0 8px 0;
+                    max-width: 250px;
+                }
             }
 
             p {
@@ -52,6 +102,11 @@
                 line-height: 22px;
                 max-width: 434px;
                 @include font-normal;
+
+                @include respond-to("sm") {
+                    max-width: 306px;
+                    margin: 0 0 50px 0;
+                }
             }
 
             .outlineButton {

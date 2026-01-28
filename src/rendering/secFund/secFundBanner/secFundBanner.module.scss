@@ -5,6 +5,10 @@
 .secFundBanner {
     padding: 120px 0;
 
+    @include respond-to("sm") {
+        padding: 80px 0;
+    }
+
     h1 {
         max-width: 727px;
         margin: 0 auto;
@@ -15,6 +19,14 @@
         font-weight: 500;
         line-height: 120%;
         @include font-medium;
+
+        @include respond-to("sm") {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            max-width: 225px;
+        }
     }
 
     .lineAnimation {
@@ -29,6 +41,10 @@
     .textstyle {
         padding: 31px 0 0 0;
 
+        @include respond-to("sm") {
+            padding: 20px 0 0 0;
+        }
+
         h2 {
             color: #FFF;
             text-align: center;
@@ -38,6 +54,13 @@
             font-weight: 500;
             line-height: 120%;
             @include font-medium;
+
+            @include respond-to("sm") {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
         }
 
         p {
@@ -49,6 +72,13 @@
             line-height: 120%;
             max-width: 392px;
             margin: 0 auto;
+
+            @include respond-to("sm") {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
         }
     }
 }

@@ -32,7 +32,7 @@ export default function ProAccountBanner({ data }) {
 
 							<h1>{data.title}</h1>
 							<p>{data.description}</p>
-							<Button text="Open Pro Account" />
+							<Button className={styles.mobileHide} text="Open Pro Account" />
 						</motion.div>
 
 						<motion.div
@@ -49,6 +49,8 @@ export default function ProAccountBanner({ data }) {
 						>
 							<img src={data.image} alt="AccountImage" />
 						</motion.div>
+						<Button className={styles.mobileShow} text="Open Pro Account" />
+
 					</div>
 				</div>
 			</div>

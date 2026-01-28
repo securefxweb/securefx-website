@@ -6,6 +6,10 @@
     position: relative;
     padding: 0 0 40px 0;
 
+    @include respond-to("sm") {
+        padding: 0;
+    }
+
     h2 {
         color: #FFF;
         text-align: center;
@@ -15,6 +19,10 @@
         margin: 0 0 20px 0;
         line-height: 130%;
         @include font-medium;
+
+        @include respond-to("sm") {
+            margin: 0 0 12px 0;
+        }
     }
 
     p {
@@ -27,6 +35,13 @@
         font-style: normal;
         font-weight: 300;
         line-height: 120%;
+
+        @include respond-to("sm") {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+        }
     }
 
     &::before {

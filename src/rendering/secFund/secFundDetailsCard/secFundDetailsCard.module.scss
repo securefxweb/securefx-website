@@ -5,20 +5,47 @@
 .secFundDetailsCard {
     padding: 120px 0 50px 0;
 
+    @include respond-to("sm") {
+        padding: 80px 0 0 0;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 60px 0;
 
+        @include respond-to("sm") {
+            grid-template-columns: 1fr;
+            gap: 0px;
+        }
+
         .griditems:nth-child(3),
         .griditems:nth-child(6),
         .griditems:last-child {
             border: none;
+
+            @include respond-to("sm") {
+                border-bottom: 1px solid rgb(255, 255, 255, .1);
+
+            }
+        }
+
+        .griditems:last-child {
+            @include respond-to("sm") {
+                border-bottom: none;
+            }
         }
 
         .griditems {
             padding: 0 20px 58px 20px;
             border-right: 1px solid rgb(255, 255, 255, .1);
+
+            @include respond-to("sm") {
+                border-right: none;
+                padding: 32px 0;
+                border-bottom: 1px solid rgb(255, 255, 255, .1);
+
+            }
 
             .iconAlignment {
                 padding: 0 0 25px 0;
@@ -36,6 +63,10 @@
                 line-height: 120%;
                 @include font-normal;
                 margin: 0 0 22px 0;
+
+                @include respond-to("sm") {
+                    margin: 0 0 20px 0;
+                }
             }
 
             p {
