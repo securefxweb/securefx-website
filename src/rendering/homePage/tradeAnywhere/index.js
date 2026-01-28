@@ -37,27 +37,54 @@ export default function TradeAnywhere() {
 						</button>
 					</div>
 				</div>
-				<Swiper
-					spaceBetween={50}
-					slidesPerView={"1.8"}
-					loop={true}
-					speed={800}
-					navigation={{ prevEl, nextEl }}
-					onBeforeInit={(swiper) => {
-						// assign refs before init
-						swiper.params.navigation = swiper.params.navigation || {};
-					}}
-					onInit={(swiper) => {
-						// initialize navigation after refs are set
-						if (swiper.navigation) {
-							swiper.navigation.init();
-							swiper.navigation.update();
-						}
-					}}
-					modules={[Navigation]}
-				>
-					{[...tradeAnywhereData, ...tradeAnywhereData].map((item, index) => (
-						<SwiperSlide key={`${item.id}-${index}`}>
+				<div className={styles.mobileHide}>
+					<Swiper
+						spaceBetween={50}
+						slidesPerView={"1.8"}
+						loop={true}
+						speed={800}
+						navigation={{ prevEl, nextEl }}
+						onBeforeInit={(swiper) => {
+							// assign refs before init
+							swiper.params.navigation = swiper.params.navigation || {};
+						}}
+						onInit={(swiper) => {
+							// initialize navigation after refs are set
+							if (swiper.navigation) {
+								swiper.navigation.init();
+								swiper.navigation.update();
+							}
+						}}
+						modules={[Navigation]}
+					>
+						{[...tradeAnywhereData, ...tradeAnywhereData].map((item, index) => (
+							<SwiperSlide key={`${item.id}-${index}`}>
+								<div className={styles.sliderBox}>
+									<div className={styles.allDetails}>
+										<div className={styles.iconAlignment}>
+											<img src={item.icon} alt={item.title} />
+										</div>
+										<div className={styles.details}>
+											<h3>{item.title}</h3>
+											<p>{item.description}</p>
+										</div>
+										<div className={styles.buttonUi}>
+											<div className={styles.layer}></div>
+											<div className={styles.layer2}></div>
+											<span>{item.cta}</span>
+										</div>
+									</div>
+									<div className={styles.image}>
+										<img src={PlatformImage} alt="PlatformImage" />
+									</div>
+								</div>
+							</SwiperSlide>
+						))}
+					</Swiper>
+				</div>
+				<div className={styles.mobileShow}>
+					{[...tradeAnywhereData].map((item, index) => (
+						<div key={`${item.id}-${index}`}>
 							<div className={styles.sliderBox}>
 								<div className={styles.allDetails}>
 									<div className={styles.iconAlignment}>
@@ -77,9 +104,9 @@ export default function TradeAnywhere() {
 									<img src={PlatformImage} alt="PlatformImage" />
 								</div>
 							</div>
-						</SwiperSlide>
+						</div>
 					))}
-				</Swiper>
+				</div>
 			</div>
 		</div>
 	);

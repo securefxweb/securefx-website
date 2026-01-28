@@ -5,6 +5,10 @@
 .trustedbyTraders {
     padding: 120px 0;
 
+    @include respond-to("sm") {
+        padding: 80px 0;
+    }
+
     .text {
         padding: 0 0 40px 0;
 
@@ -17,6 +21,15 @@
             margin: 0 0 20px 0;
             @include font-medium;
             text-align: center;
+
+            @include respond-to("sm") {
+                margin: 0 0 12px 0;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+                text-align: center;
+            }
 
             span {
                 color: #EFBA4E;
@@ -33,6 +46,13 @@
             line-height: 120%;
             @include font-normal;
             max-width: 719px;
+
+            @include respond-to("sm") {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+            }
         }
     }
 
