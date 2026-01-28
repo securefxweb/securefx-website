@@ -10,12 +10,59 @@
         display: block;
     }
 
-    .contentAlignment {
+    .sliderContainer {
+        overflow: hidden;
         padding: 0 16px;
+    }
+
+    .formContainer {
+        padding: 40px 16px 0;
+        
+        > * {
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(25px);
+            padding: 16px;
+            position: relative;
+
+            &::after,
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                padding: 1px;
+                border-radius: 12px;
+                mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                    linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+                z-index: 1;
+                transition: 0.4s ease-in-out;
+            }
+
+            &::after {
+                background: linear-gradient(117.5deg, #0084ff -35%, #0084ff00 37%);
+            }
+
+            &::before {
+                background: linear-gradient(124.5deg, #f7541c00 68.57%, #f7541c 102.63%);
+            }
+        }
+    }
+
+    .contentAlignment {
         display: flex;
-        overflow: auto;
         gap: 20px;
-        scrollbar-width: none;
+        transition: transform 0.5s ease-in-out;
+        width: fit-content;
+        cursor: grab;
+        
+        &:active {
+            cursor: grabbing;
+        }
 
         .items {
             max-width: 275px;
