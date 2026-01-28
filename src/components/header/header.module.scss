@@ -31,6 +31,52 @@
         right: 40px;
     }
 
+    .logindropdown {
+        position: absolute;
+        width: 160px;
+        border-radius: 8px;
+        top: 52px;
+
+        &.hide {
+            max-height: 0px;
+            overflow: hidden;
+            transition: .3s ease-in-out;
+        }
+
+        &.show {
+            max-height: 100vh;
+            overflow: hidden;
+            transition: .3s ease-in-out;
+        }
+
+        .design {
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            background: #131315;
+            border-radius: 8px;
+            padding: 12px;
+
+            a {
+                display: block;
+                font-size: 16px;
+                padding: 0 0 10px 0;
+                color: #fff;
+                @include font-normal;
+                opacity: .7;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+
+                &:hover {
+                    opacity: 1;
+
+                }
+
+                &:last-child {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
     .headerAlignment {
         display: flex;
         justify-content: center;
@@ -40,6 +86,58 @@
 
         @media (max-width:1300px) {
             gap: 30px;
+        }
+
+        .spacing {
+            position: relative;
+            padding: 20px 0;
+
+            &:hover {
+                .dropdown {
+                    max-height: 100vh;
+                    transition: .3s ease-in-out;
+                    overflow: hidden;
+                }
+            }
+
+
+
+            .dropdown {
+                position: absolute;
+                width: 160px;
+                border-radius: 8px;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 9;
+                max-height: 0px;
+                overflow: hidden;
+                transition: .3s ease-in-out;
+
+                .dropdownDesign {
+                    border: 1px solid rgba(255, 255, 255, 0.20);
+                    background: #131315;
+                    border-radius: 8px;
+                    padding: 12px;
+
+                    a {
+                        padding: 0 0 14px 0;
+                        display: block;
+                        @include font-normal;
+                        font-size: 14px;
+                        opacity: .8;
+                        transition: 0.3s ease-in-out;
+
+                        &:hover {
+                            opacity: 1;
+                        }
+
+                        &:last-child {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
         }
 
         a {
@@ -110,6 +208,14 @@
             .layer2 {
                 right: -20px;
                 background-color: #0084FF;
+            }
+
+            .rotate {
+                transform: rotate(180deg);
+            }
+
+            img {
+                transition: .3s ease-in-out;
             }
 
             &::after,
