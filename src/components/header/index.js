@@ -99,7 +99,7 @@ export default function Header() {
 							</div>
 						</div>
 					</Link>
-					<Link href="#">News</Link>
+					<Link href="#">Tools</Link>
 					<Link href="mailto:support@securefx.net">Support</Link>
 					<Link href={"#"}>EN</Link>
 				</div>
