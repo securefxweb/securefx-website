@@ -13,32 +13,33 @@ export default function Herobanner() {
 		"And Arrived Here,",
 		"where smart",
 	];
+
 	const [layout, setLayout] = useState({
 		SECTION_HEIGHT: 70,
 		MAX_TRANSLATE: 54,
 		MIN_TRANSLATE: -277,
 	});
 
+	/* -----------------------------
+	 Responsive layout values
+  ----------------------------- */
 	useEffect(() => {
 		const updateLayout = () => {
 			const width = window.innerWidth;
 
 			if (width < 768) {
-				// Mobile
 				setLayout({
 					SECTION_HEIGHT: 55,
 					MAX_TRANSLATE: 75,
 					MIN_TRANSLATE: -78,
 				});
 			} else if (width < 1024) {
-				// Tablet
 				setLayout({
 					SECTION_HEIGHT: 60,
 					MAX_TRANSLATE: 55,
 					MIN_TRANSLATE: -238,
 				});
 			} else {
-				// Desktop
 				setLayout({
 					SECTION_HEIGHT: 70,
 					MAX_TRANSLATE: 54,
@@ -55,7 +56,7 @@ export default function Herobanner() {
 	const { SECTION_HEIGHT, MAX_TRANSLATE, MIN_TRANSLATE } = layout;
 
 	/* -----------------------------
-     Scroll logic
+	 Scroll logic
   ----------------------------- */
 	const { scrollYProgress } = useScroll({
 		target: wrapperRef,
@@ -85,13 +86,25 @@ export default function Herobanner() {
 		}
 	}, [SECTION_HEIGHT, texts.length]);
 
+	/* -----------------------------
+	 Text translate
+  ----------------------------- */
 	const totalTranslate =
 		MAX_TRANSLATE -
-		(MAX_TRANSLATE - MIN_TRANSLATE) * (smoothIndex / (texts.length - 1));
+		(MAX_TRANSLATE - MIN_TRANSLATE) *
+		(smoothIndex / (texts.length - 1));
+
+	/* -----------------------------
+	 Image scale (KEY PART)
+	 No layout change, only transform
+  ----------------------------- */
+	const imageScale =
+		1 + (smoothIndex / (texts.length - 1)) * 0.15; // 1 → 1.15
 
 	return (
 		<div className={styles.mainWrapper} ref={wrapperRef}>
 			<div className={styles.heroInner}>
+				{/* TEXT BLOCK */}
 				<div className={styles.textBlockmain}>
 					<div
 						className={styles.textBlock}
@@ -118,7 +131,8 @@ export default function Herobanner() {
 									style={{
 										opacity,
 										filter: `blur(${blur}px)`,
-										transition: "opacity 0.35s ease, filter 0.35s ease",
+										transition:
+											"opacity 0.35s ease, filter 0.35s ease",
 									}}
 								>
 									{txt}
@@ -128,8 +142,17 @@ export default function Herobanner() {
 					</div>
 				</div>
 
+				{/* IMAGE BLOCK */}
 				<div className={styles.imageWrapper}>
-					<img src="/hero-img.png" alt="Hero" />
+					<img
+						src="/hero-img.png"
+						alt="Hero"
+						style={{
+							transform: `scale(${imageScale})`,
+							transition: "transform 0.25s ease-out",
+							willChange: "transform",
+						}}
+					/>
 				</div>
 			</div>
 		</div>
