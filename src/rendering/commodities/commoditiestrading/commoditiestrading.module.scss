@@ -5,15 +5,30 @@
 .commoditiestrading {
     padding: 70px 0 50px 0;
 
+
     .grid {
         display: grid;
         grid-template-columns: 1fr 391px;
         gap: 56px;
 
+        @include respond-to("sm") {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
         .image {
+            @include respond-to("sm") {
+                display: flex;
+                justify-content: center;
+            }
+
             img {
                 display: block;
                 width: 100%;
+
+                @include respond-to("sm") {
+                    max-width: 286px;
+                }
             }
         }
 
@@ -26,6 +41,13 @@
                 margin: 0 0 16px 0;
                 @include font-medium;
                 @include text-gradient-white;
+
+                @include respond-to("sm") {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                }
             }
 
             p {
@@ -37,6 +59,13 @@
                 line-height: 120%;
                 @include font-normal;
                 margin: 0 0 16px 0;
+
+                @include respond-to("sm") {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
             }
         }
     }
