@@ -137,5 +137,31 @@
 			"color": "#EFBA4E80",
 			"image": "/assets/images/highlight-2.png"
 		}
-	]
+	],
+	"formSteps": {
+		"leftSteps": [
+			{
+				"title": "High-Integrity Trading Environment",
+				"desc": "Committed to transparent operations that protect clients at every level."
+			},
+			{
+				"title": "Trusted by Global Traders",
+				"desc": "Delivering reliable and compliant trading backed by strong governance."
+			}
+		],
+		"rightSteps": [
+			{
+				"title": "Premium Affiliate Structure",
+				"desc": "Designed to support consistent earnings across all market conditions."
+			},
+			{
+				"title": "Transparent Partner Rewards",
+				"desc": "Benefit from clear, reliable commissions with no hidden fees involved."
+			},
+			{
+				"title": "Instant Commission Payouts",
+				"desc": "Receive your affiliate earnings quickly without any delays or deductions."
+			}
+		]
+	}
 }
