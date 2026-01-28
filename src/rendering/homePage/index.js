@@ -18,12 +18,12 @@ export default function Homepage() {
 			<WorldsTrusted formData={"demoAccountform"} />
 			<MobileViewForm />
 			<Slidersection />
-			{/* <WhySecureFx data={highlights} />
+			<WhySecureFx data={highlights} />
 			<ChoosePerfectAccount />
 			<TradeAnywhere />
 			<SeamlessTradingSteps />
 			<TrustedbyTraders />
-			<IntroducingBrokers /> */}
+			<IntroducingBrokers />
 		</div>
 	);
 }

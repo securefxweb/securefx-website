@@ -5,6 +5,10 @@
 .yearDetailsAlignment {
     padding: 0 0 50px 0;
 
+    @include respond-to("sm") {
+        padding: 100px 0 0 0;
+    }
+
     .contentAlignment {
         max-width: 627px;
         margin: 0 auto;
@@ -13,8 +17,16 @@
         width: 100%;
         padding: 0 0 120px 0;
 
+        @include respond-to("sm") {
+            padding: 0 0 80px 0;
+        }
+
         .right {
             max-width: 299px;
+
+            @include respond-to("sm") {
+                max-width: 151px;
+            }
 
             p {
                 color: #FFF;
@@ -24,6 +36,13 @@
                 line-height: 120%;
                 margin: 0 0 16px 0;
                 @include font-medium;
+
+                @include respond-to("sm") {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                }
             }
 
             span {
@@ -34,6 +53,12 @@
                 font-weight: 400;
                 line-height: 120%;
                 @include font-normal;
+
+                @include respond-to("sm") {
+                    font-size: 16px;
+                    font-style: normal;
+                    line-height: 120%;
+                }
             }
         }
 
@@ -55,6 +80,13 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 120%;
+
+                @include respond-to("sm") {
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                }
             }
         }
     }
@@ -73,6 +105,10 @@
             align-items: center;
             gap: 14px;
 
+            @include respond-to("sm") {
+                gap: 6px;
+            }
+
             .line {
                 border-radius: 1px;
                 width: 3px;
@@ -81,9 +117,19 @@
                 transition: .3s ease-in-out;
                 cursor: pointer;
 
+                @include respond-to("sm") {
+                    height: 12px !important;
+                    min-width: 2px;
+                    width: 2px;
+                }
+
                 &:hover {
                     height: 46px;
                     background: #F35A2E;
+
+                    @include respond-to("sm") {
+                        height: 18px !important;
+                    }
                 }
             }
         }
@@ -93,6 +139,10 @@
                 display: block;
                 transform: rotate(180deg);
                 cursor: pointer;
+
+                @include respond-to("sm") {
+                    max-width: 18px;
+                }
             }
         }
 
@@ -100,6 +150,10 @@
             img {
                 display: block;
                 cursor: pointer;
+
+                @include respond-to("sm") {
+                    max-width: 18px;
+                }
             }
         }
     }
