@@ -50,52 +50,44 @@ export default function Header() {
 						About
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<a>About us</a>
-								<a>Regulation</a>
-								<a>Legal Document
-								</a>
-								<a>Security of funds</a>
+								<Link href="/about/#about-secure-fx">Why Securefx</Link>
+								<Link href="/regulations">Regulation</Link>
+								<Link href="/legal-doc">Legal Documents</Link>
+								<Link href="/sec-fund">Security of funds</Link>
 							</div>
 						</div>
 					</Link>
-					<Link className={styles.spacing} href="/about">
+					<Link className={styles.spacing} href="/forex">
 						Trade
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<a>Forex</a>
-								<a>Metal</a>
-								<a>Indices
-								</a>
-								<a>Energy</a>
-								<a>Commodities</a>
-								<a>Mt4/Mt5 Mobile</a>
-								<a>Economic Calendar</a>
-								<a>Calculators</a>
+								<Link href="/forex">Products</Link>
+								<Link href="/trading-platform">Trading Platform</Link>
+								<Link href="/calendar">Economic Calendar</Link>
+								<Link href="/precise-calculations">Calculators</Link>
 							</div>
 						</div>
 					</Link>
-					<Link className={styles.spacing} href="/about">
+					<Link className={styles.spacing} href="/standard-account">
 						Accounts
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<a>Standard</a>
-								<a>Pro</a>
-								<a>RAW
-								</a>
-								<a>ZERO Spread</a>
-								<a>Deposite/Withdraw</a>
+								<Link href="/standard-account">STD</Link>
+								<Link href="/pro-account">PRO</Link>
+								<Link href="/raw-account">RAW</Link>
+								<Link href="/zero-spread-account">ZERO</Link>
 							</div>
 						</div>
 					</Link>
 					<Link href="/">
 						<img src={Logo} alt="Logo" />
 					</Link>
-					<Link className={styles.spacing} href="/about">
+					<Link className={styles.spacing} href="/ib">
 						Partner
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<a>IB</a>
-								<a>Affiliate</a>
+								<Link href="/ib">IB</Link>
+								<Link href="/affiliate">Affiliate</Link>
 							</div>
 						</div>
 					</Link>
