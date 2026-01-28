@@ -52,7 +52,7 @@ export default function DepositData() {
 								<div className={styles.buttonUi}>
 									<div className={styles.layer}></div>
 									<div className={styles.layer2}></div>
-									<span>Make a deposite</span>
+									<span>Make a deposit</span>
 								</div>
 							</div>
 						</motion.div>

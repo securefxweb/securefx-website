@@ -30,7 +30,7 @@ export default function AboutSecureFx() {
 			animate="visible"
 		>
 			<div className="container-md4" id="about-secure-fx">
-				<motion.h2 variants={item}>About Secure Fx</motion.h2>
+				<motion.h2 variants={item}>Empowering Traders Worldwide</motion.h2>
 
 				<motion.p variants={item}>
 					SecureFx is a globally trusted forex broker committed to providing
