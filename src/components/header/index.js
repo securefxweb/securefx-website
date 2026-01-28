@@ -10,6 +10,12 @@ const Logo = "/assets/logo/logo.svg";
 export default function Header() {
 	const pathname = usePathname();
 	const [logindropdown, setLogindropdown] = useState(false);
+	const [activeDropdown, setActiveDropdown] = useState(null);
+
+	const closeDropdowns = () => {
+		setActiveDropdown(null);
+		setLogindropdown(false);
+	};
 	return (
 		<div
 			className={classNames(styles.headerSticky, {
@@ -46,54 +52,54 @@ export default function Header() {
 					</div>
 				</div>
 				<div className={styles.headerAlignment}>
-					<Link className={styles.spacing} href="/about">
-						About
-						<div className={styles.dropdown}>
+					<div className={styles.spacing} onMouseEnter={() => setActiveDropdown('about')} onMouseLeave={() => setActiveDropdown(null)}>
+						<Link href="/about" onClick={closeDropdowns}>About</Link>
+						<div className={classNames(styles.dropdown, activeDropdown === 'about' ? styles.show : '')}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/about/#about-secure-fx">Why Securefx</Link>
-								<Link href="/regulations">Regulation</Link>
-								<Link href="/legal-doc">Legal Documents</Link>
-								<Link href="/sec-fund">Security of funds</Link>
+								<Link href="/about/#about-secure-fx" onClick={closeDropdowns}>Why Securefx</Link>
+								<Link href="/regulations" onClick={closeDropdowns}>Regulation</Link>
+								<Link href="/legal-doc" onClick={closeDropdowns}>Legal Documents</Link>
+								<Link href="/sec-fund" onClick={closeDropdowns}>Security of funds</Link>
 							</div>
 						</div>
-					</Link>
-					<Link className={styles.spacing} href="/forex">
-						Trade
-						<div className={styles.dropdown}>
+					</div>
+					<div className={styles.spacing} onMouseEnter={() => setActiveDropdown('trade')} onMouseLeave={() => setActiveDropdown(null)}>
+						<Link href="/forex" onClick={closeDropdowns}>Trade</Link>
+						<div className={classNames(styles.dropdown, activeDropdown === 'trade' ? styles.show : '')}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/forex">Products</Link>
-								<Link href="/trading-platform">Trading Platform</Link>
-								<Link href="/calendar">Economic Calendar</Link>
-								<Link href="/precise-calculations">Calculators</Link>
+								<Link href="/forex" onClick={closeDropdowns}>Products</Link>
+								<Link href="/trading-platform" onClick={closeDropdowns}>Trading Platform</Link>
+								<Link href="/calendar" onClick={closeDropdowns}>Economic Calendar</Link>
+								<Link href="/precise-calculations" onClick={closeDropdowns}>Calculators</Link>
 							</div>
 						</div>
-					</Link>
-					<Link className={styles.spacing} href="/standard-account">
-						Accounts
-						<div className={styles.dropdown}>
+					</div>
+					<div className={styles.spacing} onMouseEnter={() => setActiveDropdown('accounts')} onMouseLeave={() => setActiveDropdown(null)}>
+						<Link href="/standard-account" onClick={closeDropdowns}>Accounts</Link>
+						<div className={classNames(styles.dropdown, activeDropdown === 'accounts' ? styles.show : '')}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/standard-account">STD</Link>
-								<Link href="/pro-account">PRO</Link>
-								<Link href="/raw-account">RAW</Link>
-								<Link href="/zero-spread-account">ZERO</Link>
+								<Link href="/standard-account" onClick={closeDropdowns}>STD</Link>
+								<Link href="/pro-account" onClick={closeDropdowns}>PRO</Link>
+								<Link href="/raw-account" onClick={closeDropdowns}>RAW</Link>
+								<Link href="/zero-spread-account" onClick={closeDropdowns}>ZERO</Link>
 							</div>
 						</div>
-					</Link>
-					<Link href="/">
+					</div>
+					<Link href="/" onClick={closeDropdowns}>
 						<img src={Logo} alt="Logo" />
 					</Link>
-					<Link className={styles.spacing} href="/ib">
-						Partner
-						<div className={styles.dropdown}>
+					<div className={styles.spacing} onMouseEnter={() => setActiveDropdown('partner')} onMouseLeave={() => setActiveDropdown(null)}>
+						<Link href="/ib" onClick={closeDropdowns}>Partner</Link>
+						<div className={classNames(styles.dropdown, activeDropdown === 'partner' ? styles.show : '')}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/ib">IB</Link>
-								<Link href="/affiliate">Affiliate</Link>
+								<Link href="/ib" onClick={closeDropdowns}>IB</Link>
+								<Link href="/affiliate" onClick={closeDropdowns}>Affiliate</Link>
 							</div>
 						</div>
-					</Link>
-					<Link href="#">Tools</Link>
-					<Link href="mailto:support@securefx.net">Support</Link>
-					<Link href={"#"}>EN</Link>
+					</div>
+					<Link href="#" onClick={closeDropdowns}>Tools</Link>
+					<Link href="mailto:support@securefx.net" onClick={closeDropdowns}>Support</Link>
+					<Link href={"#"} onClick={closeDropdowns}>EN</Link>
 				</div>
 			</header >
 		</div >
