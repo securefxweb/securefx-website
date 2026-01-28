@@ -7,6 +7,27 @@
     padding-bottom: 0;
     scroll-margin-top: 120px;
 
+    @include respond-to("sm") {
+        padding: 0 20px;
+    }
+
+    .mobilehide {
+        @include respond-to("sm") {
+            display: none;
+        }
+    }
+
+    .mobileShow {
+        display: none;
+
+        @include respond-to("sm") {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 60px;
+            padding: 0 0 60px 0;
+        }
+    }
+
     .iconCenter {
         display: flex;
         justify-content: center;
@@ -14,6 +35,10 @@
 
         img {
             display: block;
+
+            @include respond-to("sm") {
+                max-width: 140px;
+            }
         }
     }
 
@@ -26,6 +51,14 @@
         line-height: 130%;
         margin: 0 0 20px 0;
         @include font-medium;
+
+        @include respond-to("sm") {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%;
+            margin: 0 0 12px 0;
+        }
     }
 
     p {
@@ -39,6 +72,13 @@
         min-height: 68px;
         @include font-normal;
         margin: 0 auto;
+
+        @include respond-to("sm") {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 120%;
+        }
     }
 
 }

@@ -6,6 +6,10 @@
     padding: 0 0 120px 0;
     scroll-margin-top: 120px;
 
+    @include respond-to("sm") {
+        padding: 0 0 80px 0;
+    }
+
     h2 {
         color: #FFF;
         text-align: center;
@@ -16,6 +20,10 @@
         @include font-medium;
         text-align: center;
         margin: 0 0 20px 0;
+
+        @include respond-to("sm") {
+            margin: 0 0 12px 0;
+        }
     }
 
     p {
@@ -28,6 +36,15 @@
         max-width: 777px;
         margin: 0 auto 24px auto;
         @include font-normal;
+
+        @include respond-to("sm") {
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            margin: 0 auto 12px auto;
+        }
 
         &.sec {
             max-width: 665px;
