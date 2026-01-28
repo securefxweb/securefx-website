@@ -32,7 +32,7 @@ export default function ZeroSpreadAccountBanner({ data }) {
 
 							<h1>{data.title}</h1>
 							<p>{data.description}</p>
-							<Button text="Open Zero Spread Account" />
+							<Button className={styles.mobileHide} text="Open Zero Spread Account" />
 						</motion.div>
 
 						<motion.div
@@ -49,6 +49,8 @@ export default function ZeroSpreadAccountBanner({ data }) {
 						>
 							<img src={data.image} alt="AccountImage" />
 						</motion.div>
+						<Button className={styles.mobileShow} text="Open Zero Spread Account" />
+
 					</div>
 				</div>
 			</div>
