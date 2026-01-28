@@ -33,7 +33,7 @@ export default function LegalDocBanner({ data }) {
 
 							<h1>{data?.title}</h1>
 
-							<Button text="Start Secure Trading" />
+							<Button className={styles.mobileHide} text="Start Secure Trading" />
 						</motion.div>
 
 						<motion.div
@@ -50,6 +50,7 @@ export default function LegalDocBanner({ data }) {
 						>
 							<img src={data?.image} alt="AccountImage" />
 						</motion.div>
+						<Button className={styles.mobileShow} text="Start Secure Trading" />
 					</div>
 				</div>
 			</div>

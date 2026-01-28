@@ -7,6 +7,10 @@
     padding: 40px 0;
     position: relative;
 
+    @include respond-to("sm") {
+        padding: 40px 0 0 0;
+    }
+
     &::before {
         position: absolute;
         width: 200px;
@@ -17,6 +21,13 @@
         content: '';
         background: #EFBA4E;
         filter: blur(127px);
+
+        @include respond-to("sm") {
+            top: 0;
+            transform: none;
+            width: 100px;
+            height: 100px;
+        }
     }
 
     &::after {
@@ -29,12 +40,26 @@
         content: '';
         background: #3C75FE;
         filter: blur(127px);
+
+        @include respond-to("sm") {
+            top: inherit;
+            bottom: 0;
+            right: 0;
+            transform: none;
+            width: 100px;
+            height: 100px;
+        }
     }
 
     .grid {
         display: grid;
         grid-template-columns: 1fr 306px;
         gap: 40px;
+
+        @include respond-to("sm") {
+            grid-template-columns: 1fr;
+            gap: 80px;
+        }
 
         h2 {
             max-width: 630px;
@@ -45,14 +70,45 @@
             margin: 0 0 16px 0;
             @include font-medium;
             @include text-gradient-white;
+
+            @include respond-to("sm") {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+            }
+        }
+
+        .mobileShow {
+            display: none;
+
+            @include respond-to("sm") {
+                display: block;
+            }
+
+            .buttonwidth {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
         .buttonAlignment {
             max-width: 183px;
 
+            @include respond-to("sm") {
+                width: 100%;
+                display: none;
+                max-width: 100%;
+            }
+
+            a {
+                @include respond-to("sm") {
+                    display: block;
+                }
+            }
+
             div:first-child {
                 width: 100%;
-                justify-content: center;
                 background: rgba(0, 0, 0, 0.06);
             }
         }

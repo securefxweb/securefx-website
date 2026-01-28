@@ -5,10 +5,19 @@
 .energyTrading {
     padding: 70px 0 20px 0;
 
+    @include respond-to("sm") {
+        padding: 80px 0;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 1fr 445px;
         gap: 50px;
+
+        @include respond-to("sm") {
+            grid-template-columns: 1fr;
+            gap: 35px;
+        }
 
         .image {
             img {
@@ -26,6 +35,13 @@
                 margin: 0 0 16px 0;
                 @include font-medium;
                 @include text-gradient-white;
+
+                @include respond-to("sm") {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                }
             }
 
             p {
@@ -37,6 +53,13 @@
                 line-height: 120%;
                 @include font-normal;
                 margin: 0 0 16px 0;
+
+                @include respond-to("sm") {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
             }
         }
     }

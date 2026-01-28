@@ -53,14 +53,13 @@ export default function FlipCardSection() {
 
 	return (
 		<div className={styles.flipCardSection}>
-			<Marquee>
+			<Marquee pauseOnHover autoFill>
 				{displayData.map((currency, i) => {
 					return (
 						<motion.div
 							key={`${currency.pair}-${i}`}
-							className={`${styles.card} ${
-								i % 2 === 1 ? styles.cardChange : ""
-							}`}
+							className={`${styles.card} ${i % 2 === 1 ? styles.cardChange : ""
+								}`}
 							whileHover={{ rotateY: 180 }}
 							transition={{ duration: 0.6, ease: "easeInOut" }}
 						>

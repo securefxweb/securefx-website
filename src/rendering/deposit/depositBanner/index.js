@@ -37,7 +37,7 @@ export default function DepositBanner() {
 								Choose the method that suits you best, move money instantly and
 								trade with confidence without waiting.
 							</p>
-							<Button text="Begin Now" />
+							<Button text="Begin Now" className={styles.mobileHide} />
 						</motion.div>
 
 						<motion.div
@@ -54,6 +54,8 @@ export default function DepositBanner() {
 						>
 							<img src={PrintImage} alt="PrintImage" />
 						</motion.div>
+						<Button text="Begin Now" className={styles.mobileShow} />
+
 					</div>
 				</div>
 			</div>

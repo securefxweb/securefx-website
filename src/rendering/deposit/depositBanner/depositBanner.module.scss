@@ -3,10 +3,21 @@
 @use '../../../scss/font/font.scss' as *;
 
 .depositBanner {
+    :global(.container-lg) {
+        padding: 0;
+    }
 
     .box {
         padding: 160px 70px 62px 70px;
         position: relative;
+
+        @include respond-to("md") {
+            padding: 60px 40px 60px 40px;
+        }
+
+        @include respond-to("sm") {
+            padding: 70px 16px 46px 16px;
+        }
 
         &::before {
             position: absolute;
@@ -22,9 +33,39 @@
         }
 
         .image {
+            @include respond-to("sm") {
+                display: flex;
+                justify-content: center;
+            }
+
             img {
                 max-width: 372px;
                 display: block;
+
+                @include respond-to("sm") {
+                    max-width: 314px;
+                }
+            }
+        }
+
+        .mobileHide {
+            background: rgba(255, 255, 255, 0.06);
+
+            @include respond-to("sm") {
+                display: none;
+            }
+        }
+
+        .mobileShow {
+            display: none;
+            background: rgba(255, 255, 255, 0.06);
+            margin: 40px 0 0 0;
+
+            @include respond-to("sm") {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.06);
             }
         }
 
@@ -32,6 +73,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @include respond-to("sm") {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
 
             h1 {
                 color: #FFF;
@@ -42,6 +89,13 @@
                 margin: 0 0 16px 0;
                 max-width: 434px;
                 @include font-medium;
+
+                @include respond-to("sm") {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                }
             }
 
             p {
@@ -53,6 +107,10 @@
                 line-height: 22px;
                 max-width: 434px;
                 @include font-normal;
+
+                @include respond-to("sm") {
+                    margin: 0 0 40px 0;
+                }
             }
 
             .outlineButton {

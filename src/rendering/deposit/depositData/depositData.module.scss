@@ -5,6 +5,10 @@
 .depositDatasection {
     padding: 120px 0;
 
+    @include respond-to("sm") {
+        padding: 80px 0;
+    }
+
     .box {
         background-image: url('/assets/images/bg-banner.png');
         width: 100%;
@@ -13,11 +17,21 @@
         border-radius: 8px;
         padding: 40px 80px;
 
+        @include respond-to("sm") {
+            padding: 24px 8px;
+        }
+
         .buttonCenterAlignment {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 16px;
+
+            @include respond-to("sm") {
+                overflow: auto;
+                justify-content: flex-start;
+                scrollbar-width: none;
+            }
 
             .buttonUi {
                 position: relative;
@@ -40,6 +54,12 @@
                 justify-content: center;
                 backdrop-filter: blur(100px);
                 transition: 0.3s ease-in-out;
+
+                @include respond-to("sm") {
+                    white-space: nowrap;
+                    width: 100%;
+                    min-width: 140px;
+                }
 
                 .layer,
                 .layer2 {
@@ -111,6 +131,12 @@
         .allDataAlignment {
             padding: 56px 0;
 
+            @include respond-to("sm") {
+                width: 100%;
+                overflow: auto;
+                scrollbar-width: none;
+            }
+
             table {
                 width: 100%;
                 border-collapse: collapse;
@@ -141,6 +167,14 @@
                             font-style: normal;
                             font-weight: 500;
                             line-height: 130%;
+
+                            @include respond-to("sm") {
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 130%;
+                                padding: 10px;
+                            }
                         }
                     }
                 }
@@ -181,6 +215,14 @@
                             font-weight: 400;
                             line-height: 130%;
 
+                            @include respond-to("sm") {
+                                padding: 10px;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 130%;
+                            }
+
                             p {
                                 max-width: 253px;
                             }
@@ -200,6 +242,13 @@
             gap: 25px;
             justify-content: space-between;
 
+            @include respond-to("sm") {
+                gap: 16px;
+                overflow: auto;
+                padding: 4px;
+                scrollbar-width: none;
+            }
+
             .buttonUi {
                 position: relative;
                 padding: 6px 24px 6px 6px;
@@ -218,6 +267,11 @@
                 overflow: hidden;
                 background: transparent;
                 transition: 0.3s ease-in-out;
+
+                @include respond-to("sm") {
+                    min-width: 140px;
+                    font-size: 12px;
+                }
 
                 &.activeButton {
                     background: rgba(255, 255, 255, 0.04);

@@ -47,6 +47,11 @@ export default function ExperienceSecureFx() {
                 <Button text="Become an IB" />
               </Link>
             </div>
+            <div className={styles.mobileShow}>
+              <Link href="/ib">
+                <Button text="Become an IB" className={styles.buttonwidth} />
+              </Link>
+            </div>
           </motion.div>
 
           <motion.div

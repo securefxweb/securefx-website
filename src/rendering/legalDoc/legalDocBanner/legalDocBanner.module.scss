@@ -3,9 +3,22 @@
 @use "../../../scss/font/font.scss" as *;
 
 .legalDocBanner {
+
+  :global(.container-lg) {
+    padding: 0;
+  }
+
   .box {
     padding: 160px 70px 62px 70px;
     position: relative;
+
+    @include respond-to("md") {
+      padding: 120px 40px 60px 40px;
+    }
+
+    @include respond-to("sm") {
+      padding: 46px 16px;
+    }
 
     &::before {
       position: absolute;
@@ -20,10 +33,38 @@
       opacity: 0.1;
     }
 
+
     .image {
+      @include respond-to("sm") {
+        display: flex;
+        padding: 0 0 16px 0;
+        justify-content: center;
+      }
+
       img {
         max-width: 350px;
         display: block;
+
+        @include respond-to("sm") {
+          max-width: 275px;
+        }
+      }
+    }
+
+    .mobileHide {
+      @include respond-to("sm") {
+        display: none;
+      }
+    }
+
+    .mobileShow {
+      display: none;
+
+      @include respond-to("sm") {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.06);
       }
     }
 
@@ -31,6 +72,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @include respond-to("sm") {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
 
       h1 {
         color: #fff;
@@ -41,6 +88,12 @@
         margin: 0 0 52px 0;
         @include font-medium;
         max-width: 521px;
+
+        @include respond-to("sm") {
+          @include heading24;
+          max-width: 250px;
+        }
+
       }
 
       .outlineButton {
@@ -70,11 +123,9 @@
           inset: 0;
           padding: 1px;
           border-radius: 6px;
-          background: linear-gradient(
-            90deg,
-            rgba(249, 92, 47, 0.6),
-            rgba(147, 54, 28, 0.06)
-          );
+          background: linear-gradient(90deg,
+              rgba(249, 92, 47, 0.6),
+              rgba(147, 54, 28, 0.06));
           -webkit-mask: linear-gradient(#fff 0 0) content-box,
             linear-gradient(#fff 0 0);
           -webkit-mask-composite: xor;
