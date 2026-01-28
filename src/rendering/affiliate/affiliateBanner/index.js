@@ -1,6 +1,7 @@
 "use client";
 import styles from "./affiliateBanner.module.scss";
 import Button from "@/components/button";
+import classNames from "classnames";
 import { motion } from "framer-motion";
 const AccountImage = "/assets/images/pro-account.png";
 export default function AffiliateBanner({ data }) {
@@ -33,7 +34,7 @@ export default function AffiliateBanner({ data }) {
 
 							<h1>{data.title}</h1>
 							<p>{data.description}</p>
-							<Button text="Affiliate" className={styles.buttonWidth} />
+							<Button text="Affiliate" className={classNames(styles.mobileHide, styles.buttonWidth)} />
 						</motion.div>
 
 						<motion.div
@@ -50,6 +51,8 @@ export default function AffiliateBanner({ data }) {
 						>
 							<img src={data.image} alt="AccountImage" />
 						</motion.div>
+						<Button text="Affiliate" className={classNames(styles.mobileShow)} />
+
 					</div>
 				</div>
 			</div>

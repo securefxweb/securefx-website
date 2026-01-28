@@ -6,8 +6,16 @@
     padding: 120px 0;
     overflow-x: hidden;
 
+    @include respond-to("sm") {
+        padding: 80px 0;
+    }
+
     .title {
         padding: 0 0 100px 0;
+
+        @include respond-to("sm") {
+            padding: 0 0 50px 0;
+        }
 
         h2 {
             color: #FFF;
@@ -17,6 +25,14 @@
             font-weight: 500;
             line-height: 120%;
             @include font-medium;
+
+            @include respond-to("sm") {
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 120%;
+            }
         }
     }
 
@@ -24,6 +40,25 @@
         .mainSpacing {
             transform: scale(1.1);
             margin-top: -20px;
+
+            @include respond-to("sm") {
+                margin-top: -10px;
+                transform: scale(1.02);
+            }
+
+            .card {
+
+                .mainTitle {
+                    p {
+                        transform: translateY(0%);
+                    }
+
+                    h3 {
+                        transform: translateY(-150%);
+                    }
+
+                }
+            }
         }
     }
 
@@ -37,6 +72,10 @@
         transition: .3s ease-in-out;
         overflow: hidden;
         width: 100%;
+
+        @include respond-to("sm") {
+            height: 350px;
+        }
     }
 
     .card {
@@ -45,6 +84,10 @@
         border-radius: 12px;
         transition: .3s ease-in-out;
         position: relative;
+
+        @include respond-to("sm") {
+            height: 350px;
+        }
 
         &:hover {
             .mainTitle {
@@ -81,13 +124,20 @@
                 transition: .3s ease-in-out;
                 @include font-medium;
                 line-height: 120%;
+
+                @include respond-to("sm") {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 120%;
+                }
             }
 
             p {
                 color: #FFF;
                 font-size: 18px;
                 position: absolute;
-                padding: 0 20px 20px 20px;
+                margin: 10px 20px 20px 20px;
                 left: 0;
                 bottom: 0;
                 transition: .3s ease-in-out;
@@ -95,8 +145,19 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 120%;
-                margin: 8px 0 0 0;
                 @include font-normal;
+
+                @include respond-to("sm") {
+                    color: #FFF;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                }
             }
         }
 
@@ -124,6 +185,10 @@
         gap: 40px;
         justify-content: center;
         padding: 40px 0 0 0;
+
+        @include respond-to("sm") {
+            padding: 28px 0 0 0;
+        }
 
         button {
             background: transparent;

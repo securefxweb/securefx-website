@@ -27,7 +27,7 @@ const steps = [
     desc: "Our multilingual team stands ready around the clock to assist, guide, and resolve, wherever you trade.",
   },
 ];
-export default function MobileViewForm({ spaceremove }) {
+export default function MobileViewForm({ spaceremove , allSpaceRemove }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [startX, setStartX] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
@@ -80,7 +80,7 @@ export default function MobileViewForm({ spaceremove }) {
   };
 
   return (
-    <div className={classNames(styles.mobileViewForm, spaceremove ? styles.spaceRemove : "")}>
+    <div className={classNames(styles.mobileViewForm, spaceremove ? styles.spaceRemove : "" , allSpaceRemove ? styles.allSpaceRemove : "")}>
       <div className={styles.sliderContainer}>
         <div
           className={styles.contentAlignment}

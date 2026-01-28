@@ -64,7 +64,7 @@ export default function OurAffiliate({ data }) {
 						spaceBetween: 15,
 					},
 					0: {
-						slidesPerView: 1.1,
+						slidesPerView: 1.4,
 						spaceBetween: 10,
 					},
 				}}
