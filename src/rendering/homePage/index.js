@@ -9,19 +9,21 @@ import TradeAnywhere from "./tradeAnywhere";
 import SeamlessTradingSteps from "./seamlessTradingSteps";
 import TrustedbyTraders from "./trustedbyTraders";
 import IntroducingBrokers from "./introducingBrokers";
+import MobileViewForm from "./mobileViewForm";
 import { highlights } from "@/constants/data";
 export default function Homepage() {
 	return (
 		<div>
 			<Herobanner />
-			<WorldsTrusted formData ={"demoAccountform"} />
+			<WorldsTrusted formData={"demoAccountform"} />
+			<MobileViewForm />
 			<Slidersection />
-			<WhySecureFx data={highlights} />
+			{/* <WhySecureFx data={highlights} />
 			<ChoosePerfectAccount />
 			<TradeAnywhere />
 			<SeamlessTradingSteps />
 			<TrustedbyTraders />
-			<IntroducingBrokers />
+			<IntroducingBrokers /> */}
 		</div>
 	);
 }

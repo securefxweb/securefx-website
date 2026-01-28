@@ -1,0 +1,50 @@
+@use "../../../scss/main.scss" as *;
+@use "../../../scss/breakpoints/breakpoints.scss" as *;
+@use "../../../scss/font/font.scss" as *;
+
+.mobileViewForm {
+    padding: 80px 0;
+    display: none;
+
+    @include respond-to("sm") {
+        display: block;
+    }
+
+    .contentAlignment {
+        padding: 0 16px;
+        display: flex;
+        overflow: auto;
+        gap: 20px;
+        scrollbar-width: none;
+
+        .items {
+            max-width: 275px;
+            width: 275px;
+            min-width: 275px;
+
+            h2 {
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                margin: 0 0 16px 0;
+                line-height: 120%;
+                @include font-medium;
+            }
+
+            p {
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%;
+                @include font-normal;
+                padding: 16px 0 0 0;
+            }
+
+            img {
+                display: block;
+            }
+        }
+    }
+}

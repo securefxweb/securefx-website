@@ -9,11 +9,16 @@
   max-width: 1200px;
   margin: 0 auto;
 
+  @include respond-to("sm") {
+    display: none;
+  }
+
   .sticky {
     position: sticky;
     top: 120px;
     display: flex;
     overflow: hidden;
+
   }
 
   .grid {

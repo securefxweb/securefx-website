@@ -7,6 +7,7 @@
 
     @include respond-to("sm") {
         overflow: clip;
+        padding: 40px 0 20px 0;
     }
 
     .title {
@@ -21,6 +22,18 @@
             @include font-medium;
             line-height: 110%;
 
+
+            @include respond-to("sm") {
+                color: #FFF;
+                text-align: center;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 500;
+                max-width: 244px;
+                margin: 0 auto;
+                line-height: 110%;
+            }
+
             span {
                 color: #EFBA4E;
             }
@@ -31,6 +44,12 @@
         display: flex;
         justify-content: space-between;
 
+        @include respond-to("sm") {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px 16px;
+        }
+
         h3 {
             text-align: center;
             font-size: 48px;
@@ -40,6 +59,13 @@
             @include text-gradient-primary;
             margin: 0 0 10px 0;
             @include font-medium;
+
+            @include respond-to("sm") {
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%;
+            }
         }
 
         p {
@@ -50,6 +76,15 @@
             font-weight: 400;
             line-height: 120%;
             @include font-normal;
+
+            @include respond-to("sm") {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                max-width: 132px;
+                margin: 0 auto;
+                line-height: 120%;
+            }
         }
     }
 }
