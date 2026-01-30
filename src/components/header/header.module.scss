@@ -97,6 +97,7 @@
                     max-height: 100vh;
                     transition: .3s ease-in-out;
                     overflow: hidden;
+                    opacity: 1;
                 }
             }
 
@@ -106,6 +107,7 @@
                 position: absolute;
                 width: 160px;
                 border-radius: 8px;
+                opacity: 0;
                 top: 50px;
                 left: 50%;
                 transform: translateX(-50%);
