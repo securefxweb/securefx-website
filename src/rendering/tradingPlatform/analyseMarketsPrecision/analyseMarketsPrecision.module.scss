@@ -82,6 +82,11 @@
         padding: 36px 16px;
         border: 1px solid rgba(255, 255, 255, 0.10);
         background: rgba(255, 255, 255, 0.04);
+        display: none;
+
+        @include respond-to("sm") {
+            display: block;
+        }
     }
 
     .roundBorder {

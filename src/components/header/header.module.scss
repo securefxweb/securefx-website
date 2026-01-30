@@ -114,6 +114,22 @@
                 overflow: hidden;
                 transition: .3s ease-in-out;
 
+                &.dropdownStyling {
+                    width: 210px;
+
+                    p {
+                        font-size: 15px;
+                        color: #fff;
+                        @include font-medium;
+                        margin: 0 0 10px 0;
+                    }
+
+                    .leftAlignment {
+                        padding-left: 14px;
+                        padding-bottom: 10px;
+                    }
+                }
+
                 .dropdownDesign {
                     border: 1px solid rgba(255, 255, 255, 0.20);
                     background: #131315;
@@ -121,7 +137,7 @@
                     padding: 12px;
 
                     a {
-                        padding: 0 0 14px 0;
+                        padding: 0 0 10px 0;
                         display: block;
                         @include font-normal;
                         font-size: 14px;

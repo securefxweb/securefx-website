@@ -50,7 +50,7 @@ export default function Header() {
 						About
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/about/#about-secure-fx">Why Securefx</Link>
+								<Link href="/about">Why Securefx</Link>
 								<Link href="/regulations">Regulation</Link>
 								<Link href="/legal-doc">Legal Documents</Link>
 								<Link href="/sec-fund">Security of funds</Link>
@@ -59,10 +59,28 @@ export default function Header() {
 					</Link>
 					<Link className={styles.spacing} href="/forex">
 						Trade
-						<div className={styles.dropdown}>
+						<div className={classNames(styles.dropdown, styles.dropdownStyling)}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/forex">Products</Link>
+								<p>
+									Products
+								</p>
+								{/* <Link href="/forex">Products</Link>
 								<Link href="/trading-platform">Trading Platform</Link>
+								<Link href="/calendar">Economic Calendar</Link>
+								<Link href="/precise-calculations">Calculators</Link> */}
+								<div className={styles.leftAlignment}>
+									<Link href="/forex">Forex</Link>
+									<Link href="/metals">Metal</Link>
+									<Link href="/indices">Indices</Link>
+									<Link href="/energy">Energy</Link>
+									<Link href="/commodities">Commodities</Link>
+								</div>
+								<p>
+									Treading Platform
+								</p>
+								<div className={styles.leftAlignment}>
+									<Link href="/trading-platform">Mt4/Mt5 Mobile</Link>
+								</div>
 								<Link href="/calendar">Economic Calendar</Link>
 								<Link href="/precise-calculations">Calculators</Link>
 							</div>
@@ -72,10 +90,11 @@ export default function Header() {
 						Accounts
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/standard-account">STD</Link>
-								<Link href="/pro-account">PRO</Link>
+								<Link href="/standard-account">Standard</Link>
+								<Link href="/pro-account">Pro</Link>
 								<Link href="/raw-account">RAW</Link>
-								<Link href="/zero-spread-account">ZERO</Link>
+								<Link href="/zero-spread-account">ZERO Spread</Link>
+								<Link href="/deposit">Deposite/Withdraw</Link>
 							</div>
 						</div>
 					</Link>
