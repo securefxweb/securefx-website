@@ -46,8 +46,8 @@ export default function Header() {
 					</div>
 				</div>
 				<div className={styles.headerAlignment}>
-					<Link className={styles.spacing} href="/about">
-						About
+					<div className={styles.spacing}>
+						<Link href="/about">About</Link>
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
 								<Link href="/about">Why Securefx</Link>
@@ -56,18 +56,14 @@ export default function Header() {
 								<Link href="/sec-fund">Security of funds</Link>
 							</div>
 						</div>
-					</Link>
-					<Link className={styles.spacing} href="/forex">
-						Trade
+					</div>
+					<div className={styles.spacing}>
+						<Link className={styles.spacing} href="/forex">Trade</Link>
 						<div className={classNames(styles.dropdown, styles.dropdownStyling)}>
 							<div className={styles.dropdownDesign}>
 								<p>
 									Products
 								</p>
-								{/* <Link href="/forex">Products</Link>
-								<Link href="/trading-platform">Trading Platform</Link>
-								<Link href="/calendar">Economic Calendar</Link>
-								<Link href="/precise-calculations">Calculators</Link> */}
 								<div className={styles.leftAlignment}>
 									<Link href="/forex">Forex</Link>
 									<Link href="/metals">Metal</Link>
@@ -85,9 +81,9 @@ export default function Header() {
 								<Link href="/precise-calculations">Calculators</Link>
 							</div>
 						</div>
-					</Link>
-					<Link className={styles.spacing} href="/standard-account">
-						Accounts
+					</div>
+					<div className={styles.spacing}>
+						<Link className={styles.spacing} href="/standard-account">Accounts</Link>
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
 								<Link href="/standard-account">Standard</Link>
@@ -97,22 +93,22 @@ export default function Header() {
 								<Link href="/deposit">Deposite/Withdraw</Link>
 							</div>
 						</div>
-					</Link>
+					</div>
 					<Link href="/">
 						<img src={Logo} alt="Logo" />
 					</Link>
-					<Link className={styles.spacing} href="/ib">
-						Partner
+					<div className={styles.spacing}>
+						<Link className={styles.spacing} href="/ib">Partner</Link>
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
 								<Link href="/ib">IB</Link>
 								<Link href="/affiliate">Affiliate</Link>
 							</div>
 						</div>
-					</Link>
+					</div>
 					<Link href="#">Tools</Link>
 					<Link href="mailto:support@securefx.net">Support</Link>
-					<Link href={"#"}>EN</Link>
+					{/* <Link href={"#"}>EN</Link> */}
 				</div>
 			</header >
 		</div >

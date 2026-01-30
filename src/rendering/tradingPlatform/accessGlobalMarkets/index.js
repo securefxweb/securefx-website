@@ -19,7 +19,7 @@ export default function AccessGlobalMarkets({ data }) {
 					</p>
 				</div>
 			</div>
-			<Marquee>
+			<Marquee pauseOnHover>
 				{[...Array(12)].map((_, i) => {
 					const currency = currencyData[i % currencyData.length];
 					return (

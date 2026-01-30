@@ -1,4 +1,5 @@
-import Header from "@/components/header";
+import dynamic from 'next/dynamic'
+const Header = dynamic(() => import('@/components/header'))
 import SmokeEffect from "@/components/smokeEffect/SmokeEffect";
 import "./globals.css";
 import "swiper/css";
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body>
 				<Header />
-				<div>
+				<>
 					<MobileHeader />
 					{children}
 					<ChooseWhere />
@@ -39,7 +40,7 @@ export default function RootLayout({ children }) {
 						}}
 					/>
 					<SmokeEffect />
-				</div>
+				</>
 			</body>
 		</html>
 	);
