@@ -1,10 +1,11 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./whySecureFx.module.scss";
 import BlueDot from "@/icons/bluedot";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 const ArrowIcon = "/assets/icons/left-arrow.svg";
+const AUTO_PLAY_DELAY = 5000;
 
 export default function WhySecureFx({ data }) {
 	const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,11 +14,39 @@ export default function WhySecureFx({ data }) {
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true, margin: "-150px" });
 
-	const fadeUp = {
-		hidden: { opacity: 0, y: 60, scale: 0.95 },
-		show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.8 } },
+	const progressControls = useAnimation();
+	const intervalRef = useRef(null);
+
+	/* ------------------ PROGRESS ------------------ */
+	const startProgress = () => {
+		progressControls.stop();
+		progressControls.set({ width: "0%" });
+		progressControls.start({
+			width: "100%",
+			transition: { duration: 5, ease: "linear" },
+		});
 	};
 
+	/* ------------------ AUTOPLAY ------------------ */
+	const forceNext = () => {
+		setCurrentIndex((prev) => (prev + 1) % data.length);
+	};
+
+	useEffect(() => {
+		if (!isInView) return;
+
+		startProgress();
+
+		intervalRef.current = setInterval(() => {
+			forceNext();
+		}, AUTO_PLAY_DELAY);
+
+		return () => {
+			clearInterval(intervalRef.current);
+		};
+	}, [currentIndex, isInView]);
+
+	/* ------------------ MANUAL CONTROLS ------------------ */
 	const next = () => {
 		if (isTransitioning) return;
 		setIsTransitioning(true);
@@ -32,6 +61,7 @@ export default function WhySecureFx({ data }) {
 		setTimeout(() => setIsTransitioning(false), 500);
 	};
 
+	/* ------------------ CARD POSITION ------------------ */
 	const getCardPosition = (index) => {
 		let diff = index - currentIndex;
 
@@ -39,34 +69,13 @@ export default function WhySecureFx({ data }) {
 		if (diff < -data.length / 2) diff += data.length;
 
 		if (diff === 0) {
-			return {
-				x: 0,
-				y: 0,
-				rotate: 0,
-				scale: 1,
-				opacity: 1,
-				zIndex: 10,
-			};
+			return { x: 0, y: 0, rotate: 0, scale: 1, opacity: 1, zIndex: 10 };
 		}
 		if (diff === -1) {
-			return {
-				x: -280,
-				y: 45,
-				rotate: -12,
-				scale: 0.85,
-				opacity: 0.6,
-				zIndex: 5,
-			};
+			return { x: -280, y: 45, rotate: -12, scale: 0.85, opacity: 0.6, zIndex: 5 };
 		}
 		if (diff === 1) {
-			return {
-				x: 280,
-				y: 45,
-				rotate: 12,
-				scale: 0.85,
-				opacity: 0.6,
-				zIndex: 5,
-			};
+			return { x: 280, y: 45, rotate: 12, scale: 0.85, opacity: 0.6, zIndex: 5 };
 		}
 
 		return {
@@ -82,12 +91,7 @@ export default function WhySecureFx({ data }) {
 	return (
 		<div className={styles.whySecureFxSection} ref={ref}>
 			<div className="container" id="why-secure-fx">
-				<motion.div
-					variants={fadeUp}
-					initial="hidden"
-					animate={isInView ? "show" : "hidden"}
-					className={styles.sectiontitle}
-				>
+				<div className={styles.sectiontitle}>
 					<h2>
 						Why <span>Secure FX</span>
 					</h2>
@@ -95,9 +99,8 @@ export default function WhySecureFx({ data }) {
 						Empowering traders worldwide with innovative tools, secure fund
 						management, and proven market expertise.
 					</p>
-				</motion.div>
+				</div>
 
-				{/* SLIDER CENTERED */}
 				<div className={styles.centerBox}>
 					<div className={styles.sliderWrap}>
 						{data.map((card, index) => (
@@ -109,12 +112,21 @@ export default function WhySecureFx({ data }) {
 								style={{ "--gradient-color": card.color }}
 								onClick={() => !isTransitioning && setCurrentIndex(index)}
 							>
+								{/* PROGRESS */}
+								<div className={styles.topline}>
+									{index === currentIndex && (
+										<motion.span
+											className={styles.progress}
+											animate={progressControls}
+										/>
+									)}
+								</div>
+
 								<div className={styles.sapcing}>
 									<div className={styles.cardheader}>
 										<BlueDot color={card.color.slice(0, 7)} />
 										<span>{card.title}</span>
 									</div>
-
 									<h3>{card.subtitle}</h3>
 									<p>{card.description}</p>
 								</div>
@@ -127,12 +139,10 @@ export default function WhySecureFx({ data }) {
 					</div>
 				</div>
 
-				{/* NAVIGATION */}
 				<div className={styles.arrowCenterAlignment}>
 					<button onClick={prev}>
 						<img src={ArrowIcon} alt="Previous" />
 					</button>
-
 					<button onClick={next} style={{ transform: "rotate(180deg)" }}>
 						<img src={ArrowIcon} alt="Next" />
 					</button>
