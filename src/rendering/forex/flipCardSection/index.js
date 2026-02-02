@@ -53,7 +53,7 @@ export default function FlipCardSection() {
 
 	return (
 		<div className={styles.flipCardSection}>
-			<Marquee pauseOnHover autoFill>
+			<Marquee pauseOnHover>
 				{displayData.map((currency, i) => {
 					return (
 						<motion.div

@@ -5,6 +5,8 @@ import MenuIcon from "../../icons/menuIcon";
 const Logo = "/assets/logo/logo.svg";
 import Link from "next/link";
 import classNames from "classnames";
+import Button from "@/components/button";
+
 
 export default function MobileHeader() {
 	const [headerOpen, setHeaderOpen] = useState(false);
@@ -103,6 +105,9 @@ export default function MobileHeader() {
 					<div className={styles.textIconAlignment}>
 						<Link href="#" className={styles.lgText}>EN</Link>
 					</div>
+				</div>
+				<div className={styles.mobileSidebarFooter}>
+					<Button className={styles.widthfull} text="Login" />
 				</div>
 			</div>
 		</>

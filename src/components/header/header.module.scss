@@ -36,6 +36,7 @@
         width: 160px;
         border-radius: 8px;
         top: 52px;
+        opacity: 0;
 
         &.hide {
             max-height: 0px;
@@ -45,6 +46,7 @@
 
         &.show {
             max-height: 100vh;
+            opacity: 1;
             overflow: hidden;
             transition: .3s ease-in-out;
         }
@@ -92,20 +94,12 @@
             position: relative;
             padding: 20px 0;
 
-            &:hover {
-                .dropdown {
-                    max-height: 100vh;
-                    transition: .3s ease-in-out;
-                    overflow: hidden;
-                }
-            }
-
-
-
             .dropdown {
                 position: absolute;
                 width: 160px;
                 border-radius: 8px;
+                opacity: 0;
+
                 top: 50px;
                 left: 50%;
                 transform: translateX(-50%);
@@ -114,6 +108,22 @@
                 overflow: hidden;
                 transition: .3s ease-in-out;
 
+                &.dropdownStyling {
+                    width: 210px;
+
+                    p {
+                        font-size: 15px;
+                        color: #fff;
+                        @include font-medium;
+                        margin: 0 0 10px 0;
+                    }
+
+                    .leftAlignment {
+                        padding-left: 14px;
+                        padding-bottom: 10px;
+                    }
+                }
+
                 .dropdownDesign {
                     border: 1px solid rgba(255, 255, 255, 0.20);
                     background: #131315;
@@ -121,7 +131,7 @@
                     padding: 12px;
 
                     a {
-                        padding: 0 0 14px 0;
+                        padding: 0 0 10px 0;
                         display: block;
                         @include font-normal;
                         font-size: 14px;
@@ -138,6 +148,19 @@
                     }
                 }
             }
+
+            &:hover {
+                .dropdown {
+                    max-height: 100vh;
+                    transition: .3s ease-in-out;
+                    overflow: hidden;
+                    opacity: 1;
+                }
+            }
+
+
+
+
         }
 
         a {
