@@ -9,11 +9,11 @@ export default function Herobanner() {
 	const texts = [
 		"You’ve done",
 		"The Research,",
-		"Rusted Your Instincts,",
+		"Trusted Your Instincts,",
 		"And Arrived Here,",
-		"where smart",
+		"where smart traders turn",
+		"insight into opportunity with SecureFX",
 	];
-
 	const [layout, setLayout] = useState({
 		SECTION_HEIGHT: 70,
 		MAX_TRANSLATE: 54,
