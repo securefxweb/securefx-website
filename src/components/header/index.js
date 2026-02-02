@@ -10,6 +10,12 @@ const Logo = "/assets/logo/logo.svg";
 export default function Header() {
 	const pathname = usePathname();
 	const [logindropdown, setLogindropdown] = useState(false);
+	const [activeDropdown, setActiveDropdown] = useState(null);
+
+	const closeDropdowns = () => {
+		setActiveDropdown(null);
+		setLogindropdown(false);
+	};
 	return (
 		<div
 			className={classNames(styles.headerSticky, {
@@ -101,8 +107,8 @@ export default function Header() {
 						<Link className={styles.spacing} href="/ib">Partner</Link>
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/ib">IB</Link>
-								<Link href="/affiliate">Affiliate</Link>
+								<Link href="/ib" onClick={closeDropdowns}>IB</Link>
+								<Link href="/affiliate" onClick={closeDropdowns}>Affiliate</Link>
 							</div>
 						</div>
 					</div>
