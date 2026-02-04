@@ -354,7 +354,7 @@ export default function Header() {
             </div>
           </div>
           <Link href="#">Tools</Link>
-          <Link href="mailto:support@securefx.net">Support</Link>
+          <Link href="/contact-us">Support</Link>
           {/* <Link href={"#"}>EN</Link> */}
         </div>
       </header>
