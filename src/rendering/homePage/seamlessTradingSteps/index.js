@@ -11,14 +11,14 @@ export default function SeamlessTradingSteps() {
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setActiveStep((prev) => (prev + 1) % stepperData.stepper.steps.length);
-		}, 2000);
+		}, 5000);
 		return () => clearInterval(interval);
 	}, []);
 
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setDisplayImage(activeStep);
-		}, 1500);
+		}, 4500);
 		return () => clearTimeout(timer);
 	}, [activeStep]);
 

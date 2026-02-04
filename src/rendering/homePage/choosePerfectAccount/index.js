@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import styles from "./choosePerfectAccount.module.scss";
 import { perfectAccountData } from "@/constants/data";
-
+import WinIcon from "@/icons/winIcon";
 // Animation variants
 const container = {
 	hidden: {},
@@ -46,6 +46,12 @@ export default function ChoosePerfectAccount() {
 							className={styles.griditems}
 							variants={card}
 						>
+							<div className={styles.bestseller}>
+								<WinIcon />
+								<span>
+									Best Seller
+								</span>
+							</div>
 							<div className={styles.iconBox}>
 								<img src={item.icon} alt="ProfileIcon" />
 							</div>

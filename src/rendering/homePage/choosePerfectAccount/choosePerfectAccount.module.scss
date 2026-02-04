@@ -119,6 +119,7 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
       background: #131315;
       transition: 0.3s ease-in-out;
+      position: relative;
 
       @include respond-to("sm") {
         width: 250px;
@@ -129,6 +130,30 @@
 
       &:hover {
         transform: translateY(-5px) !important;
+      }
+
+      .bestseller {
+        border-radius: 11px 11px 0 0;
+        background: #EFBA4E;
+        padding: 7px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        span {
+          display: block;
+          color: #FFF;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 130%;
+          @include font-medium;
+        }
       }
 
       .buttonBottomAlignment {

@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
 					<MobileHeader />
 					{children}
 					<ChooseWhere />
-					<NewsLatter />
+					{/* <NewsLatter /> */}
 					<Faq />
 					<Footer />
 					<Toaster

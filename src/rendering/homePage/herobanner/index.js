@@ -21,7 +21,7 @@ export default function Herobanner() {
   });
 
   /* -----------------------------
-	 Responsive layout values
+   Responsive layout values
   ----------------------------- */
   useEffect(() => {
     const updateLayout = () => {
@@ -56,7 +56,7 @@ export default function Herobanner() {
   const { SECTION_HEIGHT, MAX_TRANSLATE, MIN_TRANSLATE } = layout;
 
   /* -----------------------------
-	 Scroll logic
+   Scroll logic
   ----------------------------- */
   const { scrollYProgress } = useScroll({
     target: wrapperRef,
@@ -87,15 +87,15 @@ export default function Herobanner() {
   }, [SECTION_HEIGHT, texts.length]);
 
   /* -----------------------------
-	 Text translate
+   Text translate
   ----------------------------- */
   const totalTranslate =
     MAX_TRANSLATE -
     (MAX_TRANSLATE - MIN_TRANSLATE) * (smoothIndex / (texts.length - 1));
 
   /* -----------------------------
-	 Image scale (KEY PART)
-	 No layout change, only transform
+   Image scale (KEY PART)
+   No layout change, only transform
   ----------------------------- */
   const imageScale = 1 + (smoothIndex / (texts.length - 1)) * 0.15; // 1 → 1.15
 

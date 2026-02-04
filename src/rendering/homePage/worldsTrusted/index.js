@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 import styles from "./worldsTrusted.module.scss";
 import WorldsTrustedForm from "../worldsTrustedForm";
 
-export default function WorldsTrusted({formData}) {
+export default function WorldsTrusted({ formData }) {
 	const sectionRef = useRef(null);
 	const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
 
@@ -65,7 +65,7 @@ export default function WorldsTrusted({formData}) {
 						<p>Active Trading Accounts</p>
 					</div>
 				</div>
-				<WorldsTrustedForm  form={formData} />
+				<WorldsTrustedForm form={formData} />
 			</div>
 		</div>
 	);

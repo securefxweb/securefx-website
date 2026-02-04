@@ -4,7 +4,7 @@
 
 .descriptionPara {
     position: relative;
-    padding: 0 0 40px 0;
+    padding: 80px 0;
 
     @include respond-to("sm") {
         padding: 0;
