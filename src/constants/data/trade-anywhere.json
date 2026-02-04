@@ -4,13 +4,15 @@
 		"title": "MetaTrader 5 Platform",
 		"description": "Trade smarter with MT5 — the industry’s leading multi-asset platform offering advanced analytics, one-click trading, and ultra-fast execution. Access Forex, Metals, and more with confidence and precision.",
 		"cta": "Trade on MT5",
-		"icon": "/assets/icons/mobile.svg"
+		"icon": "/assets/icons/mobile.svg",
+		"link": "/trading-platform"	
 	},
 	{
 		"id": "9e1a74d5-6d44-4e28-8e1e-8b8a3e79f342",
 		"title": "Web Terminal Platform",
 		"description": "Experience trading from anywhere with our secure Web Terminal setup — just instant access to markets through any browser with smooth performance. Access Forex, Metals, and more with confidence and precision.",
 		"cta": "Launch Platform",
-		"icon": "/assets/icons/desktop.png"
+		"icon": "/assets/icons/desktop.png",
+		"link": "#"
 	}
 ]

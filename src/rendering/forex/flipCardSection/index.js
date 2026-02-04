@@ -8,86 +8,87 @@ import { currencyData } from "@/constants/data";
 import { getForexPricing } from "@/services/forexapi";
 
 export default function FlipCardSection() {
-	const [forexData, setForexData] = useState(null);
-	const [loading, setLoading] = useState(true);
+  const [forexData, setForexData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const data = await getForexPricing();
-				console.log("forex data ====>", data);
-				setForexData(data);
-				setLoading(false);
-			} catch (error) {
-				console.error("Failed to fetch forex data:", error);
-				setLoading(false);
-			}
-		};
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await getForexPricing();
 
-		fetchData();
-	}, []);
-	// Prepare currency cards data from API
-	const getCurrencyCards = () => {
-		if (loading || !forexData?.rates) {
-			return currencyData; // Fallback to static data while loading
-		}
+        setForexData(data);
+        setLoading(false);
+      } catch (error) {
+        console.error("Failed to fetch forex data:", error);
+        setLoading(false);
+      }
+    };
 
-		// Create cards for all currencies from API
-		return Object.entries(forexData.rates).map(([currencyCode, rate]) => {
-			// Find matching currency data for description
-			const existingCurrency = currencyData.find((c) =>
-				c.pair.includes(currencyCode),
-			);
+    fetchData();
+  }, []);
+  // Prepare currency cards data from API
+  const getCurrencyCards = () => {
+    if (loading || !forexData?.rates) {
+      return currencyData; // Fallback to static data while loading
+    }
 
-			return {
-				pair: `USD/${currencyCode}`,
-				description:
-					existingCurrency?.description || `US Dollar vs ${currencyCode}`,
-				rate: rate.toFixed(4),
-				change_percent: existingCurrency?.change_percent || 0,
-			};
-		});
-	};
+    // Create cards for all currencies from API
+    return Object.entries(forexData.rates).map(([currencyCode, rate]) => {
+      // Find matching currency data for description
+      const existingCurrency = currencyData.find((c) =>
+        c.pair.includes(currencyCode),
+      );
 
-	const displayData = getCurrencyCards();
+      return {
+        pair: `USD/${currencyCode}`,
+        description:
+          existingCurrency?.description || `US Dollar vs ${currencyCode}`,
+        rate: rate.toFixed(4),
+        change_percent: existingCurrency?.change_percent || 0,
+      };
+    });
+  };
 
-	return (
-		<div className={styles.flipCardSection}>
-			<Marquee pauseOnHover>
-				{displayData.map((currency, i) => {
-					return (
-						<motion.div
-							key={`${currency.pair}-${i}`}
-							className={`${styles.card} ${i % 2 === 1 ? styles.cardChange : ""
-								}`}
-							whileHover={{ rotateY: 180 }}
-							transition={{ duration: 0.6, ease: "easeInOut" }}
-						>
-							{/* Front */}
-							<div className={styles.front}>
-								<div className={styles.top}>
-									<p>{currency.pair}</p>
-									<h4>${currency.rate}</h4>
-								</div>
-								<div className={styles.bottom}>
-									<span>{currency.change_percent}%</span>
-									<p>{currency.description}</p>
-								</div>
-							</div>
+  const displayData = getCurrencyCards();
 
-							{/* Back */}
-							<div className={styles.back}>
-								<div className={styles.layer}></div>
-								<div className={styles.layer1}></div>
-								<div className={styles.iconText}>
-									<span>Start Trading</span>
-									<img src={ArrowIcon} alt="ArrowIcon" />
-								</div>
-							</div>
-						</motion.div>
-					);
-				})}
-			</Marquee>
-		</div>
-	);
+  return (
+    <div className={styles.flipCardSection}>
+      <Marquee pauseOnHover>
+        {displayData.map((currency, i) => {
+          return (
+            <motion.div
+              key={`${currency.pair}-${i}`}
+              className={`${styles.card} ${
+                i % 2 === 1 ? styles.cardChange : ""
+              }`}
+              whileHover={{ rotateY: 180 }}
+              transition={{ duration: 0.6, ease: "easeInOut" }}
+            >
+              {/* Front */}
+              <div className={styles.front}>
+                <div className={styles.top}>
+                  <p>{currency.pair}</p>
+                  <h4>${currency.rate}</h4>
+                </div>
+                <div className={styles.bottom}>
+                  <span>{currency.change_percent}%</span>
+                  <p>{currency.description}</p>
+                </div>
+              </div>
+
+              {/* Back */}
+              <div className={styles.back}>
+                <div className={styles.layer}></div>
+                <div className={styles.layer1}></div>
+                <div className={styles.iconText}>
+                  <span>Start Trading</span>
+                  <img src={ArrowIcon} alt="ArrowIcon" />
+                </div>
+              </div>
+            </motion.div>
+          );
+        })}
+      </Marquee>
+    </div>
+  );
 }
