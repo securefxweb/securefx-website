@@ -7,6 +7,7 @@ import Link from "next/link";
 const ArrowIcon = "/assets/icons/arrow.svg";
 const LoginIcon = "/assets/icons/login.svg";
 const Logo = "/assets/logo/logo.svg";
+import UpIcon from '../../icons/upIcon'
 export default function Header() {
 	const pathname = usePathname();
 	const [logindropdown, setLogindropdown] = useState(false);
@@ -56,10 +57,22 @@ export default function Header() {
 						<Link href="/about">About</Link>
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/about">Why Securefx</Link>
-								<Link href="/regulations">Regulation</Link>
-								<Link href="/legal-doc">Legal Documents</Link>
-								<Link href="/sec-fund">Security of funds</Link>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/about">Why Securefx</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/regulations">Regulation</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/legal-doc">Legal Documents</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/sec-fund">Security of funds</Link>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -67,24 +80,47 @@ export default function Header() {
 						<Link className={styles.spacing} href="/forex">Trade</Link>
 						<div className={classNames(styles.dropdown, styles.dropdownStyling)}>
 							<div className={styles.dropdownDesign}>
-								<p>
-									Products
-								</p>
-								<div className={styles.leftAlignment}>
+								<div className={styles.subheaderAlignment}>
+									<div className={styles.style}>
+										<div className={styles.dot}></div>
+										<span>Products
+										</span>
+									</div>
+									<div className={classNames(styles.icon, styles.rotateRemove)}>
+										<UpIcon />
+									</div>
+								</div>
+								<div className={classNames(styles.sublistStyle, styles.hide)}>
 									<Link href="/forex">Forex</Link>
 									<Link href="/metals">Metal</Link>
 									<Link href="/indices">Indices</Link>
 									<Link href="/energy">Energy</Link>
 									<Link href="/commodities">Commodities</Link>
 								</div>
-								<p>
-									Treading Platform
-								</p>
-								<div className={styles.leftAlignment}>
-									<Link href="/trading-platform">Mt4/Mt5 Mobile</Link>
+								<div className={styles.subheaderAlignment}>
+									<div className={styles.style}>
+										<div className={styles.dot}></div>
+										<span>Treading Platform
+										</span>
+									</div>
+									<div className={styles.icon}>
+										<UpIcon />
+									</div>
 								</div>
-								<Link href="/calendar">Economic Calendar</Link>
-								<Link href="/precise-calculations">Calculators</Link>
+								<div className={classNames(styles.sublistStyle, styles.hide)}>
+									<Link href="/trading-platform">Mt4/Mt5 Mobile</Link>
+									<Link href="/trading-platform">Mt4/Mt5 Web</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/calendar">Economic Calendar</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/precise-calculations">Calculators</Link>
+								</div>
+
+
 							</div>
 						</div>
 					</div>
@@ -92,11 +128,26 @@ export default function Header() {
 						<Link className={styles.spacing} href="/standard-account">Accounts</Link>
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/standard-account">Standard</Link>
-								<Link href="/pro-account">Pro</Link>
-								<Link href="/raw-account">RAW</Link>
-								<Link href="/zero-spread-account">ZERO Spread</Link>
-								<Link href="/deposit">Deposite/Withdraw</Link>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/standard-account">Standard</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/pro-account">Pro</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/raw-account">RAW</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/zero-spread-account">ZERO Spread</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/deposit">Deposite/Withdraw</Link>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -107,8 +158,14 @@ export default function Header() {
 						<Link className={styles.spacing} href="/ib">Partner</Link>
 						<div className={styles.dropdown}>
 							<div className={styles.dropdownDesign}>
-								<Link href="/ib" onClick={closeDropdowns}>IB</Link>
-								<Link href="/affiliate" onClick={closeDropdowns}>Affiliate</Link>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/ib" onClick={closeDropdowns}>IB</Link>
+								</div>
+								<div className={styles.style}>
+									<div className={styles.dot}></div>
+									<Link href="/affiliate" onClick={closeDropdowns}>Affiliate</Link>
+								</div>
 							</div>
 						</div>
 					</div>

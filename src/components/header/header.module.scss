@@ -96,11 +96,10 @@
 
             .dropdown {
                 position: absolute;
-                width: 160px;
-                border-radius: 8px;
+                width: 200px;
+                border-radius: 6px;
                 opacity: 0;
-
-                top: 50px;
+                top: 55px;
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 9;
@@ -109,43 +108,103 @@
                 transition: .3s ease-in-out;
 
                 &.dropdownStyling {
-                    width: 210px;
+                    width: 220px;
 
-                    p {
-                        font-size: 15px;
-                        color: #fff;
-                        @include font-medium;
-                        margin: 0 0 10px 0;
+                    .sublistStyle {
+                        padding-left: 20px;
+
+                        &.hide {
+                            max-height: 0px;
+                            overflow: hidden;
+                            transition: .3s ease-in-out;
+                        }
+
+                        &.show {
+                            max-height: 100vh;
+                            overflow: hidden;
+                            transition: .3s ease-in-out;
+                        }
+
+                        a {
+                            font-weight: 400;
+                            @include font-normal;
+                            display: block;
+                            border-radius: 4px;
+                            transition: .3s ease-in-out;
+                            margin: 0 0 4px 0;
+                            padding: 5px 7px;
+
+                            &:hover {
+                                background: #3B3B3B;
+                            }
+                        }
                     }
 
-                    .leftAlignment {
-                        padding-left: 14px;
-                        padding-bottom: 10px;
+                    .subheaderAlignment {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .icon {
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+
+                            &.rotateRemove {
+                                svg {
+                                    transform: rotate(0deg);
+                                }
+                            }
+
+                            svg {
+                                transition: .3s ease-in-out;
+                                transform: rotate(180deg);
+                            }
+                        }
                     }
+
                 }
 
                 .dropdownDesign {
+                    border-radius: 6px;
                     border: 1px solid rgba(255, 255, 255, 0.20);
-                    background: #131315;
-                    border-radius: 8px;
+                    background: #171719;
                     padding: 12px;
 
-                    a {
-                        padding: 0 0 10px 0;
-                        display: block;
-                        @include font-normal;
-                        font-size: 14px;
-                        opacity: .8;
-                        transition: 0.3s ease-in-out;
+                    .style {
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
 
                         &:hover {
-                            opacity: 1;
+                            .dot {
+                                opacity: 1;
+                            }
                         }
 
-                        &:last-child {
-                            padding: 0;
+                        .dot {
+                            width: 6px;
+                            height: 6px;
+                            background-color: #CA512E;
+                            border-radius: 6px;
+                            opacity: 0;
+                            transition: .3s ease-in-out;
+                        }
+
+                        a,
+                        span {
+                            display: block;
+                            color: #FFF;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 130%;
+                            @include font-normal;
                         }
                     }
+
+
                 }
             }
 
