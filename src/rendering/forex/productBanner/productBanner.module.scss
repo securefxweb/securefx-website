@@ -110,6 +110,20 @@
                     opacity: 1;
                 }
             }
+
+            &.active {
+                box-shadow: 0 0 12px 0 rgba(60, 117, 254, 0.44);
+
+                &::after {
+                    background-position: 200% 0;
+                    opacity: 1;
+                }
+
+                &::before {
+                    background-position: -200% 0;
+                    opacity: 1;
+                }
+            }
         }
     }
 

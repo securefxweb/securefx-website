@@ -142,28 +142,30 @@
               }
             }
 
-            .subheaderAlignment {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              cursor: pointer;
 
-              .icon {
-                display: flex;
-                align-items: center;
-                cursor: pointer;
+          }
+        }
 
-                &.rotateRemove {
-                  svg {
-                    transform: rotate(0deg) !important;
-                  }
-                }
+        .subheaderAlignment {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
 
-                svg {
-                  transition: 0.3s ease-in-out;
-                  transform: rotate(180deg) !important;
-                }
+          .icon {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &.rotateRemove {
+              svg {
+                transform: rotate(0deg) !important;
               }
+            }
+
+            svg {
+              transition: 0.3s ease-in-out;
+              transform: rotate(180deg) !important;
             }
           }
         }
@@ -323,11 +325,9 @@
       }
 
       &::before {
-        background: linear-gradient(
-          267.5deg,
-          #f7541c00 68.57%,
-          #f7541c 102.63%
-        );
+        background: linear-gradient(267.5deg,
+            #f7541c00 68.57%,
+            #f7541c 102.63%);
       }
 
       &:hover {

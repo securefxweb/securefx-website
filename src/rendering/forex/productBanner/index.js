@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion"; // <-- added
 import styles from "./productBanner.module.scss";
 import Button from "@/components/button";
+import classNames from "classnames";
 
 export default function ProductBanner({ productLinks, productData }) {
 	const container = {
@@ -40,7 +41,7 @@ export default function ProductBanner({ productLinks, productData }) {
 									<motion.div
 										whileHover={{ scale: 1.06 }}
 										whileTap={{ scale: 0.95 }}
-										className={styles.buttonUi}
+										className={classNames(styles.buttonUi, styles.active)}
 									>
 										{itemData.name}
 									</motion.div>
