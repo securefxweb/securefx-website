@@ -69,6 +69,7 @@
     padding: 16px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 
     @include respond-to("sm") {
       padding: 14px;
