@@ -1,5 +1,6 @@
 import productsData from "./products.json";
 import highlightsData from "./highlights.json";
+import accountsData from "./accounts.json";
 import proAccount from "./pro-account.json";
 import rawAccont from "./raw-account.json";
 import standardAccount from "./standard-account.json";
@@ -33,6 +34,7 @@ import countryPins from "./country-pins.json";
 export const highlights = highlightsData.highlights;
 
 //accounts
+export const accountsDataLinks = accountsData;
 export const products = productsData.products;
 export const proAccountData = proAccount;
 export const rawAccountData = rawAccont;
