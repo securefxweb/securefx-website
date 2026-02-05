@@ -253,7 +253,7 @@ export default function Header() {
                 >
                   <div className={styles.style}>
                     <div className={styles.dot}></div>
-                    <span>Treading Platform</span>
+                    <span>Trading Platform</span>
                   </div>
                   <div className={styles.icon}>
                     {tradingPlatformOpen ? (
