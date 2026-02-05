@@ -9,36 +9,36 @@ import PivotPointCalculator from "../pivotPointCalculator";
 import ProfitCalculator from "../profitCalculator";
 
 export default function PreciseCalculationsData() {
-	const [activeTab, setActiveTab] = useState(0);
-	const tabs = ["PIP", "Margin", "Fibonacci", "Pivot", "Profit"];
-	const components = [
-		<Pipvaluecalculator />,
-		<Forexmargincalculator />,
-		<Fibonaccicalculator />,
-		<PivotPointCalculator />,
-		<ProfitCalculator />,
-	];
+  const [activeTab, setActiveTab] = useState(0);
+  const tabs = ["PIP", "Margin", "Fibonacci", "Pivot", "Profit"];
+  const components = [
+    <Pipvaluecalculator />,
+    <Forexmargincalculator />,
+    <Fibonaccicalculator />,
+    <PivotPointCalculator />,
+    <ProfitCalculator />,
+  ];
 
-	return (
-		<div className={styles.preciseCalculationsData}>
-			<div className="container-lg">
-				<div className={styles.tabAlignment}>
-					{tabs.map((tab, index) => (
-						<div
-							key={index}
-							className={classNames(styles.buttonUi, {
-								[styles.active]: activeTab === index,
-							})}
-							onClick={() => setActiveTab(index)}
-						>
-							<span>{tab}</span>
-						</div>
-					))}
-				</div>
-				<div className={styles.boxCenter}>
-					<div className={styles.box}>{components[activeTab]}</div>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className={styles.preciseCalculationsData}>
+      <div className="container-lg">
+        <div className={styles.tabAlignment}>
+          {tabs.map((tab, index) => (
+            <div
+              key={index}
+              className={classNames(styles.buttonUi, {
+                [styles.active]: activeTab === index,
+              })}
+              onClick={() => setActiveTab(index)}
+            >
+              <span>{tab}</span>
+            </div>
+          ))}
+        </div>
+        <div className={styles.boxCenter}>
+          <div className={styles.box}>{components[activeTab]}</div>
+        </div>
+      </div>
+    </div>
+  );
 }
