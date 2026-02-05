@@ -15,10 +15,20 @@ export default function Header() {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [productsOpen, setProductsOpen] = useState(false);
   const [tradingPlatformOpen, setTradingPlatformOpen] = useState(false);
+  const [aboutDropdownOpen, setAboutDropdownOpen] = useState(false);
+  const [tradeDropdownOpen, setTradeDropdownOpen] = useState(false);
+  const [accountsDropdownOpen, setAccountsDropdownOpen] = useState(false);
+  const [partnerDropdownOpen, setPartnerDropdownOpen] = useState(false);
 
   const closeDropdowns = () => {
     setActiveDropdown(null);
     setLogindropdown(false);
+    setAboutDropdownOpen(false);
+    setTradeDropdownOpen(false);
+    setAccountsDropdownOpen(false);
+    setPartnerDropdownOpen(false);
+    setProductsOpen(false);
+    setTradingPlatformOpen(false);
   };
 
   // Normalize pathname by removing trailing slash for comparison
@@ -71,9 +81,18 @@ export default function Header() {
           </div>
         </div>
         <div className={styles.headerAlignment}>
-          <div className={styles.spacing}>
+          <div
+            className={styles.spacing}
+            onMouseEnter={() => setAboutDropdownOpen(true)}
+            onMouseLeave={() => setAboutDropdownOpen(false)}
+          >
             <Link href="/about">About</Link>
-            <div className={styles.dropdown}>
+            <div
+              className={classNames(
+                styles.dropdown,
+                aboutDropdownOpen && styles.dropdownOpen,
+              )}
+            >
               <div className={styles.dropdownDesign}>
                 <div
                   className={classNames(
@@ -82,7 +101,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/about">Why Securefx</Link>
+                  <Link
+                    href="/about"
+                    onClick={() => setAboutDropdownOpen(false)}
+                  >
+                    Why Securefx
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -91,7 +115,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/regulations">Regulation</Link>
+                  <Link
+                    href="/regulations"
+                    onClick={() => setAboutDropdownOpen(false)}
+                  >
+                    Regulation
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -100,7 +129,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/legal-doc">Legal Documents</Link>
+                  <Link
+                    href="/legal-doc"
+                    onClick={() => setAboutDropdownOpen(false)}
+                  >
+                    Legal Documents
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -109,17 +143,30 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/sec-fund">Security of funds</Link>
+                  <Link
+                    href="/sec-fund"
+                    onClick={() => setAboutDropdownOpen(false)}
+                  >
+                    Security of funds
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className={styles.spacing}>
+          <div
+            className={styles.spacing}
+            onMouseEnter={() => setTradeDropdownOpen(true)}
+            onMouseLeave={() => setTradeDropdownOpen(false)}
+          >
             <Link className={styles.spacing} href="/forex">
               Trade
             </Link>
             <div
-              className={classNames(styles.dropdown, styles.dropdownStyling)}
+              className={classNames(
+                styles.dropdown,
+                styles.dropdownStyling,
+                tradeDropdownOpen && styles.dropdownOpen,
+              )}
             >
               <div className={styles.dropdownDesign}>
                 <div
@@ -151,6 +198,7 @@ export default function Header() {
                         : ""
                     }
                     href="/forex"
+                    onClick={() => setTradeDropdownOpen(false)}
                   >
                     Forex
                   </Link>
@@ -161,6 +209,7 @@ export default function Header() {
                         : ""
                     }
                     href="/metals"
+                    onClick={() => setTradeDropdownOpen(false)}
                   >
                     Metal
                   </Link>
@@ -171,6 +220,7 @@ export default function Header() {
                         : ""
                     }
                     href="/indices"
+                    onClick={() => setTradeDropdownOpen(false)}
                   >
                     Indices
                   </Link>
@@ -181,6 +231,7 @@ export default function Header() {
                         : ""
                     }
                     href="/energy"
+                    onClick={() => setTradeDropdownOpen(false)}
                   >
                     Energy
                   </Link>
@@ -191,6 +242,7 @@ export default function Header() {
                         : ""
                     }
                     href="/commodities"
+                    onClick={() => setTradeDropdownOpen(false)}
                   >
                     Commodities
                   </Link>
@@ -224,6 +276,7 @@ export default function Header() {
                         : ""
                     }
                     href="/trading-platform"
+                    onClick={() => setTradeDropdownOpen(false)}
                   >
                     Mt4/Mt5 Mobile
                   </Link>
@@ -234,6 +287,7 @@ export default function Header() {
                         : ""
                     }
                     href="/trading-platform"
+                    onClick={() => setTradeDropdownOpen(false)}
                   >
                     Mt4/Mt5 Web
                   </Link>
@@ -245,7 +299,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/calendar">Economic Calendar</Link>
+                  <Link
+                    href="/calendar"
+                    onClick={() => setTradeDropdownOpen(false)}
+                  >
+                    Economic Calendar
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -256,16 +315,30 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/precise-calculations">Calculators</Link>
+                  <Link
+                    href="/precise-calculations"
+                    onClick={() => setTradeDropdownOpen(false)}
+                  >
+                    Calculators
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className={styles.spacing}>
+          <div
+            className={styles.spacing}
+            onMouseEnter={() => setAccountsDropdownOpen(true)}
+            onMouseLeave={() => setAccountsDropdownOpen(false)}
+          >
             <Link className={styles.spacing} href="/standard-account">
               Accounts
             </Link>
-            <div className={styles.dropdown}>
+            <div
+              className={classNames(
+                styles.dropdown,
+                accountsDropdownOpen && styles.dropdownOpen,
+              )}
+            >
               <div className={styles.dropdownDesign}>
                 <div
                   className={classNames(
@@ -276,7 +349,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/standard-account">Standard</Link>
+                  <Link
+                    href="/standard-account"
+                    onClick={() => setAccountsDropdownOpen(false)}
+                  >
+                    Standard
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -285,7 +363,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/pro-account">Pro</Link>
+                  <Link
+                    href="/pro-account"
+                    onClick={() => setAccountsDropdownOpen(false)}
+                  >
+                    Pro
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -294,7 +377,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/raw-account">RAW</Link>
+                  <Link
+                    href="/raw-account"
+                    onClick={() => setAccountsDropdownOpen(false)}
+                  >
+                    RAW
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -305,7 +393,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/zero-spread-account">ZERO Spread</Link>
+                  <Link
+                    href="/zero-spread-account"
+                    onClick={() => setAccountsDropdownOpen(false)}
+                  >
+                    ZERO Spread
+                  </Link>
                 </div>
                 <div
                   className={classNames(
@@ -314,7 +407,12 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/deposit">Deposite/Withdraw</Link>
+                  <Link
+                    href="/deposit"
+                    onClick={() => setAccountsDropdownOpen(false)}
+                  >
+                    Deposite/Withdraw
+                  </Link>
                 </div>
               </div>
             </div>
@@ -322,11 +420,20 @@ export default function Header() {
           <Link href="/">
             <img src={Logo} alt="Logo" />
           </Link>
-          <div className={styles.spacing}>
+          <div
+            className={styles.spacing}
+            onMouseEnter={() => setPartnerDropdownOpen(true)}
+            onMouseLeave={() => setPartnerDropdownOpen(false)}
+          >
             <Link className={styles.spacing} href="/ib">
               Partner
             </Link>
-            <div className={styles.dropdown}>
+            <div
+              className={classNames(
+                styles.dropdown,
+                partnerDropdownOpen && styles.dropdownOpen,
+              )}
+            >
               <div className={styles.dropdownDesign}>
                 <div
                   className={classNames(
@@ -335,7 +442,10 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/ib" onClick={closeDropdowns}>
+                  <Link
+                    href="/ib"
+                    onClick={() => setPartnerDropdownOpen(false)}
+                  >
                     IB
                   </Link>
                 </div>
@@ -346,7 +456,10 @@ export default function Header() {
                   )}
                 >
                   <div className={styles.dot}></div>
-                  <Link href="/affiliate" onClick={closeDropdowns}>
+                  <Link
+                    href="/affiliate"
+                    onClick={() => setPartnerDropdownOpen(false)}
+                  >
                     Affiliate
                   </Link>
                 </div>
