@@ -16,7 +16,7 @@
         }
 
         @include respond-to("sm") {
-            padding: 70px 16px 46px 16px;
+            padding: 50px 16px 46px 16px;
         }
 
         &::before {

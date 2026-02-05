@@ -25,15 +25,18 @@
     }
 
     .box {
-        padding: 160px 70px 62px 70px;
         position: relative;
 
-        @include respond-to("md") {
-            padding: 120px 40px 60px 40px;
-        }
+        .bottomAlignment {
+            padding: 80px 70px 62px 70px;
 
-        @include respond-to("sm") {
-            padding: 80px 16px 60px 16px;
+            @include respond-to("md") {
+                padding: 60px 40px 60px 40px;
+            }
+
+            @include respond-to("sm") {
+                padding: 50px 16px 46px 16px;
+            }
         }
 
         &::before {

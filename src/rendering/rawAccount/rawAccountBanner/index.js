@@ -2,6 +2,8 @@
 import styles from "./rawAccountBanner.module.scss";
 import Button from "@/components/button";
 import { motion } from "framer-motion";
+import TabView from "@/components/tabView";
+
 export default function RawAccountBanner({ data }) {
 	return (
 		<motion.div
@@ -13,6 +15,8 @@ export default function RawAccountBanner({ data }) {
 		>
 			<div className="container-lg">
 				<div className={styles.box}>
+					<TabView />
+					<div className={styles.bottomAlignment}>
 					<div className={styles.contentAlignment}>
 						<motion.div
 							className={styles.leftcontent}
@@ -51,6 +55,7 @@ export default function RawAccountBanner({ data }) {
 						</motion.div>
 						<Button className={styles.mobileShow} text="Open Raw Account" />
 
+					</div>
 					</div>
 				</div>
 			</div>
