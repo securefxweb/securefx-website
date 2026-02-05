@@ -11,6 +11,7 @@ import TrustedbyTraders from "./trustedbyTraders";
 import IntroducingBrokers from "./introducingBrokers";
 import MobileViewForm from "./mobileViewForm";
 import { highlights } from "@/constants/data";
+import PricingModal from "@/components/pricingModal";
 export default function Homepage() {
 	return (
 		<div>
@@ -24,6 +25,7 @@ export default function Homepage() {
 			<SeamlessTradingSteps />
 			<TrustedbyTraders />
 			<IntroducingBrokers />
+			<PricingModal />
 		</div>
 	);
 }

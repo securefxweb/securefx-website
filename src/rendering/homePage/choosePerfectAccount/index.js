@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "./choosePerfectAccount.module.scss";
 import { perfectAccountData } from "@/constants/data";
 import WinIcon from "@/icons/winIcon";
+import classNames from "classnames";
 // Animation variants
 const container = {
   hidden: {},
@@ -23,11 +24,11 @@ const card = {
   },
 };
 
-export default function ChoosePerfectAccount() {
+export default function ChoosePerfectAccount({titleSpace , bottomSpaceRemoveCard}) {
   return (
     <div className={styles.choosePerfectAccount} id="accounts">
       <div className="container-lg">
-        <div className={styles.title}>
+        <div className={ classNames(styles.title  , styles.title ? styles.titleSpace : "") }>
           <h2>
             Choose Perfect <span>Account</span>
           </h2>
@@ -43,7 +44,7 @@ export default function ChoosePerfectAccount() {
           {perfectAccountData.accounts.map((item, index) => (
             <motion.div
               key={index}
-              className={styles.griditems}
+              className={ classNames(styles.griditems , bottomSpaceRemoveCard ? styles.spacebottom : "") }
               variants={card}
             >
               {item.isBestSeller && (
