@@ -7,16 +7,18 @@ import Forexmargincalculator from "../forexmargincalculator";
 import Fibonaccicalculator from "../fibonaccicalculator";
 import PivotPointCalculator from "../pivotPointCalculator";
 import ProfitCalculator from "../profitCalculator";
+import PositionSizeCalculator from "../positionSizeCalculator";
 
 export default function PreciseCalculationsData() {
   const [activeTab, setActiveTab] = useState(0);
-  const tabs = ["PIP", "Margin", "Fibonacci", "Pivot", "Profit"];
+  const tabs = ["PIP", "Margin", "Fibonacci", "Pivot", "Profit","Position Size"	];
   const components = [
     <Pipvaluecalculator />,
     <Forexmargincalculator />,
     <Fibonaccicalculator />,
     <PivotPointCalculator />,
     <ProfitCalculator />,
+	<PositionSizeCalculator/> 
   ];
 
   return (
