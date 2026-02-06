@@ -31,19 +31,19 @@ export default function Herobanner() {
         setLayout({
           SECTION_HEIGHT: 55,
           MAX_TRANSLATE: 75,
-          MIN_TRANSLATE: -120,
+          MIN_TRANSLATE: -160,
         });
       } else if (width < 1024) {
         setLayout({
           SECTION_HEIGHT: 60,
           MAX_TRANSLATE: 55,
-          MIN_TRANSLATE: -300,
+          MIN_TRANSLATE: -360,
         });
       } else {
         setLayout({
           SECTION_HEIGHT: 70,
           MAX_TRANSLATE: 54,
-          MIN_TRANSLATE: -350,
+          MIN_TRANSLATE: -420,
         });
       }
     };
