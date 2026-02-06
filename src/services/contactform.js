@@ -35,5 +35,3 @@ export const saveContactForm = async ({
 		throw new Error("Failed to save contact form");
 	}
 };
-
-

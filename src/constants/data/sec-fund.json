@@ -1,38 +1,38 @@
 [
-  {
-    "id": "a1f2c6b4-3f7d-4c2a-9e5e-0a1c9b2e6d11",
-    "title": "Segregated Funds",
-    "description": "Client funds are completely segregated from company capital and securely held in independent accounts with top-tier banking institutions.",
-    "icon": "/assets/icons/sec-fund-icons/icon-1.png"
-  },
-  {
-    "id": "b7d8e3f2-5a4c-4d9e-8c11-2f6a9e4b7d22",
-    "title": "Global Regulation",
-    "description": "SecureFx Capital Ltd is regulated by the Labuan Financial Services Authority (Labuan FSA), ensuring transparency, compliance, and operational integrity.",
-    "icon": "/assets/icons/sec-fund-icons/icon-2.png"
-  },
-  {
-    "id": "c9a4e7d1-6f2b-4b3d-9a55-7e8c1f2d3b33",
-    "title": "Professional Insurance Cover",
-    "description": "Every SecureFx account is protected by professional indemnity insurance, providing coverage of up to USD 1,000,000 per account.",
-    "icon": "/assets/icons/sec-fund-icons/icon-3.png"
-  },
-  {
-    "id": "d2e6b9a4-8f7c-4a1e-bc44-9d3f2e6a1c44",
-    "title": "Civil Liability Policy",
-    "description": "An additional layer of protection through a €2,500,000 civil liability insurance policy safeguards clients against negligence or third-party risks.",
-    "icon": "/assets/icons/sec-fund-icons/icon-4.png"
-  },
-  {
-    "id": "e5b1c9d7-3a6f-4d8e-9f22-4c7a6e1b5d55",
-    "title": "Negative Balance Protection",
-    "description": "Traders are protected from account overdrafts, ensuring you never lose more than the funds you have deposited.",
-    "icon": "/assets/icons/sec-fund-icons/icon-5.png"
-  },
-  {
-    "id": "f8c2a6e4-9b5d-4c7f-8a33-6d1e9b2c4a66",
-    "title": "Trusted Banking Partnerships",
-    "description": "Client deposits are securely held with Barclays Bank PLC, a British global bank operating in over 50 countries worldwide.",
-    "icon": "/assets/icons/sec-fund-icons/icon-6.png"
-  }
+	{
+		"id": "a1f2c6b4-3f7d-4c2a-9e5e-0a1c9b2e6d11",
+		"title": "Segregated Funds",
+		"description": "Client funds are completely segregated from company capital and securely held in independent accounts with top-tier banking institutions.",
+		"icon": "/assets/icons/sec-fund-icons/icon-1.png"
+	},
+	{
+		"id": "b7d8e3f2-5a4c-4d9e-8c11-2f6a9e4b7d22",
+		"title": "Global Regulation",
+		"description": "SecureFx Capital Ltd is regulated by the Labuan Financial Services Authority (Labuan FSA), ensuring transparency, compliance, and operational integrity.",
+		"icon": "/assets/icons/sec-fund-icons/icon-2.png"
+	},
+	{
+		"id": "c9a4e7d1-6f2b-4b3d-9a55-7e8c1f2d3b33",
+		"title": "Professional Insurance Cover",
+		"description": "Every SecureFx account is protected by professional indemnity insurance, providing coverage of up to USD 1,000,000 per account.",
+		"icon": "/assets/icons/sec-fund-icons/icon-3.png"
+	},
+	{
+		"id": "d2e6b9a4-8f7c-4a1e-bc44-9d3f2e6a1c44",
+		"title": "Civil Liability Policy",
+		"description": "An additional layer of protection through a €2,500,000 civil liability insurance policy safeguards clients against negligence or third-party risks.",
+		"icon": "/assets/icons/sec-fund-icons/icon-4.png"
+	},
+	{
+		"id": "e5b1c9d7-3a6f-4d8e-9f22-4c7a6e1b5d55",
+		"title": "Negative Balance Protection",
+		"description": "Traders are protected from account overdrafts, ensuring you never lose more than the funds you have deposited.",
+		"icon": "/assets/icons/sec-fund-icons/icon-5.png"
+	},
+	{
+		"id": "f8c2a6e4-9b5d-4c7f-8a33-6d1e9b2c4a66",
+		"title": "Trusted Banking Partnerships",
+		"description": "Client deposits are securely held with Barclays Bank PLC, a British global bank operating in over 50 countries worldwide.",
+		"icon": "/assets/icons/sec-fund-icons/icon-6.png"
+	}
 ]

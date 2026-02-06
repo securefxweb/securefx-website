@@ -72,10 +72,24 @@ export default function WhySecureFx({ data }) {
 			return { x: 0, y: 0, rotate: 0, scale: 1, opacity: 1, zIndex: 10 };
 		}
 		if (diff === -1) {
-			return { x: -280, y: 45, rotate: -12, scale: 0.85, opacity: 0.6, zIndex: 5 };
+			return {
+				x: -280,
+				y: 45,
+				rotate: -12,
+				scale: 0.85,
+				opacity: 0.6,
+				zIndex: 5,
+			};
 		}
 		if (diff === 1) {
-			return { x: 280, y: 45, rotate: 12, scale: 0.85, opacity: 0.6, zIndex: 5 };
+			return {
+				x: 280,
+				y: 45,
+				rotate: 12,
+				scale: 0.85,
+				opacity: 0.6,
+				zIndex: 5,
+			};
 		}
 
 		return {

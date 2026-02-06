@@ -54,7 +54,6 @@ export default function ProAccountBanner({ data }) {
 								<img src={data.image} alt="AccountImage" />
 							</motion.div>
 							<Button className={styles.mobileShow} text="Open Pro Account" />
-
 						</div>
 					</div>
 				</div>

@@ -5,10 +5,9 @@ import GetStartedSection from "./getStarted";
 import { affiliateData } from "@/constants/data";
 import WhySecureFx from "../homePage/whySecureFx";
 import WorldsTrustedForm from "../homePage/worldsTrustedForm";
-import MobileViewForm from "../homePage/mobileViewForm"
+import MobileViewForm from "../homePage/mobileViewForm";
 
 export default function Affiliate() {
-
 	return (
 		<div>
 			<AffiliateBanner data={affiliateData} />
@@ -21,7 +20,6 @@ export default function Affiliate() {
 				form={"affliateForm"}
 			/>
 			<MobileViewForm allSpaceRemove={true} />
-
 		</div>
 	);
 }

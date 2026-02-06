@@ -55,7 +55,6 @@ export default function DepositBanner() {
 							<img src={PrintImage} alt="PrintImage" />
 						</motion.div>
 						<Button text="Begin Now" className={styles.mobileShow} />
-
 					</div>
 				</div>
 			</div>

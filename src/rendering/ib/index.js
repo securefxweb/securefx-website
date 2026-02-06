@@ -7,7 +7,7 @@ import ExpectedMonthlyDeposits from "./expectedMonthlyDeposits";
 import JointheSecureFx from "./jointheSecureFx";
 import WorldsTrustedForm from "../homePage/worldsTrustedForm";
 import { ibDataJson } from "@/constants/data";
-import MobileViewForm from '../homePage/mobileViewForm'
+import MobileViewForm from "../homePage/mobileViewForm";
 export default function Ib() {
 	return (
 		<div>

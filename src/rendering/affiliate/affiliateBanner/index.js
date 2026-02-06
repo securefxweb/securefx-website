@@ -34,7 +34,10 @@ export default function AffiliateBanner({ data }) {
 
 							<h1>{data.title}</h1>
 							<p>{data.description}</p>
-							<Button text="Affiliate" className={classNames(styles.mobileHide, styles.buttonWidth)} />
+							<Button
+								text="Affiliate"
+								className={classNames(styles.mobileHide, styles.buttonWidth)}
+							/>
 						</motion.div>
 
 						<motion.div
@@ -51,8 +54,10 @@ export default function AffiliateBanner({ data }) {
 						>
 							<img src={data.image} alt="AccountImage" />
 						</motion.div>
-						<Button text="Affiliate" className={classNames(styles.mobileShow)} />
-
+						<Button
+							text="Affiliate"
+							className={classNames(styles.mobileShow)}
+						/>
 					</div>
 				</div>
 			</div>

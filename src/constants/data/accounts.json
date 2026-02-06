@@ -1,26 +1,26 @@
 [
-  {
-    "id": 1,
-    "name": "Standard Account",
-    "link": "/standard-account",
-    "uuid": "a1b2c3d4-e001-4f9a-9c01-111111111111"
-  },
-  {
-    "id": 2,
-    "name": "Pro Account",
-    "link": "/pro-account",
-    "uuid": "a1b2c3d4-e002-4f9a-9c01-222222222222"
-  },
-  {
-    "id": 3,
-    "name": "Raw Account",
-    "link": "/raw-account",
-    "uuid": "a1b2c3d4-e003-4f9a-9c01-333333333333"
-  },
-  {
-    "id": 4,
-    "name": "Zero Spread Account",
-    "link": "/zero-spread-account",
-    "uuid": "a1b2c3d4-e004-4f9a-9c01-444444444444"
-  }
+	{
+		"id": 1,
+		"name": "Standard Account",
+		"link": "/standard-account",
+		"uuid": "a1b2c3d4-e001-4f9a-9c01-111111111111"
+	},
+	{
+		"id": 2,
+		"name": "Pro Account",
+		"link": "/pro-account",
+		"uuid": "a1b2c3d4-e002-4f9a-9c01-222222222222"
+	},
+	{
+		"id": 3,
+		"name": "Raw Account",
+		"link": "/raw-account",
+		"uuid": "a1b2c3d4-e003-4f9a-9c01-333333333333"
+	},
+	{
+		"id": 4,
+		"name": "Zero Spread Account",
+		"link": "/zero-spread-account",
+		"uuid": "a1b2c3d4-e004-4f9a-9c01-444444444444"
+	}
 ]

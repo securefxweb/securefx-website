@@ -17,7 +17,9 @@ export default function DescriptionPara() {
 			viewport={{ once: true, amount: 0.3 }}
 		>
 			<div className="container-lg2">
-				<motion.h2 variants={fadeUp}>Safeguarding Your Trading Capital</motion.h2>
+				<motion.h2 variants={fadeUp}>
+					Safeguarding Your Trading Capital
+				</motion.h2>
 
 				<motion.p variants={fadeUp} transition={{ delay: 0.2, duration: 0.8 }}>
 					At SecureFx, protecting client funds is the foundation of our
