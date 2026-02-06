@@ -219,6 +219,11 @@
           opacity: 1;
         }
       }
+
+      .dropdown.hideOnNav {
+        opacity: 0 !important;
+        pointer-events: none;
+      }
     }
 
     a {
