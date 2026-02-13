@@ -385,7 +385,7 @@ export default function WorldsTrustedForm({
 								>
 									<div className={styles.layer}></div>
 									<div className={styles.layer2}></div>
-									<span>Try live A/C</span>
+									<span>Try Live A/C</span>
 								</div>
 							</div>
 						)}
