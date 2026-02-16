@@ -56,7 +56,7 @@ export default function Header() {
           <div className={styles.buttonUi}>
             <div className={styles.layer}></div>
             <div className={styles.layer2}></div>
-            <span>Try Demo</span>
+            <span>Try Now</span>
             <img src={ArrowIcon} alt="ArrowIcon" />
           </div>
         </div>
@@ -80,11 +80,11 @@ export default function Header() {
               logindropdown ? styles.show : styles.hide,
             )}
           >
-            <div className={styles.design}>
-              <a>User Login</a>
-              <a>IB Login</a>
-              <a>Affiliate Login</a>
-              <a>Mt4/Mt5</a>
+            <div className={styles.design} onClick={() => setLogindropdown(false)}>
+              <a href="https://client.securefx.net/login" target="_blank">User Login</a>
+              <a href="https://client.securefx.net/login" target="_blank">IB Login</a>
+              {/* <a>Affiliate Login</a>
+              <a>Mt4/Mt5</a> */}
             </div>
           </div>
         </div>
