@@ -139,11 +139,13 @@ export default function Slidersection({ slides = products.length * 2 }) {
 													<div className={styles.detailsText}>
 														<p>{product.description}</p>
 													</div>
-													<div className={styles.buttonUi}>
-														<div className={styles.layer}></div>
-														<div className={styles.layer2}></div>
-														<span>Start Trading</span>
-													</div>
+													<a href="https://client.securefx.net/login" target="_blank">
+														<div className={styles.buttonUi}>
+															<div className={styles.layer}></div>
+															<div className={styles.layer2}></div>
+															<span>Start Trading</span>
+														</div>
+													</a>
 												</div>
 											</>
 										);

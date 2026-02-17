@@ -55,12 +55,13 @@ export default function RegulationsBanner({ data }) {
 								</motion.div>
 
 								<h1>{data.title}</h1>
+								<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+									<Button
 
-								<Button
-									className={styles.mobileHide}
-									text="Start Secure Trading"
-									onClick={handleOpenModal}
-								/>
+										text="Start Secure Trading"
+										onClick={handleOpenModal}
+									/>
+								</a>
 							</motion.div>
 
 							<motion.div
@@ -77,11 +78,12 @@ export default function RegulationsBanner({ data }) {
 							>
 								<img src={data.image} alt="Regulations" />
 							</motion.div>
-							<Button
-								className={styles.mobileShow}
-								text="Start Secure Trading"
-								onClick={handleOpenModal}
-							/>
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+								<Button
+									text="Start Secure Trading"
+									onClick={handleOpenModal}
+								/>
+							</a>
 						</div>
 					</div>
 				</div>

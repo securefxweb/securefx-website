@@ -38,7 +38,9 @@ export default function CalendarBanner() {
 								interactive calendar, ensuring you have the latest information
 								for informed and timely forex trading decisions.
 							</p>
-							<Button className={styles.mobileHide} text="Start Trading" />
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+								<Button text="Start Trading" />
+							</a>
 						</motion.div>
 
 						<motion.div
@@ -55,7 +57,9 @@ export default function CalendarBanner() {
 						>
 							<img src={CalendarImage} alt="CalendarImage" />
 						</motion.div>
-						<Button className={styles.mobileShow} text="Start Trading" />
+						<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+							<Button text="Start Trading" />
+						</a>
 					</div>
 				</div>
 			</div>

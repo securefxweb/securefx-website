@@ -98,7 +98,9 @@ export default function ProductBanner({ productLinks, productData }) {
 						</motion.div>
 
 						<motion.div variants={item} className={styles.mobileHide}>
-							<Button text="Start Trading" />
+							<a href="https://client.securefx.net/login" target="_blank">
+								<Button text="Start Trading" />
+							</a>
 						</motion.div>
 					</motion.div>
 
@@ -112,7 +114,9 @@ export default function ProductBanner({ productLinks, productData }) {
 						<img src={productData?.image} alt="ProductImage" />
 					</motion.div>
 					<motion.div variants={item} className={styles.mobileshow}>
-						<Button text="Start Trading" className={styles.buttonWidth} />
+						<a href="https://client.securefx.net/login" target="_blank">
+							<Button text="Start Trading" className={styles.buttonWidth} />
+						</a>
 					</motion.div>
 				</div>
 			</div>

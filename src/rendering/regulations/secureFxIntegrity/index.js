@@ -17,7 +17,9 @@ export default function SecureFxIntegrity({ data }) {
 						"At SecureFx, integrity isn't just policy, it's the foundation of every trade we protect."}
 				</h2>
 				<div className={styles.buttonCenter}>
-					<Button text="Start  Trading" />
+					<a href="https://client.securefx.net/login" target="_blank">
+						<Button text="Start  Trading" />
+					</a>
 				</div>
 			</div>
 		</div>

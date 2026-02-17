@@ -37,7 +37,9 @@ export default function ContactUsBanner() {
 								Share your question, feedback, or idea—we’ll make sure the right
 								expert gets back to you fast.
 							</p>
-							<Button text="Get in Touch" className={styles.mobileHide} />
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+								<Button text="Get in Touch" />
+							</a>
 						</motion.div>
 
 						<motion.div
@@ -54,7 +56,9 @@ export default function ContactUsBanner() {
 						>
 							<img src={ClockImage} alt="ClockImage" />
 						</motion.div>
-						<Button text="Get in Touch" className={styles.mobileShow} />
+						<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+							<Button text="Get in Touch" />
+						</a>
 					</div>
 				</div>
 			</div>

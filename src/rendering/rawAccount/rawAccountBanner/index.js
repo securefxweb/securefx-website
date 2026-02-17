@@ -36,7 +36,9 @@ export default function RawAccountBanner({ data }) {
 
 								<h1>{data.title}</h1>
 								<p>{data.description}</p>
-								<Button className={styles.mobileHide} text="Open Raw Account" />
+								<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+									<Button text="Open Raw Account" />
+								</a>
 							</motion.div>
 
 							<motion.div
@@ -53,7 +55,9 @@ export default function RawAccountBanner({ data }) {
 							>
 								<img src={data.image} alt="AccountImage" />
 							</motion.div>
-							<Button className={styles.mobileShow} text="Open Raw Account" />
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+								<Button text="Open Raw Account" />
+							</a>
 						</div>
 					</div>
 				</div>

@@ -6,6 +6,7 @@ import classNames from "classnames";
 
 export default function Button({ text, widthfull, className, onClick }) {
 	return (
+
 		<motion.div
 			whileHover={{ scale: 1.01 }}
 			transition={{ type: "spring", stiffness: 200 }}
@@ -24,5 +25,6 @@ export default function Button({ text, widthfull, className, onClick }) {
 				<span>{text}</span>
 			</div>
 		</motion.div>
+
 	);
 }

@@ -36,10 +36,12 @@ export default function ZeroSpreadAccountBanner({ data }) {
 
 								<h1>{data.title}</h1>
 								<p>{data.description}</p>
-								<Button
-									className={styles.mobileHide}
-									text="Open Zero Spread Account"
-								/>
+								<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+									<Button
+
+										text="Open Zero Spread Account"
+									/>
+								</a>
 							</motion.div>
 
 							<motion.div
@@ -56,10 +58,11 @@ export default function ZeroSpreadAccountBanner({ data }) {
 							>
 								<img src={data.image} alt="AccountImage" />
 							</motion.div>
-							<Button
-								className={styles.mobileShow}
-								text="Open Zero Spread Account"
-							/>
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+								<Button
+									text="Open Zero Spread Account"
+								/>
+							</a>
 						</div>
 					</div>
 				</div>

@@ -38,10 +38,12 @@ export default function StandardAccountBanner({ data }) {
 
 								<h1>{data.title}</h1>
 								<p>{data.description}</p>
-								<Button
-									className={styles.mobileHide}
-									text="Open Standard Account"
-								/>
+								<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+									<Button
+
+										text="Open Standard Account"
+									/>
+								</a>
 							</motion.div>
 
 							<motion.div
@@ -58,7 +60,9 @@ export default function StandardAccountBanner({ data }) {
 							>
 								<img src={AccountImage} alt="AccountImage" />
 							</motion.div>
-							<Button className={styles.mobileShow} text="Start Trading" />
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+								<Button text="Open Standard Account" />
+							</a>
 						</div>
 					</div>
 				</div>

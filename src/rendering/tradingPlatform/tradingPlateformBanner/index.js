@@ -50,7 +50,9 @@ export default function TradingPlateformBanner({ data }) {
 
 								<h1>{data.title}</h1>
 								<p>{data.description}</p>
-								<Button text="Get Started" className={styles.mobileHide} />
+								<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+									<Button text="Get Started" />
+								</a>
 							</motion.div>
 
 							<motion.div
@@ -67,7 +69,9 @@ export default function TradingPlateformBanner({ data }) {
 							>
 								<img src={data.image} alt="Mt5MobileImage" />
 							</motion.div>
-							<Button text="Get Started" className={styles.mobileShow} />
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+								<Button text="Get Started" />
+							</a>
 						</div>
 					</div>
 				</div>

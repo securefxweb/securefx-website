@@ -36,7 +36,9 @@ export default function PreciseCalculationsBanner() {
 							<p>
 								Forex strategy control is made easy with EoneFX calculators.
 							</p>
-							<Button text="Start Trading" className={styles.mobileHide} />
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+								<Button text="Start Trading" />
+							</a>
 						</motion.div>
 
 						<motion.div
@@ -53,7 +55,9 @@ export default function PreciseCalculationsBanner() {
 						>
 							<img src={CalculationsImage} alt="CalculationsImage" />
 						</motion.div>
-						<Button text="Start Trading" className={styles.mobileShow} />
+						<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+							<Button text="Start Trading" />
+						</a>
 					</div>
 				</div>
 			</div>

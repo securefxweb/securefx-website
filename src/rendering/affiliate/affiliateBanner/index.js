@@ -34,10 +34,12 @@ export default function AffiliateBanner({ data }) {
 
 							<h1>{data.title}</h1>
 							<p>{data.description}</p>
-							<Button
-								text="Affiliate"
-								className={classNames(styles.mobileHide, styles.buttonWidth)}
-							/>
+							<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileHide}>
+								<Button
+									text="Affiliate"
+									className={classNames(styles.buttonWidth)}
+								/>
+							</a>
 						</motion.div>
 
 						<motion.div
@@ -54,10 +56,11 @@ export default function AffiliateBanner({ data }) {
 						>
 							<img src={data.image} alt="AccountImage" />
 						</motion.div>
-						<Button
-							text="Affiliate"
-							className={classNames(styles.mobileShow)}
-						/>
+						<a href="https://client.securefx.net/login" target="_blank" className={styles.mobileShow}>
+							<Button
+								text="Affiliate"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>

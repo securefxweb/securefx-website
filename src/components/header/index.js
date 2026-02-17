@@ -53,12 +53,14 @@ export default function Header() {
     >
       <header className={classNames(styles.header)}>
         <div className={styles.buttonAlignment}>
-          <div className={styles.buttonUi}>
-            <div className={styles.layer}></div>
-            <div className={styles.layer2}></div>
-            <span>Try Now</span>
-            <img src={ArrowIcon} alt="ArrowIcon" />
-          </div>
+          <a href="https://client.securefx.net/login" target="_blank">
+            <div className={styles.buttonUi}>
+              <div className={styles.layer}></div>
+              <div className={styles.layer2}></div>
+              <span>Try Now</span>
+              <img src={ArrowIcon} alt="ArrowIcon" />
+            </div>
+          </a>
         </div>
         <div className={styles.loginButton}>
           <div

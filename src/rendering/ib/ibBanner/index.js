@@ -14,7 +14,9 @@ export default function IbBanner() {
 				</div>
 			</div>
 			<div className={styles.buttonAlignment}>
-				<Button text="Start Trading" />
+				<a href="https://client.securefx.net/login" target="_blank" >
+					<Button text="Start Trading" />
+				</a>
 			</div>
 		</div>
 	);
