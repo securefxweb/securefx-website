@@ -7,7 +7,8 @@ export default function Regulations() {
 	return (
 		<div>
 			<RegulationsBanner data={regulationsData} />
-			<RegulationsCountry data={regulationsData} />
+			{/* <RegulationsCountry data={regulationsData} /> */}
+			<div style={{ padding: '80px 0 0 0' }}></div>
 			<SecureFxIntegrity data={regulationsData} />
 		</div>
 	);
