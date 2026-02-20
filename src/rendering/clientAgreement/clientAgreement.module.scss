@@ -1,0 +1,56 @@
+@use '../../scss/main.scss' as *;
+@use '../../scss/breakpoints/breakpoints.scss' as *;
+@use '../../scss/font/font.scss' as *;
+
+.clientAgreement {
+    padding: 100px 0;
+
+    h1 {
+        color: #fff;
+        margin: 0 0 30px 0;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        @include font-medium;
+    }
+
+    h2 {
+        color: #fff;
+        margin: 0 0 20px 0;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        @include font-medium;
+    }
+
+    p {
+        font-size: 18px;
+        color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        @include font-normal;
+        margin: 0 0 20px 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0 0 0 20px;
+
+        &.list {
+            list-style: lower-alpha;
+        }
+
+        li {
+            font-size: 18px;
+            color: #fff;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            @include font-normal;
+            padding: 0 0 20px 0;
+        }
+    }
+}
