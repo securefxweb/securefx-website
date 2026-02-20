@@ -167,9 +167,12 @@ export default function Footer() {
 									<p>© 2025 SecureFX, Inc. All rights reserved.</p>
 
 									<div className={styles.menuAlignment}>
-										<Link href="/policy">Privacy Policy</Link>
+										<Link href="/privacy-policy">Privacy Policy</Link>
 										<span>|</span>
-										<a href="#">Terms & Conditions</a>
+										<Link href="/introducing-broker">Introducing Broker</Link>
+										<span>|</span>
+										<Link href="/client-agreement">Client Agreement</Link>
+
 									</div>
 								</div>
 							</div>
