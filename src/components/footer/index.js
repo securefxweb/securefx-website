@@ -18,10 +18,10 @@ const FooterLogo = "/assets/logo/footer-logo.svg";
 
 export default function Footer() {
 	const socialIcons = [
-		{ id: "instagram", icon: <InstagramIcon />, link: "#" },
-		{ id: "facebook", icon: <FacebookIcon />, link: "#" },
+		{ id: "instagram", icon: <InstagramIcon />, link: "https://www.instagram.com/securefxcapital?igsh=MXd2cTFmNWtqbGc1MA==" },
+		{ id: "facebook", icon: <FacebookIcon />, link: "https://www.facebook.com/share/p/17fN25jHAG/" },
 		{ id: "twitter", icon: <TwitterIcon />, link: "#" },
-		{ id: "linkedin", icon: <LinkdinIcon />, link: "#" },
+		{ id: "linkedin", icon: <LinkdinIcon />, link: "https://www.linkedin.com/company/securefx-capital-ltd/" },
 		{ id: "youtube", icon: <YoutubeIcon />, link: "#" },
 		{ id: "telegram", icon: <TelegramIcon />, link: "#" },
 		{ id: "whatsapp", icon: <WhatsaapIcon />, link: "#" },
@@ -142,7 +142,7 @@ export default function Footer() {
 
 										<div className={styles.socialAlignment}>
 											{socialIcons.map((item) => (
-												<a key={item.id} href={item.link}>
+												<a key={item.id} href={item.link} target="_blank">
 													{item.icon}
 												</a>
 											))}
