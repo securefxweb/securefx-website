@@ -310,36 +310,7 @@ export default function Header() {
                     Mt4/Mt5 Web
                   </Link>
                 </div>
-                <div
-                  className={classNames(
-                    styles.style,
-                    normalizedPathname === "/calendar" ? styles.active : "",
-                  )}
-                >
-                  <div className={styles.dot}></div>
-                  <Link
-                    href="/calendar"
-                    onClick={() => setTradeDropdownOpen(false)}
-                  >
-                    Economic Calendar
-                  </Link>
-                </div>
-                <div
-                  className={classNames(
-                    styles.style,
-                    normalizedPathname === "/precise-calculations"
-                      ? styles.active
-                      : "",
-                  )}
-                >
-                  <div className={styles.dot}></div>
-                  <Link
-                    href="/precise-calculations"
-                    onClick={() => setTradeDropdownOpen(false)}
-                  >
-                    Calculators
-                  </Link>
-                </div>
+
               </div>
             </div>
           </div>
@@ -492,7 +463,56 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <Link href="#">Tools</Link>
+          <div
+            className={styles.spacing}
+            onMouseEnter={() => {
+              setIsNavigating(false);
+              setPartnerDropdownOpen(true);
+            }}
+            onMouseLeave={() => setPartnerDropdownOpen(false)}
+          >
+            <Link href="#">Tools</Link>
+            <div
+              className={classNames(
+                styles.dropdown,
+                aboutDropdownOpen && styles.dropdownOpen,
+                isNavigating && styles.hideOnNav,
+              )}
+            >
+              <div className={styles.dropdownDesign}>
+                <div
+                  className={classNames(
+                    styles.style,
+                    normalizedPathname === "/calendar" ? styles.active : "",
+                  )}
+                >
+                  <div className={styles.dot}></div>
+                  <Link
+                    href="/calendar"
+                    onClick={() => setTradeDropdownOpen(false)}
+                  >
+                    Economic Calendar
+                  </Link>
+                </div>
+                <div
+                  className={classNames(
+                    styles.style,
+                    normalizedPathname === "/precise-calculations"
+                      ? styles.active
+                      : "",
+                  )}
+                >
+                  <div className={styles.dot}></div>
+                  <Link
+                    href="/precise-calculations"
+                    onClick={() => setTradeDropdownOpen(false)}
+                  >
+                    Calculators
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
           <Link href="/contact-us">Support</Link>
           {/* <Link href={"#"}>EN</Link> */}
         </div>

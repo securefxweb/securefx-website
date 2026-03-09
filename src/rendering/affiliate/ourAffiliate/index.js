@@ -7,7 +7,7 @@ const PlatformImage = "/assets/images/platform.png";
 const BullImage = "/assets/images/bull-img.png";
 const ArrowIcon = "/assets/icons/left-arrow.svg";
 import "swiper/css/navigation";
-import { Navigation, FreeMode } from "swiper/modules";
+import { Navigation, FreeMode, Autoplay } from "swiper/modules";
 
 export default function OurAffiliate({ data }) {
 	const [prevEl, setPrevEl] = useState(null);
@@ -25,6 +25,10 @@ export default function OurAffiliate({ data }) {
 				loop={true}
 				speed={800}
 				grabCursor={true}
+				autoplay={{
+					delay: 5000,
+					disableOnInteraction: false,
+				}}
 				freeMode={{
 					enabled: true,
 					momentum: true,
@@ -41,7 +45,7 @@ export default function OurAffiliate({ data }) {
 						swiper.navigation.update();
 					}
 				}}
-				modules={[Navigation, FreeMode]}
+				modules={[Navigation, FreeMode, Autoplay]}
 				breakpoints={{
 					1400: {
 						slidesPerView: 4.2,

@@ -125,6 +125,10 @@
                 @include font-medium;
                 line-height: 120%;
 
+                @include respond-to("xl") {
+                    font-size: 20px;
+                }
+
                 @include respond-to("sm") {
                     font-size: 18px;
                     font-style: normal;
@@ -141,11 +145,15 @@
                 left: 0;
                 bottom: 0;
                 transition: .3s ease-in-out;
-                transform: translateY(130%);
+                transform: translateY(136%);
                 font-style: normal;
                 font-weight: 400;
                 line-height: 120%;
                 @include font-normal;
+
+                @include respond-to("xl") {
+                    font-size: 14px;
+                }
 
                 @include respond-to("sm") {
                     color: #FFF;

@@ -1,11 +1,14 @@
 "use client";
+import classNames from "classnames";
 import styles from "./tradingPlateformWebBanner.module.scss";
 import Button from "@/components/button";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 const AccountImage = "/assets/images/raw-account.png";
 const Mt5MobileImage = "/assets/images/web.png";
 export default function TradingPlateformWebBanner({ data }) {
+	const pathname = usePathname();
 	return (
 		<motion.div
 			className={styles.rawAccountBanner}
@@ -19,12 +22,12 @@ export default function TradingPlateformWebBanner({ data }) {
 					<div className={styles.productBanner}>
 						<div className="container-lg">
 							<div className={styles.tabAlignment}>
-								<Link href="/trading-platform">
-									<div className={styles.buttonUi}>Mobile</div>
+								<Link href="/trading-platform/">
+									<div className={classNames(styles.buttonUi, pathname === "/trading-platform/" ? styles.active : "")}>Mobile</div>
 								</Link>
 								<div className={styles.line}></div>
-								<Link href="/trading-platform-web">
-									<div className={styles.buttonUi}>Web</div>
+								<Link href="/trading-platform-web/">
+									<div className={classNames(styles.buttonUi, pathname === "/trading-platform-web/" ? styles.active : "")}>Web</div>
 								</Link>
 							</div>
 						</div>
