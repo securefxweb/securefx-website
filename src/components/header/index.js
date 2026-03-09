@@ -471,7 +471,7 @@ export default function Header() {
             }}
             onMouseLeave={() => setPartnerDropdownOpen(false)}
           >
-            <Link href="#">Tools</Link>
+            <Link href="/affiliate">Tools</Link>
             <div
               className={classNames(
                 styles.dropdown,
