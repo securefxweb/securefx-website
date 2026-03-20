@@ -137,6 +137,11 @@ export default function Footer() {
 												support@securefx.net
 											</a>
 										</div>
+										<div className={styles.email}>
+											<a href="callto:+971553428328">
+												+971553428328
+											</a>
+										</div>
 
 										<AnimatedLine />
 

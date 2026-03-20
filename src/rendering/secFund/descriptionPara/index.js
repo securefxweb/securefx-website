@@ -23,8 +23,8 @@ export default function DescriptionPara() {
 
 				<motion.p variants={fadeUp} transition={{ delay: 0.2, duration: 0.8 }}>
 					At SecureFx, protecting client funds is the foundation of our
-					business. Regulated by the Labuan Financial Services Authority and
-					registered in Canada (License No. 2025053949), we uphold the highest
+					business. Regulated by the Securefx Capital Ltd Financial Services Authority and
+					registered in Securefx Capital Ltd (License No. 2023-00646), we uphold the highest
 					international standards of security and transparency. Client funds are
 					fully segregated in top-tier global banks such as Barclays Bank PLC,
 					ensuring they remain separate from company operations. Every account

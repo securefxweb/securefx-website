@@ -5,20 +5,11 @@
 	"image": "/assets/images/Regulations.png",
 	"company": [
 		{
-			"name": "Eone Mauritius",
+			"name": "SecureFx Capital Ltd",
 			"other": [
-				"EONE CAPITAL LIMITED",
-				"INVESTMENT DEALER (FULL SERVICE DEALER EXCLUDING UNDERWRITING)",
-				"United Docks Business Park, Caudan, Port Louis, Mauritius."
-			],
-			"image": "/assets/icons/Eone.svg"
-		},
-		{
-			"name": "Foreign Rep. Company",
-			"other": [
-				"1701 Nassima Tower, Sheikh Zayed Road,",
-				"Trade Center, Dubai, UAE.",
-				"License No: 1423002"
+				"1st Floor, Meridian Place, Choc Estate, Castries,",
+				"LC02 801, Saint Lucia.",
+				"License No: 2023-00646"
 			],
 			"image": "/assets/icons/Foreign.png"
 		}

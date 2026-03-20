@@ -7,7 +7,7 @@ export default function SecFund() {
 	return (
 		<div>
 			<SecFundBanner />
-			{/* <DescriptionPara /> */}
+			<DescriptionPara />
 			<SecFundDetailsCard />
 		</div>
 	);
