@@ -36,6 +36,10 @@ export default function WorldsTrustedForm({
 			title: "Transparency, Trust, and Security",
 			desc: "Your funds and data are safeguarded by global compliance protocols and secure financial frameworks",
 		},
+		{
+			title: "24/5 Expert Support for Seamless Trading",
+			desc: "Our multilingual team stands ready around the clock to assist, guide, and resolve, wherever you trade.",
+		},
 	],
 	rightSteps = [
 		{
@@ -46,10 +50,6 @@ export default function WorldsTrustedForm({
 			title: "Instant Deposits and Fast Withdrawals",
 			desc: "Experience real-time fund movement designed for modern traders who value speed and reliability",
 		},
-		{
-			title: "24/5 Expert Support for Seamless Trading",
-			desc: "Our multilingual team stands ready around the clock to assist, guide, and resolve, wherever you trade.",
-		},
 	],
 	form,
 }) {
@@ -58,7 +58,8 @@ export default function WorldsTrustedForm({
 	const [isUserScrolling, setIsUserScrolling] = useState(false);
 	const [isInView, setIsInView] = useState(false);
 
-	const totalSteps = Math.max(leftSteps.length, rightSteps.length) * 2;
+	const maxGlobalIndex = Math.max((leftSteps.length - 1) * 2, (rightSteps.length - 1) * 2 + 1);
+	const totalSteps = maxGlobalIndex + 1;
 	const { scrollYProgress } = useScroll({
 		target: sectionRef,
 		offset: ["start start", "end end"],
@@ -222,13 +223,13 @@ export default function WorldsTrustedForm({
 		};
 	}, [isInView, isUserScrolling, autoScrollToNextStep]);
 
-	const makeZigzagTransform = (globalIndex, side, isLastRight) => {
+	const makeZigzagTransform = (globalIndex, side, isLast) => {
 		const start = globalIndex / totalSteps;
 		const end = (globalIndex + 1) / totalSteps;
 
 		const breakY = side === "left" ? 0 : -210;
 		const maxY = side === "left" ? 460 : 360;
-		const slideY = side === "left" ? -360 : isLastRight ? -210 : -460;
+		const slideY = side === "left" ? (isLast ? 0 : -360) : (isLast ? -210 : -460);
 
 		const rawY = useMotionValue(maxY);
 		const rawOpacity = useMotionValue(0);
@@ -307,7 +308,9 @@ export default function WorldsTrustedForm({
 					<div className={styles.text}>
 						{leftSteps.map((step, i) => {
 							const globalIndex = i * 2;
-							const { y, opacity } = makeZigzagTransform(globalIndex, "left");
+							// Only true if it is the absolute last step
+							const isLast = globalIndex === maxGlobalIndex;
+							const { y, opacity } = makeZigzagTransform(globalIndex, "left", isLast);
 
 							return (
 								<motion.div
@@ -404,7 +407,7 @@ export default function WorldsTrustedForm({
 					<div className={classNames(styles.text, styles.textbottomAlignment)}>
 						{rightSteps.map((step, i) => {
 							const globalIndex = i * 2 + 1;
-							const isLast = i === rightSteps.length - 1;
+							const isLast = globalIndex === maxGlobalIndex;
 
 							const { y, opacity } = makeZigzagTransform(
 								globalIndex,

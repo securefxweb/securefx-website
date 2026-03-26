@@ -201,7 +201,7 @@ export default function DemoAccountForm() {
 
 	return (
 		<form className={styles.demoAccountForm} onSubmit={handleSubmit}>
-			<div className={styles.spacer}>
+			<div className={styles.twocol}>
 				<Dropdown
 					placeholder="Mr."
 					label="Prefix"
@@ -209,9 +209,9 @@ export default function DemoAccountForm() {
 					value={formData.prefix}
 					onChange={(value) => handleInputChange("prefix", value)}
 				/>
-			</div>
+		
 
-			<div className={styles.spacer}>
+		
 				<Input
 					label="Your Name"
 					placeholder="Ex. John Doe"
