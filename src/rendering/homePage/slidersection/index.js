@@ -154,9 +154,9 @@ export default function Slidersection({ slides = products.length * 2 }) {
 							) : (
 								<div
 									className={styles.sliderTypeImage}
-									style={{
-										backgroundImage: `url(${SliderImage})`,
-									}}
+								// style={{
+								// 	backgroundImage: `url(${SliderImage})`,
+								// }}
 								>
 									<div className={styles.image}>
 										{(() => {
