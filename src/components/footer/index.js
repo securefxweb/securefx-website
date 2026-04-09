@@ -20,10 +20,10 @@ export default function Footer() {
 	const socialIcons = [
 		{ id: "instagram", icon: <InstagramIcon />, link: "https://www.instagram.com/securefxcapital?igsh=MXd2cTFmNWtqbGc1MA==" },
 		{ id: "facebook", icon: <FacebookIcon />, link: "https://www.facebook.com/share/p/17fN25jHAG/" },
-		{ id: "twitter", icon: <TwitterIcon />, link: "#" },
+		// { id: "twitter", icon: <TwitterIcon />, link: "#" },
 		{ id: "linkedin", icon: <LinkdinIcon />, link: "https://www.linkedin.com/company/securefx-capital-ltd/" },
-		{ id: "youtube", icon: <YoutubeIcon />, link: "#" },
-		{ id: "telegram", icon: <TelegramIcon />, link: "#" },
+		// { id: "youtube", icon: <YoutubeIcon />, link: "#" },
+		{ id: "telegram", icon: <TelegramIcon />, link: "https://t.me/+971553428328" },
 		{ id: "whatsapp", icon: <WhatsaapIcon />, link: "https://wa.me/qr/5F6XZEX7OLKSJ1" },
 	];
 
