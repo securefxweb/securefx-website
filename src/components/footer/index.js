@@ -24,7 +24,7 @@ export default function Footer() {
 		{ id: "linkedin", icon: <LinkdinIcon />, link: "https://www.linkedin.com/company/securefx-capital-ltd/" },
 		{ id: "youtube", icon: <YoutubeIcon />, link: "#" },
 		{ id: "telegram", icon: <TelegramIcon />, link: "#" },
-		{ id: "whatsapp", icon: <WhatsaapIcon />, link: "#" },
+		{ id: "whatsapp", icon: <WhatsaapIcon />, link: "https://wa.me/qr/5F6XZEX7OLKSJ1" },
 	];
 
 	const menus = {
